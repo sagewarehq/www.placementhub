@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-theme: rgb(51, 62, 216);
+}
+
+.btn-primary {
+  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-full;
+}
