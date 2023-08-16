@@ -28,3 +28,14 @@
   border-left: 3px solid #3490dc; /* Change this color as desired */
   transition: background-color 250ms ease;
 }
+.hide-answer {
+  /* display: none; */
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.7s ease-out, opacity 0.3s ease-out,
+    visibility 0.3s ease-out;
+}
+.faq-answer {
+  overflow: hidden;
+}

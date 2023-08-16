@@ -519,12 +519,45 @@
         </button>
       </section>
       <!-- FAQS SECTION -->
-      <section class="w-full bg-gray-300 h-96">FAQS SECTION</section>
+      <section
+        class="flex flex-col items-center justify-center w-full h-auto gap-10 px-20 py-10"
+      >
+        <h1 class="mb-4 text-5xl font-semibold">Frequently Asked Questions</h1>
+        <div
+          class="flex flex-col justify-center w-full px-8 py-10 text-2xl font-medium faq-question rounded-xl card-bs"
+        >
+          How can I get started?
+          <div
+            class="px-8 pt-4 text-xl font-normal text-gray-400 faq-answer hide-answer"
+          >
+            You can get started by following these steps...
+          </div>
+        </div>
+        <div
+          class="w-full px-8 py-10 text-2xl font-medium faq-question rounded-xl card-bs"
+        >
+          What documents or other requirements I need to prepare?
+          <div
+            class="px-8 pt-4 text-xl font-normal text-gray-400 faq-answer hide-answer"
+          >
+            To prepare for the process, you will need...
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="w-full bg-gray-500 h-96">FOOTER CONTENT</footer>
   </body>
 
   <script>
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach((question) => {
+      question.addEventListener("click", () => {
+        const answer = question.querySelector(".faq-answer");
+        answer.classList.toggle("hide-answer");
+      });
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
       const toggleButton = document.querySelector(".relative > button");
       const dropdownMenu = document.querySelector(".relative > .absolute");
@@ -565,54 +598,4 @@
       });
     });
   </script>
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.querySelector(".relative > button");
-      const dropdownMenu = document.querySelector(".relative > .absolute");
-      const otherCheckbox = document.getElementById("otherCheckbox");
-      const otherInput = document.getElementById("otherInput");
-
-      toggleButton.addEventListener("click", function () {
-        dropdownMenu.classList.toggle("hidden");
-      });
-
-      otherCheckbox.addEventListener("change", function () {
-        if (otherCheckbox.checked) {
-          otherInput.classList.remove("hidden");
-        } else {
-          otherInput.classList.add("hidden");
-        }
-      });
-
-      // Close the dropdown when clicking outside of it
-      window.addEventListener("click", function (event) {
-        if (
-          !toggleButton.contains(event.target) &&
-          !dropdownMenu.contains(event.target)
-        ) {
-          dropdownMenu.classList.add("hidden");
-        }
-      });
-    });
-  </script> -->
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.querySelector(".relative > button");
-      const dropdownMenu = document.querySelector(".relative > .absolute");
-
-      toggleButton.addEventListener("click", function () {
-        dropdownMenu.classList.toggle("hidden");
-      });
-
-      // Close the dropdown when clicking outside of it
-      window.addEventListener("click", function (event) {
-        if (
-          !toggleButton.contains(event.target) &&
-          !dropdownMenu.contains(event.target)
-        ) {
-          dropdownMenu.classList.add("hidden");
-        }
-      });
-    });
-  </script> -->
 </html>
