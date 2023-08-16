@@ -20,6 +20,14 @@
   transition: all ease 0.2s;
   cursor: pointer;
 }
+.card-bs-green {
+  background-color: green;
+  border: none;
+  box-shadow: 8px 0 15px rgba(0, 0, 0, 0.1), -8px 0 15px rgba(0, 0, 0, 0.1),
+    0 15px 8px rgba(0, 0, 0, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
 .scroll-snap-inline-mandatory {
   scroll-snap-type: inline mandatory;
 }
@@ -29,13 +37,5 @@
   transition: background-color 250ms ease;
 }
 .hide-answer {
-  /* display: none; */
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: height 0.7s ease-out, opacity 0.3s ease-out,
-    visibility 0.3s ease-out;
-}
-.faq-answer {
-  overflow: hidden;
+  display: none;
 }
