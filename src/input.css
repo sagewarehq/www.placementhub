@@ -9,3 +9,11 @@
 .btn-primary {
   @apply px-3 py-3 border border-[var(--primary-theme)] rounded-full;
 }
+.card-bs {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 8px 0 15px rgba(0, 0, 0, 0.1), -8px 0 15px rgba(0, 0, 0, 0.1),
+    0 15px 8px rgba(0, 0, 0, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.2s;
+  cursor: pointer;
+}

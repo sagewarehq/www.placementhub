@@ -574,6 +574,14 @@ video {
   height: 80%;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[500px\] {
   height: 500px;
 }
@@ -588,6 +596,10 @@ video {
 
 .w-2\/5 {
   width: 40%;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-full {
@@ -622,13 +634,17 @@ video {
   gap: 3.5rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
 
-.bg-gray-50 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -645,6 +661,10 @@ video {
   padding: 0px;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -658,6 +678,10 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -685,6 +709,16 @@ video {
   line-height: 1;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -710,6 +744,10 @@ video {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 :root {
   --primary-theme: rgb(51, 62, 216);
 }
@@ -722,4 +760,13 @@ video {
   padding-right: 0.75rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.card-bs {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 8px 0 15px rgba(0, 0, 0, 0.1), -8px 0 15px rgba(0, 0, 0, 0.1),
+    0 15px 8px rgba(0, 0, 0, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.2s;
+  cursor: pointer;
 }
