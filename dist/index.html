@@ -24,7 +24,7 @@
           <li>About us</li>
           <li>Contact us</li>
         </ul>
-        <button class="btn-primary">START A FREE TRIAL</button>
+        <button class="btn-primary">START FREE TRIAL</button>
       </div>
     </nav>
     <main class="w-full h-auto">
@@ -146,7 +146,7 @@
             </p>
             <div>
               <h1 class="text-4xl font-bold text-center">₱500,000/year</h1>
-              <h3 class="text-sm text-center">per year with Placementhub</h3>
+              <h3 class="text-lg text-center">per year with Placementhub</h3>
             </div>
             <h3 class="text-sm italic">
               Based on typical development and maintenance costs in the
@@ -235,7 +235,7 @@
       </section>
       <!-- FORMS SECTION -->
       <section
-        class="flex flex-col items-center justify-center w-full h-auto px-20 py-10"
+        class="flex flex-col items-center justify-center w-full h-auto px-32 py-10"
       >
         <h1 class="mb-4 text-5xl font-semibold">Free 30-Day Success Trial</h1>
         <p class="text-lg text-center">
@@ -245,75 +245,103 @@
           streamline your operations, improve placement efficiency, and provide
           invaluable insights.
         </p>
-        <div class="w-full mt-5 mb-20 h-[500px]">
+        <div class="w-full mt-5 mb-20 h-[600px]">
           <form>
-            <div class="px-20 py-10 mb-4">
-              <label
-                for="first-name"
-                class="block mb-2 text-sm font-bold text-gray-700"
-                >First Name</label
-              >
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="First Name"
-                required
-              />
+            <div class="flex items-center justify-center gap-4">
+              <div class="w-1/3 mb-4">
+                <label
+                  for="first-name"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="First Name*"
+                  required
+                />
+              </div>
+              <div class="w-1/3 mb-4">
+                <label
+                  for="middle-name"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Middle Name</label
+                >
+                <input
+                  type="text"
+                  id="middle-name"
+                  name="middle-name"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Middle Name"
+                  required
+                />
+              </div>
+              <div class="w-1/3 mb-4">
+                <label
+                  for="last-name"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Last Name*"
+                  required
+                />
+              </div>
             </div>
-          </form>
-        </div>
-        <!-- <div class="max-w-md p-6 mx-auto mb-10 bg-white rounded card-bs">
-          <form>
-            <div class="mb-4">
-              <label
-                for="first-name"
-                class="block mb-2 text-sm font-bold text-gray-700"
-                >First Name</label
-              >
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="First Name"
-                required
-              />
+            <div class="flex items-center justify-center gap-12">
+              <div class="w-1/2 mb-4">
+                <label
+                  for="email"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+              <div class="w-1/2 mb-4">
+                <label
+                  for="phone"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Phone</label
+                >
+                <div class="flex items-center gap-4">
+                  <div class="relative flex-shrink-0">
+                    <select
+                      class="w-20 px-3 py-2 text-gray-500 bg-transparent border rounded-l-md focus:outline-none focus:border-blue-500"
+                    >
+                      <option>+63</option>
+                      <option>+1</option>
+                      <option>+44</option>
+                      <option>+49</option>
+                    </select>
+                  </div>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-3 py-2 border rounded-r-md focus:outline-none focus:border-blue-500"
+                    placeholder="Phone*"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-            <div class="mb-4">
-              <label
-                for="middle-name"
-                class="block mb-2 text-sm font-bold text-gray-700"
-                >Middle Name</label
-              >
-              <input
-                type="text"
-                id="middle-name"
-                name="middle-name"
-                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="Middle Name"
-              />
-            </div>
-            <div class="mb-4">
-              <label
-                for="last-name"
-                class="block mb-2 text-sm font-bold text-gray-700"
-                >Last Name</label
-              >
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="Last Name"
-                required
-              />
-            </div>
-            <div class="mb-4">
+            <div class="w-full mb-4">
               <label
                 for="company"
-                class="block mb-2 text-sm font-bold text-gray-700"
+                class="block mb-2 text-lg font-bold text-gray-700"
                 >Company</label
               >
               <input
@@ -321,47 +349,154 @@
                 id="company"
                 name="company"
                 class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="Company"
-              />
-            </div>
-            <div class="mb-4">
-              <label
-                for="email"
-                class="block mb-2 text-sm font-bold text-gray-700"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="Email"
+                placeholder="Company*"
                 required
               />
             </div>
-            <div class="mb-4">
-              <label
-                for="phone"
-                class="block mb-2 text-sm font-bold text-gray-700"
-                >Phone</label
+            <div class="flex justify-center gap-10">
+              <select
+                class="w-1/2 h-full px-3 py-2 text-gray-500 bg-transparent border rounded-l-md focus:outline-none focus:border-blue-500"
               >
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                placeholder="Phone"
-                required
-              />
+                <option disabled selected>How big is your company?*</option>
+                <option>1-10 Employees</option>
+                <option>11-25 Employees</option>
+                <option>26-100 Employees</option>
+                <option>100+ Employees</option>
+              </select>
+              <div class="relative w-1/2 mb-4">
+                <div class="relative">
+                  <button
+                    type="button"
+                    class="w-full px-3 py-2 text-left text-gray-700 bg-transparent border rounded-lg focus:outline-none focus:border-blue-500"
+                  >
+                    What do you want to accomplish?*
+                  </button>
+                  <div
+                    class="absolute hidden w-full py-2 mt-1 bg-white border rounded-lg shadow-md"
+                  >
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold"
+                          >Streamline Recruitment Process:</span
+                        >
+                        Automate and streamline your recruitment process,
+                        reducing the time and effort spent on sourcing and
+                        selecting candidates.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold"
+                          >Enhance Candidate Tracking:</span
+                        >
+                        Improve your ability to track candidates throughout the
+                        recruitment process, from initial application to final
+                        placement.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold"
+                          >Improve Placement Efficiency:</span
+                        >
+                        Enhance the speed and accuracy of your candidate
+                        placements, ensuring the right fit for both candidates
+                        and companies.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold"
+                          >Better Data Management:</span
+                        >
+                        Improve your recruitment data management, allowing for
+                        efficient storage, access, and utilization of candidate
+                        and company data.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold">Automate Reporting:</span>
+                        Automate your recruitment reporting, providing
+                        insightful and actionable analytics for decision-making.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold"
+                          >Reduce Hiring Errors:</span
+                        >
+                        Minimize errors in the recruitment process, enhancing
+                        the quality of your candidate shortlists and placements.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold"
+                          >Scale Recruitment Efforts:</span
+                        >
+                        Improve your ability to scale up recruitment efforts in
+                        line with company growth or seasonal fluctuations.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                      <span
+                        ><span class="font-semibold">Ensure Compliance:</span>
+                        Ensure your recruitment processes are compliant with
+                        industry regulations and standards.
+                      </span>
+                    </label>
+                    <label class="flex items-start px-4 py-2 cursor-pointer">
+                      <input
+                        id="otherCheckbox"
+                        type="checkbox"
+                        class="mt-2 mr-2 leading-tight"
+                      />
+                      <span
+                        ><span class="font-semibold">Other:</span>
+                        If there are other specific goals you want to achieve
+                        with PlacementHub, please specify.
+                      </span>
+                    </label>
+                    <div id="otherInput" class="hidden px-4 py-2">
+                      <input
+                        type="text"
+                        class="w-full px-3 py-2 mt-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Specify other goals here"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button
-              type="submit"
-              class="w-full py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200"
+            <label
+              class="block mb-2 text-base font-bold text-gray-700"
+              for="otherChallenges"
+              >Tell us more about your challenges</label
             >
-              Submit
-            </button>
+            <textarea
+              id="otherChallenges"
+              class="w-full px-4 py-2 mt-2 border rounded-md resize-none h-52 focus:outline-none focus:border-blue-500"
+              placeholder="Let us know here"
+            ></textarea>
+            <div class="flex items-center justify-center w-full">
+              <button
+                type="submit"
+                class="w-1/3 my-10 text-xl text-blue-500 bg-white hover:bg-blue-600 hover:text-white focus:outline-none focus:ring focus:ring-blue-200 btn-primary"
+              >
+                START YOUR TRIAL
+              </button>
+            </div>
           </form>
-        </div> -->
+        </div>
       </section>
       <!-- PRICING SECTION -->
       <!-- <section class="w-full bg-gray-400 h-96">PRICING SECTION</section> -->
@@ -388,4 +523,96 @@
     </main>
     <footer class="w-full bg-gray-500 h-96">FOOTER CONTENT</footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".relative > button");
+      const dropdownMenu = document.querySelector(".relative > .absolute");
+      const checkboxes = document.querySelectorAll(
+        ".relative input[type='checkbox']"
+      );
+      const otherCheckbox = document.getElementById("otherCheckbox");
+      const otherInput = document.getElementById("otherInput");
+
+      toggleButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function () {
+          if (checkbox === otherCheckbox) {
+            otherInput.classList.toggle("hidden", !otherCheckbox.checked);
+          }
+
+          checkboxes.forEach(function (cb) {
+            const label = cb.closest("label");
+            if (cb.checked) {
+              label.classList.add("selected-label");
+            } else {
+              label.classList.remove("selected-label");
+            }
+          });
+        });
+      });
+
+      window.addEventListener("click", function (event) {
+        if (
+          !toggleButton.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".relative > button");
+      const dropdownMenu = document.querySelector(".relative > .absolute");
+      const otherCheckbox = document.getElementById("otherCheckbox");
+      const otherInput = document.getElementById("otherInput");
+
+      toggleButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      otherCheckbox.addEventListener("change", function () {
+        if (otherCheckbox.checked) {
+          otherInput.classList.remove("hidden");
+        } else {
+          otherInput.classList.add("hidden");
+        }
+      });
+
+      // Close the dropdown when clicking outside of it
+      window.addEventListener("click", function (event) {
+        if (
+          !toggleButton.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    });
+  </script> -->
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".relative > button");
+      const dropdownMenu = document.querySelector(".relative > .absolute");
+
+      toggleButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      // Close the dropdown when clicking outside of it
+      window.addEventListener("click", function (event) {
+        if (
+          !toggleButton.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    });
+  </script> -->
 </html>

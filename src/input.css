@@ -23,3 +23,8 @@
 .scroll-snap-inline-mandatory {
   scroll-snap-type: inline mandatory;
 }
+.selected-label {
+  background-color: #f0f0f0; /* Change this color as desired */
+  border-left: 3px solid #3490dc; /* Change this color as desired */
+  transition: background-color 250ms ease;
+}
