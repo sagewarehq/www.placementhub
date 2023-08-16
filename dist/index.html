@@ -18,13 +18,13 @@
       </div>
       <div class="flex items-center justify-between gap-14">
         <ul class="flex items-center justify-center gap-12">
-          <li>Solutions</li>
+          <li>Features</li>
           <li>Resources</li>
           <li>Pricing</li>
           <li>About us</li>
           <li>Contact us</li>
         </ul>
-        <button class="btn-primary">BOOK A CONSULTATION</button>
+        <button class="btn-primary">START A FREE TRIAL</button>
       </div>
     </nav>
     <main class="w-full h-auto">
@@ -137,7 +137,7 @@
         </h1>
         <div class="flex items-center justify-between w-full px-20 py-14">
           <div
-            class="flex flex-col items-center justify-between p-10 w-80 h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
           >
             <h2 class="text-4xl font-bold">Savings</h2>
             <p class="text-center">
@@ -154,7 +154,7 @@
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-10 w-80 h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
           >
             <h2 class="text-4xl font-bold">Talents</h2>
             <p class="text-center">
@@ -170,7 +170,7 @@
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-10 w-80 h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
           >
             <h2 class="text-4xl font-bold">Time saved</h2>
             <p class="text-center">
@@ -187,7 +187,7 @@
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-10 w-80 h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
           >
             <h2 class="text-4xl font-bold">Efficiency</h2>
             <p class="text-center">
@@ -207,6 +207,185 @@
           </div>
         </div>
       </section>
+      <section class="px-20 py-10">
+        <div
+          class="flex items-center justify-center w-full gap-10 p-20 bg-blue-600 h-[500px]"
+        >
+          <div
+            class="flex flex-col items-center justify-center w-1/4 h-full text-white"
+          >
+            <h2 class="mb-4 text-3xl font-semibold">
+              Join the Sageware Revolution
+            </h2>
+            <p>
+              Don't let outdated processes hold you back. Embrace the future
+              with Sageware and watch your business flourish. Our dedicated
+              support team is always on hand to assist you, ensuring a smooth
+              transition and ongoing success.
+            </p>
+          </div>
+          <div
+            class="w-3/4 h-full grid grid-flow-col auto-cols-[30%] gap-5 overflow-x-auto overflow-y-hidden overscroll-contain scroll-snap-inline-mandatory p-4"
+          >
+            <div class="bg-white rounded-md card-bs">TESTIMONIAL 1</div>
+            <div class="bg-white rounded-md card-bs">TESTIMONIAL 2</div>
+            <div class="bg-white rounded-md card-bs">TESTIMONIAL 3</div>
+          </div>
+        </div>
+      </section>
+      <!-- FORMS SECTION -->
+      <section
+        class="flex flex-col items-center justify-center w-full h-auto px-20 py-10"
+      >
+        <h1 class="mb-4 text-5xl font-semibold">Free 30-Day Success Trial</h1>
+        <p class="text-lg text-center">
+          Are you considering if PlacementHub is the right solution for your
+          recruitment agency? Experience the revolution in hiring processes
+          firsthand with our 30-day free trial. Explore how PlacementHub can
+          streamline your operations, improve placement efficiency, and provide
+          invaluable insights.
+        </p>
+        <div class="w-full mt-5 mb-20 h-[500px]">
+          <form>
+            <div class="px-20 py-10 mb-4">
+              <label
+                for="first-name"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="First Name"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <!-- <div class="max-w-md p-6 mx-auto mb-10 bg-white rounded card-bs">
+          <form>
+            <div class="mb-4">
+              <label
+                for="first-name"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="middle-name"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >Middle Name</label
+              >
+              <input
+                type="text"
+                id="middle-name"
+                name="middle-name"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Middle Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="last-name"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="company"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >Company</label
+              >
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Company"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="phone"
+                class="block mb-2 text-sm font-bold text-gray-700"
+                >Phone</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Phone"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200"
+            >
+              Submit
+            </button>
+          </form>
+        </div> -->
+      </section>
+      <!-- PRICING SECTION -->
+      <!-- <section class="w-full bg-gray-400 h-96">PRICING SECTION</section> -->
+      <!-- JOIN US SECTION -->
+      <section
+        class="flex items-center justify-around py-20 text-white bg-blue-600"
+      >
+        <div>
+          <h1 class="mb-2 text-6xl font-bold">
+            Ready to transform your business?
+          </h1>
+          <h4 class="text-3xl">
+            Contact us today for a free demo and experience the Sageware
+            difference.
+          </h4>
+          <p class="mt-5 text-2xl">✔ Free 30-Day Success Trial</p>
+        </div>
+        <button class="text-2xl text-blue-600 bg-white w-44 btn-secondary">
+          Try it Now
+        </button>
+      </section>
+      <!-- FAQS SECTION -->
+      <section class="w-full bg-gray-300 h-96">FAQS SECTION</section>
     </main>
+    <footer class="w-full bg-gray-500 h-96">FOOTER CONTENT</footer>
   </body>
 </html>

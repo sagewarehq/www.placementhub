@@ -7,7 +7,10 @@
 }
 
 .btn-primary {
-  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-full;
+  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-full font-bold;
+}
+.btn-secondary {
+  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-3xl font-semibold;
 }
 .card-bs {
   background-color: #ffffff;
@@ -16,4 +19,7 @@
     0 15px 8px rgba(0, 0, 0, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: all ease 0.2s;
   cursor: pointer;
+}
+.scroll-snap-inline-mandatory {
+  scroll-snap-type: inline mandatory;
 }
