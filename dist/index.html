@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border p-0 m-0">
+<html lang="en" class="box-border p-0 m-0 overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
     class="box-border flex flex-col items-center justify-center h-auto p-0 m-0"
   >
     <nav
-      class="sticky top-0 z-10 flex items-center justify-between w-full h-24 px-20 py-4 bg-white border-b"
+      class="sticky top-0 z-20 flex items-center justify-between w-full h-24 px-20 py-4 bg-white border-b"
     >
       <div>
         <h2 class="text-lg">PlacementHub</h2>
@@ -135,75 +135,80 @@
           </div>
         </article>
       </section>
-      <section>
+      <!-- BENEFITS SECTION -->
+      <section
+        class="max-w-[1600px] flex flex-col items-center justify-center w-full mx-auto"
+      >
         <h1 class="w-full text-5xl font-semibold text-center">
           By the numbers
         </h1>
-        <div class="flex items-center justify-between w-full px-20 py-14">
+        <div
+          class="flex items-center justify-between w-full gap-10 px-20 py-14"
+        >
           <div
-            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[305px] h-96 rounded-3xl card-bs"
           >
-            <h2 class="text-4xl font-bold">Savings</h2>
+            <div>
+              <h1 class="text-5xl font-semibold text-center">
+                ₱500,000<span class="text-sm font-normal">/year</span>
+              </h1>
+              <h3 class="text-base text-center">savings with PlacementHub</h3>
+            </div>
             <p class="text-center">
               Bypass the expenses of custom software development, maintenance,
               change requests.
             </p>
-            <div>
-              <h1 class="text-4xl font-bold text-center">₱500,000/year</h1>
-              <h3 class="text-lg text-center">per year with Placementhub</h3>
-            </div>
             <h3 class="text-sm italic">
               Based on typical development and maintenance costs in the
               Philippines.
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[305px] h-96 rounded-3xl card-bs"
           >
-            <h2 class="text-4xl font-bold">Talents</h2>
+            <div>
+              <h1 class="text-4xl font-semibold text-center">5x more talent</h1>
+              <h3 class="text-sm text-center">applicants with Apply Wizard</h3>
+            </div>
             <p class="text-center">
               Triple the visibility of your job postings through the Job Listing
               pages and Apply Wizard.
             </p>
-            <div>
-              <h1 class="text-4xl font-bold text-center">5x more</h1>
-              <h3 class="text-sm text-center">applicants with Apply Wizard</h3>
-            </div>
             <h3 class="text-sm italic">
               Based on comparative data from agencies not using Apply Wizard.
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[305px] h-96 rounded-3xl card-bs"
           >
-            <h2 class="text-4xl font-bold">Time saved</h2>
+            <div>
+              <h1 class="text-5xl font-semibold text-center">108 hrs</h1>
+              <h3 class="text-sm text-center">
+                time saved w/ Weekly Reports by Jared
+              </h3>
+            </div>
             <p class="text-center">
               Employees usually spend 2 hours every week to produce the Weekly
               Operational Reports.
             </p>
-            <div>
-              <h1 class="text-4xl font-bold text-center">108 hrs</h1>
-              <h3 class="text-sm text-center">with Weekly Reports by Jared</h3>
-            </div>
             <h3 class="text-sm italic">
               Employees usually spend 2 hours every week to produce weekly
               operational reports.
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-10 max-w-[320px] min-w-[285px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[305px] h-96 rounded-3xl card-bs"
           >
-            <h2 class="text-4xl font-bold">Efficiency</h2>
-            <p class="text-center">
-              Reduce document creation time from 2 hours and 30 minutes to just
-              30 seconds
-            </p>
             <div>
-              <h1 class="text-4xl font-bold text-center">30 seconds</h1>
+              <h1 class="text-5xl font-semibold text-center">30 seconds</h1>
               <h3 class="text-sm text-center">
                 encoding efficiency with DocGen
               </h3>
             </div>
+            <p class="text-center">
+              Reduce document creation time from 2 hours and 30 minutes to just
+              30 seconds
+            </p>
             <h3 class="text-sm italic">
               Efficiency tested on sampled worker contracts on 50 worker
               contracts.
@@ -694,15 +699,14 @@
           </div>
           <div class="flex flex-col w-1/3 h-full gap-5 rounded-lg">
             <div
-              class="relative flex items-center w-full rounded-lg h-1/2 min-w-[566px] card-bs"
+              class="relative flex items-center w-full rounded-lg h-1/2 min-w-[474px] card-bs"
             >
               <div
                 class="flex flex-col justify-center w-1/3 h-full gap-2 px-3 py-6"
               >
                 <div class="flex flex-col">
-                  <h1 class="text-3xl">
-                    ₱48,000<span class="text-sm">/8 pages</span>
-                  </h1>
+                  <h1 class="text-3xl">₱48,000</h1>
+                  <h4 class="text-sm">/8 layouts</h4>
                   <h3
                     class="px-2 py-1 mt-3 text-xs text-center text-white bg-blue-500 rounded-sm w-fit"
                   >
@@ -761,7 +765,7 @@
               </div>
             </div>
             <div
-              class="relative w-full rounded-lg h-1/2 min-w-[566px] card-bs flex"
+              class="relative w-full rounded-lg h-1/2 min-w-[474px] card-bs flex"
             >
               <div
                 class="flex flex-col justify-center w-1/3 h-full gap-2 px-3 py-6"
@@ -880,7 +884,62 @@
         </div>
       </section>
     </main>
-    <footer class="w-full text-white bg-blue-600 h-72">FOOTER SECTION</footer>
+    <footer class="w-full text-white bg-blue-600 h-72">
+      <div class="container flex flex-wrap mx-auto">
+        <div class="w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold">Column 1</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="hover:text-gray-300">Link 1</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 2</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 3</a></li>
+          </ul>
+        </div>
+        <div class="w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold">Column 2</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="hover:text-gray-300">Link 4</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 5</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 6</a></li>
+          </ul>
+        </div>
+        <div class="w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold">Column 3</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="hover:text-gray-300">Link 7</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 8</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 9</a></li>
+          </ul>
+        </div>
+        <div class="w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold">Column 4</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="hover:text-gray-300">Link 10</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 11</a></li>
+            <li><a href="#" class="hover:text-gray-300">Link 12</a></li>
+          </ul>
+        </div>
+        <div class="w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold">Social Media</h3>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#" class="text-xl hover:text-gray-300"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-gray-300"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-xl hover:text-gray-300"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <script>
