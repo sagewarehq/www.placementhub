@@ -98,3 +98,7 @@
 li:hover .animated-underline::before {
   width: 100%;
 }
+
+.half-vh {
+  height: 50vh;
+}
