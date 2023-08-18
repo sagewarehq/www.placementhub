@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora:wght@500&family=Montserrat:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0169320a9c.js"
       crossorigin="anonymous"
@@ -11,14 +17,16 @@
     <title>PlacementHub</title>
   </head>
   <body
-    class="box-border flex flex-col items-center justify-center h-auto p-0 m-0"
+    class="box-border flex flex-col items-center justify-center h-auto p-0 m-0 roboto"
   >
     <nav
       class="sticky top-0 z-20 flex items-center justify-between w-full h-24 px-20 py-4 bg-white border-b"
     >
       <div>
         <h2 class="text-lg">PlacementHub</h2>
-        <h3>Built by Sageware</h3>
+        <h3 class="text-xs italic text-gray-500 libre-baskerville">
+          Built by Sageware
+        </h3>
       </div>
       <div class="flex items-center justify-between gap-14">
         <ul class="flex items-center justify-center gap-12">
@@ -28,7 +36,11 @@
           <li>About us</li>
           <li>Contact us</li>
         </ul>
-        <button class="btn-primary">START FREE TRIAL</button>
+        <button
+          class="transition-all duration-300 ease-in-out btn-primary hover:bg-blue-500 hover:text-white"
+        >
+          START FREE TRIAL
+        </button>
       </div>
     </nav>
     <main class="w-full h-auto">
@@ -70,7 +82,9 @@
           class="flex items-center justify-around w-full py-14 h-[500px]"
         >
           <div class="w-2/5">
-            <h1 class="mb-12 text-5xl font-bold">Expand Your Talent Reach</h1>
+            <h1 class="mb-12 text-5xl font-bold libre-baskerville">
+              Expand Your Talent Reach
+            </h1>
             <p class="text-2xl">
               With digital job applications shareable across all social media
               channels, you'll reach more potential candidates in less time.
@@ -78,8 +92,8 @@
             </p>
           </div>
           <img
-            class="object-cover w-2/5 h-full"
-            src="/assets/talent-reach.jpg"
+            class="object-cover w-2/5 h-full shadow-lg"
+            src="/assets/ph-lp-1-1.png"
             alt="feature-1"
           />
         </article>
@@ -87,12 +101,14 @@
           class="flex items-center justify-around w-full py-14 h-[500px]"
         >
           <img
-            class="object-cover w-2/5 h-full"
-            src="/assets/fingertip-insight.jpg"
+            class="object-cover w-2/5 h-full shadow-lg"
+            src="/assets/feature-ra.png"
             alt="feature-2"
           />
           <div class="w-2/5">
-            <h1 class="mb-12 text-5xl font-bold">Insight at Your Fingertips</h1>
+            <h1 class="mb-12 text-5xl font-bold libre-baskerville">
+              Insight at Your Fingertips
+            </h1>
             <p class="text-2xl">
               Our easy-to-understand visual indicators offer real-time insights
               into your recruitment and placement processes. No more wading
@@ -105,7 +121,9 @@
           class="flex items-center justify-around w-full py-14 h-[500px]"
         >
           <div class="w-2/5">
-            <h1 class="mb-12 text-5xl font-bold">Precision in Placement</h1>
+            <h1 class="mb-12 text-5xl font-bold libre-baskerville">
+              Precision in Placement
+            </h1>
             <p class="text-2xl">
               PlacementHub's revolutionary AutoMatch feature simplifies the
               placement process, ensuring the right candidate is matched to the
@@ -114,8 +132,8 @@
             </p>
           </div>
           <img
-            class="object-cover w-2/5 h-full"
-            src="/assets/placement-precision.jpg"
+            class="object-cover w-2/5 h-full shadow-lg"
+            src="/assets/automatch-1.png"
             alt="feature-3"
           />
         </article>
@@ -123,12 +141,14 @@
           class="flex items-center justify-around w-full py-14 h-[500px]"
         >
           <img
-            class="object-cover w-2/5 h-full"
-            src="/assets/proactivity-easy.jpg"
+            class="object-cover w-2/5 h-full shadow-lg"
+            src="/assets/ph-lp-1-2.png"
             alt="feature-4"
           />
           <div class="w-2/5">
-            <h1 class="mb-12 text-5xl font-bold">Proactivity Made Easy</h1>
+            <h1 class="mb-12 text-5xl font-bold libre-baskerville">
+              Proactivity Made Easy
+            </h1>
             <p class="text-2xl">
               Automated notifications for expiring documents keep you ahead of
               any potential issues. Support your workforce effectively and
@@ -141,50 +161,54 @@
       <section
         class="max-w-[1600px] flex flex-col items-center justify-center w-full mx-auto mb-10"
       >
-        <h1 class="w-full text-5xl font-semibold text-center">
+        <h1
+          class="w-full mt-8 text-5xl font-semibold text-center libre-baskerville"
+        >
           By the numbers
         </h1>
         <div
           class="flex items-center justify-between w-full gap-10 px-20 py-14"
         >
           <div
-            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[315px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[325px] min-w-[315px] h-96 rounded-3xl card-bs bg-white"
           >
             <div>
-              <h1 class="text-5xl font-semibold text-center">
+              <h1 class="text-5xl font-semibold text-center lora">
                 ₱500,000<span class="text-sm font-normal">/year</span>
               </h1>
-              <h3 class="text-base text-center">savings with PlacementHub</h3>
+              <h3 class="text-sm text-center">savings with PlacementHub</h3>
             </div>
             <p class="text-center">
               Bypass the expenses of custom software development, maintenance,
               change requests.
             </p>
-            <h3 class="text-sm italic">
+            <h3 class="text-xs italic">
               Based on typical development and maintenance costs in the
               Philippines.
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[315px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[325px] min-w-[315px] h-96 rounded-3xl card-bs bg-white"
           >
             <div>
-              <h1 class="text-4xl font-semibold text-center">5x more talent</h1>
+              <h1 class="text-4xl font-semibold text-center lora">
+                5x more talent
+              </h1>
               <h3 class="text-sm text-center">applicants with Apply Wizard</h3>
             </div>
             <p class="text-center">
               Triple the visibility of your job postings through the Job Listing
               pages and Apply Wizard.
             </p>
-            <h3 class="text-sm italic">
+            <h3 class="text-xs italic">
               Based on comparative data from agencies not using Apply Wizard.
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[315px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[325px] min-w-[315px] h-96 rounded-3xl card-bs bg-white"
           >
             <div>
-              <h1 class="text-5xl font-semibold text-center">108 hours</h1>
+              <h1 class="text-5xl font-semibold text-center lora">108 hours</h1>
               <h3 class="text-sm text-center">
                 time saved w/ Weekly Reports by Jared
               </h3>
@@ -193,16 +217,18 @@
               Employees usually spend 2 hours every week to produce the Weekly
               Operational Reports.
             </p>
-            <h3 class="text-sm italic">
+            <h3 class="text-xs italic">
               Employees usually spend 2 hours every week to produce weekly
               operational reports.
             </h3>
           </div>
           <div
-            class="flex flex-col items-center justify-between p-9 max-w-[320px] min-w-[315px] h-96 rounded-3xl card-bs"
+            class="flex flex-col items-center justify-between p-9 max-w-[325px] min-w-[315px] h-96 rounded-3xl card-bs bg-white"
           >
             <div>
-              <h1 class="text-5xl font-semibold text-center">30 seconds</h1>
+              <h1 class="text-5xl font-semibold text-center lora">
+                30 seconds
+              </h1>
               <h3 class="text-sm text-center">
                 encoding efficiency with DocGen
               </h3>
@@ -211,7 +237,7 @@
               Reduce document creation time from 2 hours and 30 minutes to just
               30 seconds
             </p>
-            <h3 class="text-sm italic">
+            <h3 class="text-xs italic">
               Efficiency tested on sampled worker contracts on 50 worker
               contracts.
             </h3>
@@ -224,12 +250,12 @@
           class="relative flex items-center justify-center w-full gap-10 p-20 bg-blue-600 h-[650px] rounded-md"
         >
           <div
-            class="absolute -top-20 left-10 py-8 px-10 text-8xl text-white bg-orange-500 rounded-[50%] z-[2]"
+            class="absolute -top-20 left-10 py-8 px-10 text-8xl text-white bg-green-700 rounded-[50%] z-[2]"
           >
             <i class="fa-solid fa-quote-left"></i>
           </div>
-          <div class="flex flex-col justify-center w-1/3 h-full text-white">
-            <h2 class="mb-4 text-4xl font-semibold">
+          <div class="flex flex-col justify-center w-[35%] h-full text-white">
+            <h2 class="mb-4 text-4xl font-semibold libre-baskerville">
               Join the Sageware Revolution
             </h2>
             <p class="text-lg">
@@ -240,14 +266,14 @@
             </p>
           </div>
           <div
-            class="grid w-2/3 h-full grid-flow-col gap-5 p-4 overflow-x-auto overflow-y-hidden overscroll-contain scroll-snap-inline-mandatory auto-cols-max"
+            class="grid w-[65%] h-full grid-flow-col gap-5 p-4 overflow-x-auto overflow-y-hidden overscroll-contain scroll-snap-inline-mandatory auto-cols-max"
           >
             <div
               class="flex flex-col items-center justify-between gap-4 bg-gray-300 rounded-md card-bs w-[265px]"
             >
               <div class="relative w-full bg-gray-300 h-2/5">
                 <div
-                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-blue-700 rounded-[50%]"
+                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-green-700 rounded-[50%]"
                 >
                   <i class="fa-solid fa-quote-left"></i>
                 </div>
@@ -278,7 +304,7 @@
             >
               <div class="relative w-full bg-gray-300 h-2/5">
                 <div
-                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-blue-700 rounded-[50%]"
+                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-green-700 rounded-[50%]"
                 >
                   <i class="fa-solid fa-quote-left"></i>
                 </div>
@@ -310,7 +336,7 @@
             >
               <div class="relative w-full bg-gray-300 h-2/5">
                 <div
-                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-blue-700 rounded-[50%]"
+                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-green-700 rounded-[50%]"
                 >
                   <i class="fa-solid fa-quote-left"></i>
                 </div>
@@ -337,7 +363,7 @@
             >
               <div class="relative w-full bg-gray-300 h-2/5">
                 <div
-                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-blue-700 rounded-[50%]"
+                  class="absolute -bottom-7 left-5 py-2 px-3.5 text-xl text-white bg-green-700 rounded-[50%]"
                 >
                   <i class="fa-solid fa-quote-left"></i>
                 </div>
@@ -366,11 +392,170 @@
           </div>
         </div>
       </section>
+      <!-- SUCCESS PROGRAM -->
+      <section class="bg-gray-100">
+        <div class="container p-8 mx-auto">
+          <h1
+            class="mb-16 text-5xl font-semibold text-center libre-baskerville"
+          >
+            PlacementHub Success Program
+          </h1>
+          <div class="relative flex">
+            <!-- Timeline Line -->
+            <div
+              class="absolute top-0 w-full h-2 transform -translate-y-1/2 bg-gray-400"
+            ></div>
+
+            <!-- Timeline Circles -->
+            <div
+              class="absolute top-0 flex items-center justify-between w-full transform -translate-y-1/2"
+            >
+              <div
+                class="w-6 h-6 translate-x-32 bg-white border-2 border-gray-400 rounded-full"
+              ></div>
+              <div
+                class="w-6 h-6 translate-x-16 bg-white border-2 border-gray-400 rounded-full"
+              ></div>
+              <div
+                class="w-6 h-6 bg-white border-2 border-gray-400 rounded-full"
+              ></div>
+              <div
+                class="w-6 h-6 -translate-x-16 bg-white border-2 border-gray-400 rounded-full"
+              ></div>
+              <div
+                class="w-6 h-6 -translate-x-32 bg-white border-2 border-gray-400 rounded-full"
+              ></div>
+            </div>
+
+            <!-- Timeline Cards -->
+            <div class="w-1/5 mt-[25rem]">
+              <div class="p-4 mb-4 mr-2 bg-white rounded-lg card-bs">
+                <h2
+                  class="mb-2 text-xl font-semibold text-center libre-baskerville"
+                >
+                  Tomorrow
+                </h2>
+                <ul class="flex flex-col gap-2 text-sm text-gray-600">
+                  <li class="flex gap-2">
+                    <span>🔑</span>
+                    <p>
+                      Receive access to your account:
+                      <a
+                        class="text-blue-600 underline"
+                        href="https://youragency.placementhub.ph"
+                        >https://youragency.placementhub.ph</a
+                      >
+                    </p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>⚙️</span>
+                    <p>Configure site; Request data customizations</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>📝</span>
+                    <p>Fill out the worker import sheet.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-1/5 mt-80">
+              <div class="p-4 mb-4 mr-2 bg-white rounded-lg card-bs">
+                <h2
+                  class="mb-2 text-xl font-semibold text-center libre-baskerville"
+                >
+                  Week 1
+                </h2>
+                <ul class="flex flex-col gap-2 text-sm text-gray-600">
+                  <li class="flex gap-2">
+                    <span>📨</span>
+                    <p>Share walk-in application page on social media.</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>🗄️</span>
+                    <p>Publish employers and jobs</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>📂</span>
+                    <p>Fill job preferences.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-1/5 mt-60">
+              <div class="p-4 mb-4 mr-2 bg-white rounded-lg card-bs">
+                <h2
+                  class="mb-2 text-xl font-semibold text-center libre-baskerville"
+                >
+                  Week 2
+                </h2>
+                <ul class="flex flex-col gap-2 text-sm text-gray-600">
+                  <li class="flex gap-2">
+                    <span>💯</span>
+                    <p>Use "Automatch" for efficient placement.</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>💌</span>
+                    <p>Invite candidates for interviews.</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>📩</span>
+                    <p>Follow-up on application submissions.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-1/5 mt-40">
+              <div class="p-4 mb-4 mr-2 bg-white rounded-lg card-bs">
+                <h2
+                  class="mb-2 text-xl font-semibold text-center libre-baskerville"
+                >
+                  Week 3
+                </h2>
+                <ul class="flex flex-col gap-2 text-sm text-gray-600">
+                  <li class="flex gap-2">
+                    <span>✅</span>
+                    <p>Ensure all requirements are complete.</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>📨</span>
+                    <p>Follow-up on pending requirements.</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>🗄</span>
+                    <p>Load worker import sheet to the database.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-1/5 mt-20">
+              <div class="p-4 mb-4 bg-white rounded-lg card-bs">
+                <h2
+                  class="mb-2 text-xl font-semibold text-center libre-baskerville"
+                >
+                  Week 4
+                </h2>
+                <ul class="flex flex-col gap-2 text-sm text-gray-600">
+                  <li class="flex gap-2">
+                    <span>⭐️</span>
+                    <p>Write commendations for standout candidates.</p>
+                  </li>
+                  <li class="flex gap-2">
+                    <span>🤝</span>
+                    <p>Recap and review of all activities.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- FORMS SECTION -->
       <section
         class="flex flex-col items-center justify-center w-full h-auto px-32 py-10"
       >
-        <h1 class="mb-4 text-5xl font-semibold">Free 30-Day Success Trial</h1>
+        <h1 class="mb-4 text-5xl font-semibold libre-baskerville">
+          Free 30-Day Success Trial
+        </h1>
         <p class="text-lg text-center">
           Are you considering if PlacementHub is the right solution for your
           recruitment agency? Experience the revolution in hiring processes
@@ -623,7 +808,7 @@
             <div class="flex items-center justify-center w-full">
               <button
                 type="submit"
-                class="w-1/3 my-10 text-xl text-blue-500 bg-white hover:bg-blue-600 hover:text-white focus:outline-none focus:ring focus:ring-blue-200 btn-primary"
+                class="w-1/3 my-10 text-xl text-blue-500 transition-all duration-300 ease-in-out bg-white hover:bg-blue-500 hover:text-white focus:outline-none focus:ring focus:ring-blue-200 btn-primary libre-baskerville"
               >
                 START YOUR TRIAL
               </button>
@@ -633,25 +818,33 @@
       </section>
       <!-- WHY PLACEMENTHUB? -->
       <section class="mb-4">
-        <h1 class="w-full mt-5 text-5xl font-semibold text-center mb-7">
+        <h1
+          class="w-full mt-5 text-5xl font-semibold text-center mb-7 libre-baskerville"
+        >
           Why choose PlacementHub
         </h1>
         <div class="w-full px-20">
           <table class="w-full">
             <thead>
               <tr>
-                <th></th>
+                <th class="text-white bg-gray-500"></th>
                 <!-- Empty cell -->
-                <th class="px-4 py-2 text-3xl border-b border-r">
+                <th
+                  class="px-4 py-2 text-3xl text-white bg-gray-500 border-b border-l border-r libre-baskerville"
+                >
                   PlacementHub
                 </th>
-                <th class="px-4 py-2 text-3xl">Build-Your-Own</th>
+                <th
+                  class="px-4 py-2 text-3xl text-white bg-gray-500 libre-baskerville"
+                >
+                  Build-Your-Own
+                </th>
               </tr>
             </thead>
             <tbody class="shadow-lg">
               <tr>
                 <td
-                  class="px-4 py-2 text-lg font-semibold bg-gray-100 border-t border-b border-r"
+                  class="px-4 py-2 text-lg font-semibold bg-gray-100 border-t border-b border-r libre-baskerville"
                 >
                   Time and Cost Efficiency
                 </td>
@@ -676,7 +869,7 @@
               </tr>
               <tr>
                 <td
-                  class="px-4 py-2 text-lg font-semibold border-t border-b border-r"
+                  class="px-4 py-2 text-lg font-semibold border-t border-b border-r libre-baskerville"
                 >
                   Reliability and Support
                 </td>
@@ -701,7 +894,7 @@
               </tr>
               <tr>
                 <td
-                  class="px-4 py-2 text-lg font-semibold bg-gray-100 border-t border-b border-r"
+                  class="px-4 py-2 text-lg font-semibold bg-gray-100 border-t border-b border-r libre-baskerville"
                 >
                   Industry Expertise
                 </td>
@@ -725,7 +918,7 @@
               </tr>
               <tr>
                 <td
-                  class="px-4 py-2 text-lg font-semibold border-t border-b border-r"
+                  class="px-4 py-2 text-lg font-semibold border-t border-b border-r libre-baskerville"
                 >
                   Maintenance
                 </td>
@@ -744,7 +937,7 @@
               </tr>
               <tr>
                 <td
-                  class="px-4 py-2 text-lg font-semibold bg-gray-100 border-t border-b border-r"
+                  class="px-4 py-2 text-lg font-semibold bg-gray-100 border-t border-b border-r libre-baskerville"
                 >
                   Security
                 </td>
@@ -776,14 +969,16 @@
         <div
           class="flex items-center justify-center w-1/4 h-full border border-r-0 border-blue-500 shadow-lg"
         >
-          <h1 class="text-5xl font-semibold">Features</h1>
+          <h1 class="text-5xl font-semibold libre-baskerville">Features</h1>
         </div>
         <div class="flex flex-wrap w-3/4 h-full bg-white shadow-lg">
           <div
             class="flex flex-col items-center justify-between w-1/2 gap-2 p-10 border border-blue-500 h-1/2"
           >
             <div class="w-full h-1/5">
-              <h3 class="text-base font-bold">Smart Record Keeping</h3>
+              <h3 class="text-base font-bold libre-baskerville">
+                Smart Record Keeping
+              </h3>
               <p class="text-sm text-gray-500">
                 Harness the power of digital efficiency in managing candidate
                 data.
@@ -817,7 +1012,9 @@
             class="flex flex-col items-center justify-between w-1/2 gap-2 p-10 border border-blue-500 h-1/2"
           >
             <div class="w-full h-1/5">
-              <h3 class="text-base font-bold">Job Application Wizard</h3>
+              <h3 class="text-base font-bold libre-baskerville">
+                Job Application Wizard
+              </h3>
               <p class="text-sm text-gray-500">
                 Optimizing the application process for efficiency and accuracy.
               </p>
@@ -849,7 +1046,7 @@
             class="flex flex-col items-center justify-between w-1/2 gap-2 p-10 border border-blue-500 h-1/2"
           >
             <div class="w-full h-1/5">
-              <h3 class="text-base font-bold">Automatch</h3>
+              <h3 class="text-base font-bold libre-baskerville">Automatch</h3>
               <p class="text-sm text-gray-500">
                 One click, perfect matches, every time.
               </p>
@@ -880,7 +1077,9 @@
             class="flex flex-col items-center justify-between w-1/2 gap-2 p-10 border border-blue-500 h-1/2"
           >
             <div class="w-full h-1/5">
-              <h3 class="text-base font-bold">Reporting & Analytics</h3>
+              <h3 class="text-base font-bold libre-baskerville">
+                Reporting & Analytics
+              </h3>
               <p class="text-sm text-gray-500">
                 Data-driven decisions, clearer strategies.
               </p>
@@ -911,9 +1110,11 @@
       </section>
       <!-- PRICING SECTION -->
       <section
-        class="w-full px-10 pb-20 pt-10 h-[820px] flex flex-col gap-5 items-center font-semibold"
+        class="w-full px-10 pb-20 pt-2 h-[820px] flex flex-col gap-5 items-center font-semibold"
       >
-        <h1 class="mb-10 text-5xl">Transparent Pricing For You</h1>
+        <h1 class="mb-10 text-5xl libre-baskerville">
+          Transparent Pricing For You
+        </h1>
         <div class="flex items-center justify-center w-full gap-5 h-4/5">
           <div class="min-w-[680px] w-[45%] h-full rounded-lg card-bs">
             <div class="flex items-center p-6 gap-7 h-2/5">
@@ -957,7 +1158,11 @@
               class="flex gap-4 px-6 py-3 text-white bg-blue-500 border-t rounded-md h-3/5"
             >
               <div class="w-1/2">
-                <h2 class="w-full mb-2 text-xl font-bold border-b">FEATURES</h2>
+                <h2
+                  class="w-full mb-2 text-xl font-bold border-b libre-baskerville"
+                >
+                  FEATURES
+                </h2>
                 <ul class="mb-2 text-sm list-none">
                   <li>
                     <i class="fa-regular fa-circle-check"></i> Unlimited
@@ -987,7 +1192,9 @@
                     Google Analytics
                   </li>
                 </ul>
-                <h2 class="w-full mb-2 text-xl font-bold border-b">
+                <h2
+                  class="w-full mb-2 text-xl font-bold border-b libre-baskerville"
+                >
                   COMING SOON
                 </h2>
                 <ul class="mb-2 text-sm list-none">
@@ -1004,7 +1211,9 @@
                 </ul>
               </div>
               <div class="w-1/2">
-                <h2 class="w-full mb-2 text-xl font-bold border-b">
+                <h2
+                  class="w-full mb-2 text-xl font-bold border-b libre-baskerville"
+                >
                   ONBOARDING SUPPORT
                 </h2>
                 <ul class="mb-2 text-sm list-none">
@@ -1020,7 +1229,11 @@
                     <i class="fa-regular fa-circle-check"></i> Job page branding
                   </li>
                 </ul>
-                <h2 class="w-full mb-2 text-xl font-bold border-b">SUPPORT</h2>
+                <h2
+                  class="w-full mb-2 text-xl font-bold border-b libre-baskerville"
+                >
+                  SUPPORT
+                </h2>
                 <ul class="mb-2 text-sm list-none">
                   <li>
                     <i class="fa-regular fa-circle-check"></i> 8x5 Phone Support
@@ -1034,7 +1247,9 @@
                     Video Tutorials
                   </li>
                 </ul>
-                <h2 class="w-full mb-2 text-xl font-bold border-b">
+                <h2
+                  class="w-full mb-2 text-xl font-bold border-b libre-baskerville"
+                >
                   STANDARD CLOUD
                 </h2>
                 <ul class="mb-2 text-sm list-none">
@@ -1072,7 +1287,9 @@
               class="flex flex-col justify-between p-6 text-white bg-blue-500 border-t rounded-md h-3/5"
             >
               <div>
-                <h2 class="w-full mb-2 text-xl font-bold border-b">
+                <h2
+                  class="w-full mb-2 text-xl font-bold border-b libre-baskerville"
+                >
                   PRO CLOUD
                 </h2>
                 <ul class="mb-2 text-sm list-none">
@@ -1130,7 +1347,9 @@
               <div
                 class="w-4/6 h-full px-6 py-3 text-white bg-blue-500 rounded-md"
               >
-                <h2 class="w-full mb-2 font-bold border-b">PAGES</h2>
+                <h2 class="w-full mb-2 font-bold border-b libre-baskerville">
+                  PAGES
+                </h2>
                 <ul class="mb-2 text-sm list-none">
                   <li><i class="fa-regular fa-circle-check"></i> Blog</li>
                   <li><i class="fa-regular fa-circle-check"></i> Photo Feed</li>
@@ -1155,7 +1374,7 @@
                     & Privacy Policy
                   </li>
                 </ul>
-                <h2 class="w-full mb-2 font-bold border-b">
+                <h2 class="w-full mb-2 font-bold border-b libre-baskerville">
                   CONTENT MANAGEMENT SYSTEM
                 </h2>
                 <h3 class="italic">Powered by PlacementHub</h3>
@@ -1196,7 +1415,9 @@
               <div
                 class="w-4/6 h-full px-6 py-3 text-white bg-blue-500 rounded-md"
               >
-                <h2 class="w-full mb-2 font-bold border-b">DOCGEN</h2>
+                <h2 class="w-full mb-2 font-bold border-b libre-baskerville">
+                  DOCGEN
+                </h2>
                 <ul class="mb-2 text-sm list-none">
                   <li>
                     <i class="fa-regular fa-circle-check"></i> Contracts
@@ -1209,7 +1430,7 @@
                     <i class="fa-regular fa-circle-check"></i> Dossier Generator
                   </li>
                 </ul>
-                <h2 class="w-full mb-2 font-bold border-b">
+                <h2 class="w-full mb-2 font-bold border-b libre-baskerville">
                   SUPPORTED FORMATS
                 </h2>
                 <ul class="mb-2 text-sm list-none">
@@ -1244,7 +1465,7 @@
         class="flex items-center justify-around py-20 text-white bg-blue-600"
       >
         <div>
-          <h1 class="mb-2 text-6xl font-bold">
+          <h1 class="mb-2 text-6xl font-bold libre-baskerville">
             Ready to transform your business?
           </h1>
           <h4 class="text-3xl">
@@ -1255,7 +1476,9 @@
             <i class="fa-regular fa-circle-check"></i> Free 30-Day Success Trial
           </p>
         </div>
-        <button class="text-2xl text-blue-600 bg-white w-44 btn-secondary">
+        <button
+          class="text-2xl text-blue-600 transition-all duration-300 ease-in-out bg-white w-44 btn-secondary card-bs libre-baskerville"
+        >
           Try it Now
         </button>
       </section>
@@ -1263,7 +1486,9 @@
       <section
         class="flex flex-col items-center justify-center w-full h-auto gap-10 px-20 py-10"
       >
-        <h1 class="mb-4 text-5xl font-semibold">Frequently Asked Questions</h1>
+        <h1 class="mb-4 text-5xl font-semibold libre-baskerville">
+          Frequently Asked Questions
+        </h1>
         <div
           class="flex flex-col justify-center w-full px-8 py-10 text-2xl font-medium faq-question rounded-xl card-bs"
         >
@@ -1286,42 +1511,48 @@
         </div>
       </section>
     </main>
-    <footer class="w-full text-white bg-blue-600 h-72">
+    <footer
+      class="flex flex-col justify-between w-full text-white bg-blue-600 h-72"
+    >
       <div class="container flex flex-wrap mx-auto">
-        <div class="w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold">Column 1</h3>
-          <ul class="list-unstyled">
+        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold libre-baskerville">Features</h3>
+          <ul class="flex flex-col gap-2 list-unstyled">
             <li><a href="#" class="hover:text-gray-300">Link 1</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 2</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 3</a></li>
           </ul>
         </div>
-        <div class="w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold">Column 2</h3>
-          <ul class="list-unstyled">
+        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold libre-baskerville">
+            Resources
+          </h3>
+          <ul class="flex flex-col gap-2 list-unstyled">
             <li><a href="#" class="hover:text-gray-300">Link 4</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 5</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 6</a></li>
           </ul>
         </div>
-        <div class="w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold">Column 3</h3>
-          <ul class="list-unstyled">
+        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold libre-baskerville">Pricing</h3>
+          <ul class="flex flex-col gap-2 list-unstyled">
             <li><a href="#" class="hover:text-gray-300">Link 7</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 8</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 9</a></li>
           </ul>
         </div>
-        <div class="w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold">Column 4</h3>
+        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold libre-baskerville">About us</h3>
           <ul class="list-unstyled">
             <li><a href="#" class="hover:text-gray-300">Link 10</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 11</a></li>
             <li><a href="#" class="hover:text-gray-300">Link 12</a></li>
           </ul>
         </div>
-        <div class="w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold">Social Media</h3>
+        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
+          <h3 class="mb-4 text-xl font-semibold libre-baskerville">
+            Social Media
+          </h3>
           <ul class="flex space-x-4">
             <li>
               <a href="#" class="text-xl hover:text-gray-300"
@@ -1340,6 +1571,13 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="flex items-center justify-between gap-10 px-20 py-5 text-sm">
+        <h4>
+          <i class="fa-regular fa-copyright"></i> 2023 Sageware IT Solutions -
+          All Rights Reserved
+        </h4>
+        <h4>Privacy | Terms of Service</h4>
       </div>
     </footer>
   </body>

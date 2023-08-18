@@ -6,6 +6,19 @@
   --primary-theme: rgb(51, 62, 216);
 }
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+}
+.lora {
+  font-family: "Lora", serif;
+}
+
 .btn-primary {
   @apply px-3 py-3 border border-[var(--primary-theme)] rounded-full font-bold;
 }
@@ -18,6 +31,12 @@
     0 15px 8px rgba(0, 0, 0, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: all ease 0.2s;
   cursor: pointer;
+}
+.card-bs:hover {
+  animation-play-state: paused;
+  box-shadow: 16px 0 30px rgba(0, 0, 0, 0.1), -16px 0 30px rgba(0, 0, 0, 0.1),
+    0 20px 10px rgba(0, 0, 0, 0.1), 0 0px 0px rgba(0, 0, 0, 0.1);
+  translate: 0 -5px;
 }
 .card-bs-green {
   background-color: green;
