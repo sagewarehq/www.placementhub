@@ -438,7 +438,7 @@
         </div>
       </section>
       <!-- SUCCESS PROGRAM -->
-      <section class="bg-gray-100 h-[50vh]">
+      <section class="bg-gray-100 h-[50vh] w-full">
         <div class="container h-full p-8 mx-auto max-w-7xl">
           <h1
             class="mb-16 text-5xl font-semibold text-center text-blue-800 montserrat"
@@ -446,33 +446,6 @@
             PlacementHub Success Program
           </h1>
           <div class="relative flex h-full">
-            <!-- Timeline Line -->
-            <div
-              class="absolute top-0 w-full h-2 transform -translate-y-1/2 bg-gray-400"
-            ></div>
-
-            <!-- Timeline Circles -->
-            <div
-              class="absolute top-0 flex items-center justify-between w-full transform -translate-y-1/2"
-            >
-              <div
-                class="w-6 h-6 translate-x-32 bg-blue-700 border-2 border-white rounded-full"
-              ></div>
-              <div
-                class="w-6 h-6 translate-x-16 bg-blue-700 border-2 border-white rounded-full"
-              ></div>
-              <div
-                class="w-6 h-6 bg-blue-700 border-2 border-white rounded-full"
-              ></div>
-              <div
-                class="w-6 h-6 -translate-x-16 bg-blue-700 border-2 border-white rounded-full"
-              ></div>
-              <div
-                class="w-6 h-6 -translate-x-32 bg-blue-700 border-2 border-white rounded-full"
-              ></div>
-            </div>
-
-            <!-- Timeline Cards -->
             <div class="w-1/5 h-full">
               <div class="p-4 mb-4 mr-2 bg-white rounded-lg card-bs">
                 <h2
@@ -595,22 +568,323 @@
         </div>
       </section>
       <!-- FORMS SECTION -->
-      <section
-        class="flex flex-col items-center justify-center w-full h-auto px-32 py-10 mx-auto max-w-7xl"
-      >
-        <h1 class="mb-4 text-5xl font-semibold text-blue-800 montserrat">
-          Sign-up for the FREE 30-Day Success Trial
-        </h1>
-        <p class="text-lg text-center">
-          Are you considering if PlacementHub is the right solution for your
-          recruitment agency? Experience the revolution in hiring processes
-          firsthand with our 30-day free trial. Explore how PlacementHub can
-          streamline your operations, improve placement efficiency, and provide
-          invaluable insights.
-        </p>
-        <div class="w-full mt-5 mb-20 h-[600px] z-10">
-          <form>
-            <div class="flex items-center justify-center gap-4">
+      <section class="w-full h-screen py-10 mx-auto max-w-7xl">
+        <div class="flex flex-col items-center justify-center w-full h-1/4">
+          <h1 class="mb-4 text-5xl font-semibold text-blue-800 montserrat">
+            Sign-up for the FREE 30-Day Success Trial
+          </h1>
+          <p class="text-lg text-center">
+            Are you considering if PlacementHub is the right solution for your
+            recruitment agency? Experience the revolution in hiring processes
+            firsthand with our 30-day free trial. Explore how PlacementHub can
+            streamline your operations, improve placement efficiency, and
+            provide invaluable insights.
+          </p>
+        </div>
+        <div class="w-full h-3/4">
+          <form class="flex h-full gap-10">
+            <div class="w-1/2">
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Name*"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="company"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Company</label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Company*"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <select
+                  class="w-full h-full px-3 py-2 text-gray-500 bg-transparent border rounded-l-md focus:outline-none focus:border-blue-500"
+                >
+                  <option disabled selected>How big is your company?*</option>
+                  <option>1-10 Employees</option>
+                  <option>11-25 Employees</option>
+                  <option>26-100 Employees</option>
+                  <option>100+ Employees</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="phone"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Phone</label
+                >
+                <div class="flex items-center gap-4">
+                  <div class="relative flex-shrink-0">
+                    <input
+                      type="text"
+                      id="phone-code"
+                      name="phone-code"
+                      class="w-20 px-3 py-2 text-gray-500 bg-transparent border pointer-events-none rounded-l-md focus:outline-none focus:border-blue-500"
+                      placeholder="+63"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-3 py-2 border rounded-r-md focus:outline-none focus:border-blue-500"
+                    placeholder="Phone*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="w-full mt-4 text-xl text-blue-500 transition-all duration-300 ease-in-out bg-white hover:bg-blue-500 hover:text-white focus:outline-none focus:ring focus:ring-blue-200 btn-squircle montserrat"
+                >
+                  START YOUR TRIAL
+                </button>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <div class="w-full overflow-y-auto h-3/5">
+                <label
+                  class="sticky top-0 block w-full pb-1 font-bold text-gray-700 bg-white"
+                  >What do you want to accomplish?</label
+                >
+                <div>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold"
+                        >Streamline Recruitment Process:</span
+                      >
+                      Automate and streamline your recruitment process, reducing
+                      the time and effort spent on sourcing and selecting
+                      candidates.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold"
+                        >Enhance Candidate Tracking:</span
+                      >
+                      Improve your ability to track candidates throughout the
+                      recruitment process, from initial application to final
+                      placement.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold"
+                        >Improve Placement Efficiency:</span
+                      >
+                      Enhance the speed and accuracy of your candidate
+                      placements, ensuring the right fit for both candidates and
+                      companies.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold"
+                        >Better Data Management:</span
+                      >
+                      Improve your recruitment data management, allowing for
+                      efficient storage, access, and utilization of candidate
+                      and company data.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold">Automate Reporting:</span>
+                      Automate your recruitment reporting, providing insightful
+                      and actionable analytics for decision-making.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold">Reduce Hiring Errors:</span>
+                      Minimize errors in the recruitment process, enhancing the
+                      quality of your candidate shortlists and placements.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold"
+                        >Scale Recruitment Efforts:</span
+                      >
+                      Improve your ability to scale up recruitment efforts in
+                      line with company growth or seasonal fluctuations.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                    <span
+                      ><span class="font-semibold">Ensure Compliance:</span>
+                      Ensure your recruitment processes are compliant with
+                      industry regulations and standards.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="w-full border-t h-2/5">
+                <label
+                  class="block pt-1 text-base font-bold text-gray-700 h-1/6"
+                  for="otherChallenges"
+                  >Tell us more about your challenges</label
+                >
+                <textarea
+                  id="otherChallenges"
+                  class="w-full px-4 py-2 border rounded-md resize-none h-5/6 focus:outline-none focus:border-blue-500"
+                  placeholder="Let us know here"
+                ></textarea>
+              </div>
+              <!-- <div class="w-full py-2 mt-1 overflow-y-auto bg-white h-3/5">
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold"
+                      >Streamline Recruitment Process:</span
+                    >
+                    Automate and streamline your recruitment process, reducing
+                    the time and effort spent on sourcing and selecting
+                    candidates.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold"
+                      >Enhance Candidate Tracking:</span
+                    >
+                    Improve your ability to track candidates throughout the
+                    recruitment process, from initial application to final
+                    placement.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold"
+                      >Improve Placement Efficiency:</span
+                    >
+                    Enhance the speed and accuracy of your candidate placements,
+                    ensuring the right fit for both candidates and companies.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold">Better Data Management:</span>
+                    Improve your recruitment data management, allowing for
+                    efficient storage, access, and utilization of candidate and
+                    company data.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold">Automate Reporting:</span>
+                    Automate your recruitment reporting, providing insightful
+                    and actionable analytics for decision-making.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold">Reduce Hiring Errors:</span>
+                    Minimize errors in the recruitment process, enhancing the
+                    quality of your candidate shortlists and placements.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold"
+                      >Scale Recruitment Efforts:</span
+                    >
+                    Improve your ability to scale up recruitment efforts in line
+                    with company growth or seasonal fluctuations.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input type="checkbox" class="mt-2 mr-2 leading-tight" />
+                  <span
+                    ><span class="font-semibold">Ensure Compliance:</span>
+                    Ensure your recruitment processes are compliant with
+                    industry regulations and standards.
+                  </span>
+                </label>
+                <label class="flex items-start px-4 py-2 cursor-pointer">
+                  <input
+                    id="otherCheckbox"
+                    type="checkbox"
+                    class="mt-2 mr-2 leading-tight"
+                  />
+                  <span
+                    ><span class="font-semibold">Other:</span>
+                    If there are other specific goals you want to achieve with
+                    PlacementHub, please specify.
+                  </span>
+                </label>
+                <div id="otherInput" class="hidden px-4 py-2">
+                  <input
+                    type="text"
+                    class="w-full px-3 py-2 mt-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    placeholder="Specify other goals here"
+                  />
+                </div>
+              </div>
+              <div class="mt-2 h-2/5">
+                <label
+                  class="block mb-2 text-base font-bold text-gray-700 h-1/6"
+                  for="otherChallenges"
+                  >Tell us more about your challenges</label
+                >
+                <textarea
+                  id="otherChallenges"
+                  class="w-full px-4 py-2 border rounded-md resize-none h-5/6 focus:outline-none focus:border-blue-500"
+                  placeholder="Let us know here"
+                ></textarea>
+              </div> -->
+            </div>
+            <!-- <div class="flex items-center justify-center gap-4">
               <div class="w-1/3 mb-4">
                 <label
                   for="first-name"
@@ -857,7 +1131,7 @@
               >
                 START YOUR TRIAL
               </button>
-            </div>
+            </div> -->
           </form>
         </div>
       </section>
@@ -868,7 +1142,7 @@
         >
           Why choose PlacementHub
         </h1>
-        <div class="w-full px-20">
+        <div class="w-full">
           <table class="w-full">
             <thead>
               <tr>

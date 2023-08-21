@@ -28,6 +28,9 @@
 .btn-secondary {
   @apply px-3 py-3 border border-[var(--primary-theme)] rounded-3xl font-semibold;
 }
+.btn-squircle {
+  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-xl font-semibold;
+}
 .card-bs {
   border: none;
   box-shadow: 8px 0 15px rgba(0, 0, 0, 0.1), -8px 0 15px rgba(0, 0, 0, 0.1),
