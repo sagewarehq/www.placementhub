@@ -4,33 +4,52 @@
 
 :root {
   --primary-theme: rgb(51, 62, 216);
+  --talent-hub-color-dark: #1d678a;
+  --talent-hub-color-primary: #50839e;
+  --talent-hub-color-secondary: #6093ae;
 }
 
-.roboto {
-  font-family: "Roboto", sans-serif;
+.plus-jakarta-sans-L {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 300;
 }
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+.plus-jakarta-sans-B {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
 }
-.libre-baskerville {
-  font-family: "Libre Baskerville", serif;
+
+.dark-text-color {
+  color: var(--talent-hub-color-dark);
 }
-.lora {
-  font-family: "Lora", serif;
+.primary-text-color {
+  color: var(--talent-hub-color-primary);
 }
-.trirong {
-  font-family: "Trirong", serif;
+.secondary-text-color {
+  color: var(--talent-hub-color-secondary);
+}
+.dark-bg-color {
+  background-color: var(--talent-hub-color-dark);
+}
+.primary-bg-color {
+  background-color: var(--talent-hub-color-primary);
+}
+.secondary-bg-color {
+  background-color: var(--talent-hub-color-secondary);
 }
 
 .btn-primary {
-  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-full font-bold text-lg;
+  @apply px-3 py-3 border border-[var(--talent-hub-color-dark)] bg-[var(--talent-hub-color-dark)] rounded-full font-bold text-lg;
 }
 .btn-secondary {
   @apply px-3 py-3 border border-[var(--primary-theme)] rounded-3xl font-semibold;
 }
 .btn-squircle {
-  @apply px-3 py-3 border border-[var(--primary-theme)] rounded-xl font-semibold;
+  @apply px-4 py-2 border text-white border-[var(--talent-hub-color-dark)] bg-[var(--talent-hub-color-dark)] rounded-sm;
 }
+.btn-squircle-negative {
+  @apply px-4 py-2 border text-black border-[var(--talent-hub-color-dark)] bg-white rounded-sm font-medium;
+}
+
 .card-bs {
   border: none;
   box-shadow: 8px 0 15px rgba(0, 0, 0, 0.1), -8px 0 15px rgba(0, 0, 0, 0.1),
