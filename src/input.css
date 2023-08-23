@@ -124,3 +124,12 @@ li:hover .animated-underline::before {
 .half-vh {
   height: 50vh;
 }
+
+.content-item {
+  transition: background-color 300ms ease-in;
+}
+.content-item.active {
+  background-color: white;
+  font-weight: 600;
+  transition: background-color 300ms ease-out;
+}
