@@ -29,12 +29,15 @@
 }
 .dark-bg-color {
   background-color: var(--talent-hub-color-dark);
+  color: white;
 }
 .primary-bg-color {
   background-color: var(--talent-hub-color-primary);
+  color: white;
 }
 .secondary-bg-color {
   background-color: var(--talent-hub-color-secondary);
+  color: white;
 }
 
 .btn-primary {
@@ -129,6 +132,15 @@ li:hover .animated-underline::before {
   transition: background-color 300ms ease-in;
 }
 .content-item.active {
+  background-color: white;
+  font-weight: 600;
+  transition: background-color 300ms ease-out;
+}
+
+.price-plan-picker {
+  transition: background-color 300ms ease-in;
+}
+.price-plan-picker .selected {
   background-color: white;
   font-weight: 600;
   transition: background-color 300ms ease-out;
