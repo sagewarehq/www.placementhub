@@ -7,6 +7,14 @@
   --talent-hub-color-dark: #1d678a;
   --talent-hub-color-primary: #50839e;
   --talent-hub-color-secondary: #6093ae;
+
+  /* NEOMORPHIC PARAMS */
+  --ruler: 16px;
+  --color-red: #ae1100;
+  /* --color-bg: #ebecf0; */
+  --color-bg: #f3f4f6;
+  --color-shadow: #babecc;
+  --color-white: #fff;
 }
 
 .plus-jakarta-sans-L {
@@ -47,10 +55,16 @@
   @apply px-3 py-3 border border-[var(--primary-theme)] rounded-3xl font-semibold;
 }
 .btn-squircle {
-  @apply px-4 py-2 border text-white border-[var(--talent-hub-color-dark)] bg-[var(--talent-hub-color-dark)] rounded-sm;
+  @apply px-4 py-2 border text-white border-[var(--talent-hub-color-dark)] bg-[var(--talent-hub-color-dark)] rounded-sm transition-all duration-300 ease-in-out;
 }
 .btn-squircle-negative {
-  @apply px-4 py-2 border text-black border-[var(--talent-hub-color-dark)] bg-white rounded-sm font-medium;
+  @apply px-4 py-2 border text-black border-[var(--talent-hub-color-dark)] bg-white rounded-sm font-medium transition-all duration-300 ease-in-out;
+}
+.btn-squircle:hover {
+  @apply px-4 py-2 border text-white border-[var(--talent-hub-color-dark)] bg-[var(--talent-hub-color-secondary)] rounded-sm;
+}
+.btn-squircle-negative:hover {
+  @apply px-4 py-2 border text-black border-[var(--talent-hub-color-dark)] bg-gray-200 rounded-sm font-medium;
 }
 
 .card-bs {
@@ -86,30 +100,6 @@
   display: none;
 }
 
-.benefits-blue {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: blue;
-}
-.benefits-green {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: green;
-}
-.benefits-red {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: red;
-}
-.benefits-yellow {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(255, 238, 0);
-}
 .animated-underline::before {
   content: "";
   position: absolute;
@@ -117,15 +107,11 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #007bff;
+  background-color: var(--talent-hub-color-secondary);
   transition: width 0.3s ease-in-out;
 }
 li:hover .animated-underline::before {
   width: 100%;
-}
-
-.half-vh {
-  height: 50vh;
 }
 
 .content-item {
@@ -135,6 +121,7 @@ li:hover .animated-underline::before {
   background-color: white;
   font-weight: 600;
   transition: background-color 300ms ease-out;
+  color: var(--talent-hub-color-primary);
 }
 
 .price-plan-picker {
@@ -143,5 +130,88 @@ li:hover .animated-underline::before {
 .price-plan-picker .selected {
   background-color: white;
   font-weight: 600;
+  color: var(--talent-hub-color-primary);
   transition: background-color 300ms ease-out;
+}
+
+/* NEOMORPHIC */
+.neo-input {
+  border: 0;
+  outline: 0;
+  font-size: var(--ruler);
+  font-weight: normal;
+  /* border-radius: calc(var(--ruler) * 20); */
+  border-radius: 6px;
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+
+  margin-right: cacl(var([--ruler]) / 2);
+  box-shadow: inset 2px 2px 5px var(--color-shadow),
+    inset -5px -5px 10px var(--color-white);
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.neo-input-area-code {
+  border: 0;
+  outline: 0;
+  font-size: var(--ruler);
+  font-weight: normal;
+  /* border-radius: calc(var(--ruler) * 20); */
+  border-radius: 6px;
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+
+  margin-right: cacl(var([--ruler]) / 2);
+  box-shadow: inset 2px 2px 5px var(--color-shadow),
+    inset -5px -5px 10px var(--color-white);
+  width: 80px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.neo-input:focus {
+  box-shadow: inset 1px 1px 2px var(--color-shadow),
+    inset -1px -1px 2px var(--color-white);
+}
+.neo-label {
+  display: block;
+  margin-bottom: calc(var([--ruler]) * 1.5);
+  width: 100%;
+}
+.neo-button {
+  border: 0;
+  outline: 0;
+  font-size: var(--ruler);
+  font-weight: normal;
+  /* border-radius: calc(var(--ruler) * 20); */
+  border-radius: 6px;
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px var(--color-white),
+    5px 5px 20px var(--color-shadow);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+}
+.neo-button:hover {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+  color: var(--talent-hub-color-dark);
+  font-weight: bold;
+}
+.neo-button:active {
+  box-shadow: inset 1px 1px 2px var(--color-shadow),
+    inset -1px -1px 2px var(--color-white);
+}
+.tilt:hover .fa-arrow-right {
+  rotate: 45deg;
 }

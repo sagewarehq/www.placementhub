@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border p-0 m-0 overflow-x-hidden">
+<html lang="en" class="box-border p-0 m-0 overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="./assets/icon-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora:wght@500&family=plus-jakarta-sans-B:wght@200;500&family=Roboto:wght@500&family=Trirong:wght@300&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -30,128 +27,136 @@
         class="flex items-center justify-between w-full h-full max-w-screen-lg gap-4 mx-auto"
       >
         <div class="w-40">
-          <img
-            class="object-cover"
-            src="assets/placement-hub-logo.jpg"
-            alt="placement-hub-logo"
-          />
-          <!-- <h2 class="text-xl font-bold">PlacementHub</h2>
-          <h3 class="text-xs text-gray-400 plus-jakarta-sans-B">
-            Built by Sageware
-          </h3> -->
+          <a href="#hero-section">
+            <img
+              class="object-cover"
+              src="assets/placement-hub-logo.jpg"
+              alt="placement-hub-logo"
+            />
+          </a>
         </div>
         <div class="flex items-center gap-4">
           <ul
-            class="flex items-center justify-center gap-4 font-semibold dark-text-color plus-jakarta-sans-B"
+            class="flex items-center justify-center gap-4 text-lg font-normal dark-text-color"
           >
-            <li
-              class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100"
-            >
-              <span class="animated-underline">FEATURES</span>
-            </li>
-            <li
-              class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100"
-            >
-              <span class="animated-underline">RESOURCES</span>
-            </li>
-            <li
-              class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100"
-            >
-              <span class="animated-underline">PRICING</span>
-            </li>
-            <li
-              class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100"
-            >
-              <span class="animated-underline">ABOUT US</span>
-            </li>
-            <li
-              class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100"
-            >
-              <span class="animated-underline">CONTACT US</span>
-            </li>
+            <a href="#feature-section">
+              <li
+                class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+              >
+                <span class="animated-underline">Feature</span>
+              </li>
+            </a>
+            <a href="#pricing-section">
+              <li
+                class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+              >
+                <span class="animated-underline">Pricing</span>
+              </li>
+            </a>
+            <a href="#benefits-section">
+              <li
+                class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+              >
+                <span class="animated-underline">About us</span>
+              </li>
+            </a>
+            <a href="#footer-section">
+              <li
+                class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+              >
+                <span class="animated-underline">Contact us</span>
+              </li>
+            </a>
           </ul>
-          <button
-            class="text-white transition-all duration-300 ease-in-out btn-primary hover:bg-white hover:text-blue-700 plus-jakarta-sans-B"
-          >
-            START FREE TRIAL
-          </button>
+          <a href="#form-section">
+            <button
+              class="ml-4 text-white transition-all duration-300 ease-in-out btn-squircle hover:bg-white hover:text-[#1d678a] plus-jakarta-sans-B"
+            >
+              START FREE TRIAL
+            </button>
+          </a>
         </div>
       </div>
     </nav>
     <main class="w-full h-auto">
-      <!-- <div class="w-full bg-gray-300 h-[30vh]"></div> -->
       <!-- ############################################################################################ -->
-      <!-- WELCOME SECTION -->
+      <!--HERO SECTION -->
       <section
         class="flex items-center justify-center w-full py-10 h-[60vh] bg-gray-100"
+        id="hero-section"
       >
         <div
-          class="flex items-center justify-center h-full max-w-screen-lg gap-2 p-8"
+          class="flex items-center justify-center h-full max-w-screen-lg gap-16 p-8"
         >
           <div class="w-3/5">
-            <h4 class="mb-4 text-4xl plus-jakarta-sans-B">
-              Improve Your Placement Efficiency with PlacementHub!
+            <h4 class="mb-6 text-5xl leading-[1.25] plus-jakarta-sans-B">
+              Improve Your Placement Efficiency with
+              <span class="dark-text-color">PlacementHub!</span>
             </h4>
-            <p class="mb-4 text-base">
+            <p class="mb-6 text-lg font-normal">
               Experience a new level of control over your HR processes with our
               groundbreaking manpower placement management software.
             </p>
             <div class="flex items-center gap-4">
-              <button class="btn-squircle">Learn More</button>
-              <button class="btn-squircle-negative">Sign Up</button>
+              <button class="btn-squircle">
+                <a href="#form-section">Learn More</a>
+              </button>
+              <button class="btn-squircle-negative">
+                <a href="#form-section">Sign Up</a>
+              </button>
             </div>
-            <!-- <p class="mb-3 text-base">
-              Experience PlacementHub - Because efficient manpower management
-              should be the standard, not the exception."
-            </p>
-            <p class="mb-3 text-base">
-              Transform the way you approach recruitment and placement with
-              PlacementHub. Elevate your HR strategy, increase your efficiency,
-              and focus on fostering a robust and successful team.
-            </p> -->
           </div>
-          <img
-            class="object-cover w-2/5 h-full"
-            src="assets/ph-landing-va.png"
-            alt="landing-page-vector-art"
-          />
+          <div class="flex items-center justify-center w-2/5 h-full">
+            <img
+              class="h-auto scale-[1.3]"
+              src="assets/ARSK-_notion-developer-daily-product-launch-2-bluegreen.png"
+              alt="hero-vector-art"
+            />
+          </div>
         </div>
       </section>
       <!-- ############################################################################################ -->
       <!-- FEATURES SECTION -->
-      <section class="w-screen py-10">
-        <div class="w-full bg-white">
+      <section class="w-screen h-auto pb-10">
+        <div class="w-full bg-white h-[560px]">
           <article
-            class="flex items-center w-full max-w-screen-lg gap-20 py-4 mx-auto h-fit"
+            class="flex items-center w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
           >
             <div class="flex flex-col justify-center w-1/2 h-full">
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Expand Your Talent Reach
               </h1>
-              <p class="mb-4 text-base">
+              <p class="mb-4 text-base font-normal">
                 With digital job applications shareable across all social media
                 channels, you'll reach more potential candidates in less time.
                 Recruitment becomes a breeze, saving you valuable hours.
               </p>
-              <a class="pb-1 border-b w-max" href="#">Try It For Free!</a>
+              <a
+                class="pb-1 font-bold border-b border-gray-400 w-max tilt"
+                href="#form-section"
+                >Try It For Free!
+                <i
+                  class="transition-all duration-200 ease-linear -rotate-45 fa-solid fa-arrow-right"
+                ></i
+              ></a>
             </div>
-            <div class="w-1/2 py-10">
+            <div class="flex items-center justify-center w-1/2">
               <img
-                class="object-cover h-full shadow-lg"
-                src="assets/ph-lp-1-1.png"
+                class="object-cover h-auto scale-75"
+                src="assets/ARSK-_notion-developer-daily-communication-app-2-bluegreen.png"
                 alt="feature-1"
               />
             </div>
           </article>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full bg-gray-100 h-[560px]">
           <article
-            class="flex items-center justify-between w-full h-auto max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex items-center justify-between w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
           >
-            <div class="w-1/2 py-10">
+            <div class="flex items-center justify-center w-1/2">
               <img
-                class="object-cover h-full shadow-lg"
-                src="assets/feature-ra.png"
+                class="object-cover h-full"
+                src="assets/ARSK-_notion-developer-daily-analytic-bluegreen.png"
                 alt="feature-2"
               />
             </div>
@@ -159,49 +164,63 @@
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Insight at Your Fingertips
               </h1>
-              <p class="mb-4 text-base">
+              <p class="mb-4 text-base font-normal">
                 Our easy-to-understand visual indicators offer real-time
                 insights into your recruitment and placement processes. No more
                 wading through piles of data - informed decision-making has
                 never been this straightforward.
               </p>
-              <a class="pb-1 border-b w-max" href="#">Try It For Free!</a>
+              <a
+                class="pb-1 font-bold border-b border-gray-400 w-max tilt"
+                href="#form-section"
+                >Try It For Free!
+                <i
+                  class="transition-all duration-200 ease-linear -rotate-45 fa-solid fa-arrow-right"
+                ></i
+              ></a>
             </div>
           </article>
         </div>
-        <div class="w-full bg-white">
+        <div class="w-full bg-white h-[560px]">
           <article
-            class="flex items-center w-full h-auto max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex items-center w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
           >
             <div class="flex flex-col justify-center w-1/2 h-full">
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Precision in Placement
               </h1>
-              <p class="mb-4 text-base">
+              <p class="mb-4 text-base font-normal">
                 PlacementHub's revolutionary AutoMatch feature simplifies the
                 placement process, ensuring the right candidate is matched to
                 the right job, every time. Reduce turnover, increase
                 satisfaction, and boost your company's bottom line.
               </p>
-              <a class="pb-1 border-b w-max" href="#">Try It For Free!</a>
+              <a
+                class="pb-1 font-bold border-b border-gray-400 w-max tilt"
+                href="#form-section"
+                >Try It For Free!
+                <i
+                  class="transition-all duration-200 ease-linear -rotate-45 fa-solid fa-arrow-right"
+                ></i
+              ></a>
             </div>
-            <div class="w-1/2 py-10">
+            <div class="flex items-center justify-center w-1/2">
               <img
-                class="object-cover h-full shadow-lg"
-                src="assets/automatch-1.png"
+                class="object-cover h-full"
+                src="assets/ARSK-_notion-developer-daily-writing-document-bluegreen.png"
                 alt="feature-3"
               />
             </div>
           </article>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full bg-gray-100 h-[560px]">
           <article
-            class="flex items-center justify-between w-full h-auto max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex items-center justify-between w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
           >
-            <div class="w-1/2 py-10">
+            <div class="flex items-center justify-center w-1/2">
               <img
-                class="object-cover h-full shadow-lg"
-                src="assets/ph-lp-1-2.png"
+                class="object-cover h-full scale-90"
+                src="assets/ARSK-_notion-developer-daily-work-from-home-2-bluegreen.png"
                 alt="feature-4"
               />
             </div>
@@ -209,19 +228,26 @@
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Proactivity Made Easy
               </h1>
-              <p class="mb-4 text-base">
+              <p class="mb-4 text-base font-normal">
                 Automated notifications for expiring documents keep you ahead of
                 any potential issues. Support your workforce effectively and
                 maintain uninterrupted operations.
               </p>
-              <a class="pb-1 border-b w-max" href="#">Try It For Free!</a>
+              <a
+                class="pb-1 font-bold border-b border-gray-400 w-max tilt"
+                href="#form-section"
+                >Try It For Free!
+                <i
+                  class="transition-all duration-200 ease-linear -rotate-45 fa-solid fa-arrow-right"
+                ></i
+              ></a>
             </div>
           </article>
         </div>
       </section>
       <!-- ############################################################################################ -->
       <!-- BENEFITS SECTION -->
-      <section class="w-screen h-auto py-10">
+      <section class="w-screen h-auto py-10" id="benefits-section">
         <div class="max-w-screen-lg mx-auto">
           <div class="mb-12">
             <h4 class="px-2 py-1 text-sm bg-gray-100 border rounded-md w-fit">
@@ -231,7 +257,7 @@
               <span class="primary-text-color">The modern solution</span> for
               fast-growing manpower agencies.
             </h1>
-            <p class="w-1/2 mb-6">
+            <p class="w-1/2 mb-6 text-base font-normal">
               Transform the way you approach recruitment and placement with
               PlacementHub. Elevate your HR strategy, increase your efficiency,
               and focus on fostering a robust and successful team.
@@ -245,11 +271,11 @@
               <h3 class="h-12 my-4 text-base plus-jakarta-sans-B">
                 Savings with PlacementHub
               </h3>
-              <p class="text-sm">
+              <p class="text-sm font-normal">
                 Bypass the expenses of custom software development, maintenance,
                 change requests.
               </p>
-              <h6 class="mt-4 text-[0.5rem] italic">
+              <h6 class="mt-4 text-[0.6rem] italic">
                 Based on typical development and maintenance costs in the
                 Philippines.
               </h6>
@@ -259,11 +285,11 @@
               <h3 class="h-12 my-4 text-base plus-jakarta-sans-B">
                 Applicants with Apply Wizard
               </h3>
-              <p class="text-sm">
+              <p class="text-sm font-normal">
                 Triple the visibility of your job postings through the Job
                 Listing pages and Apply Wizard.
               </p>
-              <h6 class="mt-4 text-[0.5rem] italic">
+              <h6 class="mt-4 text-[0.6rem] italic">
                 Based on comparative data from agencies not using Apply Wizard.
               </h6>
             </div>
@@ -272,22 +298,22 @@
               <h3 class="h-12 my-4 text-base plus-jakarta-sans-B">
                 Saved with Weekly Reports by Jared
               </h3>
-              <p class="text-sm">
+              <p class="text-sm font-normal">
                 Employees usually spend 2 hours every week to produce the Weekly
                 Operational Reports.
               </p>
-              <h6 class="mt-4 text-[0.5rem] italic"></h6>
+              <h6 class="mt-4 text-[0.6rem] italic"></h6>
             </div>
             <div class="flex flex-col justify-start w-1/4 h-60">
               <h1 class="text-4xl plus-jakarta-sans-B">30 seconds</h1>
               <h3 class="h-12 my-4 text-base plus-jakarta-sans-B">
                 Encoding efficiency with DocGen
               </h3>
-              <p class="text-sm">
+              <p class="text-sm font-normal">
                 Reduce document creation time from 2 hours and 30 minutes to
                 just 30 seconds
               </p>
-              <h6 class="mt-4 text-[0.5rem] italic">
+              <h6 class="mt-4 text-[0.6rem] italic">
                 Efficiency tested on sampled worker contracts on 50 worker
                 contracts.
               </h6>
@@ -304,13 +330,17 @@
               Unlock Your Potential <br />
               with PlacementHub's Success Program
             </h1>
-            <p class="mb-6">
+            <p class="mb-6 font-normal">
               Maximize your PlacementHub experience with this structured
               approach, ensuring a smooth and efficient journey.
             </p>
             <div class="flex items-center gap-4">
-              <button class="btn-squircle">Learn More</button>
-              <button class="btn-squircle-negative">Sign Up</button>
+              <button class="btn-squircle">
+                <a href="#form-section">Learn More</a>
+              </button>
+              <button class="btn-squircle-negative">
+                <a href="#form-section">Sign Up</a>
+              </button>
             </div>
           </div>
           <div class="flex flex-col w-1/2 h-full gap-4">
@@ -325,7 +355,7 @@
               <div class="w-4/5">
                 <h3 class="mb-4 text-lg plus-jakarta-sans-B">Tomorrow</h3>
                 <ul class="text-sm">
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>🔑</span>
                     <p>
                       Receive access to your account:
@@ -336,11 +366,11 @@
                       >
                     </p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>⚙️</span>
                     <p>Configure site; Request data customizations</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>📝</span>
                     <p>Fill out the worker import sheet.</p>
                   </li>
@@ -358,15 +388,15 @@
               <div class="4/5">
                 <h3 class="mb-4 text-lg plus-jakarta-sans-B">Week 1</h3>
                 <ul class="text-sm">
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>📨</span>
                     <p>Share walk-in application page on social media.</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>🗄️</span>
                     <p>Publish employers and jobs</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>📂</span>
                     <p>Fill job preferences.</p>
                   </li>
@@ -384,15 +414,15 @@
               <div class="4/5">
                 <h3 class="mb-4 text-lg plus-jakarta-sans-B">Week 2</h3>
                 <ul class="text-sm">
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>💯</span>
                     <p>Use "Automatch" for efficient placement.</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>💌</span>
                     <p>Invite candidates for interviews.</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>📩</span>
                     <p>Follow-up on application submissions.</p>
                   </li>
@@ -410,15 +440,15 @@
               <div class="4/5">
                 <h3 class="mb-4 text-lg plus-jakarta-sans-B">Week 3</h3>
                 <ul class="text-sm">
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>✅</span>
                     <p>Ensure all requirements are complete.</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>📨</span>
                     <p>Follow-up on pending requirements.</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>💻</span>
                     <p>Load worker import sheet to the database.</p>
                   </li>
@@ -430,11 +460,11 @@
               <div class="4/5">
                 <h3 class="mb-4 text-lg plus-jakarta-sans-B">Week 4</h3>
                 <ul class="text-sm">
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>⭐️</span>
                     <p>Write commendations for standout candidates.</p>
                   </li>
-                  <li class="flex gap-2 mb-1">
+                  <li class="flex gap-2 mb-1 font-normal">
                     <span>🤝</span>
                     <p>Recap and review of all activities.</p>
                   </li>
@@ -445,242 +475,31 @@
         </div>
       </section>
       <!-- ############################################################################################ -->
-      <!-- FORMS SECTION -->
-      <section class="w-full h-auto py-10">
-        <div
-          class="flex flex-col items-center justify-center max-w-screen-lg mx-auto mb-10 h-1/4"
-        >
-          <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
-            Sign-up for the FREE 30-Day Success Trial
-          </h1>
-          <p class="text-base text-center">
-            Are you considering if PlacementHub is the right solution for your
-            recruitment agency? Experience the revolution in hiring processes
-            firsthand with our 30-day free trial. Explore how PlacementHub can
-            streamline your operations, improve placement efficiency, and
-            provide invaluable insights.
-          </p>
-        </div>
-        <div class="w-full h-auto max-w-screen-lg mx-auto">
-          <form class="flex h-full gap-10">
-            <div class="w-1/2 h-[505px]">
-              <div class="mb-4">
-                <label
-                  for="name"
-                  class="block mb-2 text-lg font-bold text-gray-700"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Name*"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label
-                  for="email"
-                  class="block mb-2 text-lg font-bold text-gray-700"
-                  >Email</label
-                >
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Email*"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label
-                  for="company"
-                  class="block mb-2 text-lg font-bold text-gray-700"
-                  >Company</label
-                >
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Company*"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <select
-                  class="w-full h-full px-3 py-2 text-gray-500 bg-transparent border rounded-l-md focus:outline-none focus:border-blue-500"
-                >
-                  <option disabled selected>How big is your company?*</option>
-                  <option>1-10 Employees</option>
-                  <option>11-25 Employees</option>
-                  <option>26-100 Employees</option>
-                  <option>100+ Employees</option>
-                </select>
-              </div>
-              <div class="mb-4">
-                <label
-                  for="phone"
-                  class="block mb-2 text-lg font-bold text-gray-700"
-                  >Phone</label
-                >
-                <div class="flex items-center gap-4">
-                  <div class="relative flex-shrink-0">
-                    <input
-                      type="text"
-                      id="phone-code"
-                      name="phone-code"
-                      class="w-20 px-3 py-2 text-gray-500 bg-transparent border pointer-events-none rounded-l-md focus:outline-none focus:border-blue-500"
-                      placeholder="+63"
-                      required
-                    />
-                  </div>
-                  <input
-                    type="number"
-                    id="phone"
-                    name="phone"
-                    class="w-full px-3 py-2 border rounded-r-md focus:outline-none focus:border-blue-500"
-                    placeholder="Phone*"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex justify-end">
-                <button
-                  type="submit"
-                  class="w-full mt-2 text-xl text-blue-500 transition-all duration-300 ease-in-out bg-white hover:bg-blue-500 hover:text-white focus:outline-none focus:ring focus:ring-blue-200 btn-squircle plus-jakarta-sans-B"
-                >
-                  START YOUR TRIAL
-                </button>
-              </div>
-            </div>
-            <div class="w-1/2 h-[505px]">
-              <div class="w-full overflow-y-auto h-3/5 overscroll-contain">
-                <label
-                  class="sticky top-0 block w-full pb-1 font-bold text-gray-700 bg-white"
-                  >What do you want to accomplish?</label
-                >
-                <div>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold"
-                        >Streamline Recruitment Process:</span
-                      >
-                      Automate and streamline your recruitment process, reducing
-                      the time and effort spent on sourcing and selecting
-                      candidates.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold"
-                        >Enhance Candidate Tracking:</span
-                      >
-                      Improve your ability to track candidates throughout the
-                      recruitment process, from initial application to final
-                      placement.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold"
-                        >Improve Placement Efficiency:</span
-                      >
-                      Enhance the speed and accuracy of your candidate
-                      placements, ensuring the right fit for both candidates and
-                      companies.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold"
-                        >Better Data Management:</span
-                      >
-                      Improve your recruitment data management, allowing for
-                      efficient storage, access, and utilization of candidate
-                      and company data.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold">Automate Reporting:</span>
-                      Automate your recruitment reporting, providing insightful
-                      and actionable analytics for decision-making.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold">Reduce Hiring Errors:</span>
-                      Minimize errors in the recruitment process, enhancing the
-                      quality of your candidate shortlists and placements.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold"
-                        >Scale Recruitment Efforts:</span
-                      >
-                      Improve your ability to scale up recruitment efforts in
-                      line with company growth or seasonal fluctuations.
-                    </span>
-                  </label>
-                  <label class="flex items-start px-4 py-2 cursor-pointer">
-                    <input type="checkbox" class="mt-2 mr-2 leading-tight" />
-                    <span
-                      ><span class="font-semibold">Ensure Compliance:</span>
-                      Ensure your recruitment processes are compliant with
-                      industry regulations and standards.
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <div class="w-full border-t h-2/5">
-                <label
-                  class="block pt-1 text-base font-bold text-gray-700 h-1/6"
-                  for="otherChallenges"
-                  >Tell us more about your challenges</label
-                >
-                <textarea
-                  id="otherChallenges"
-                  class="w-full px-4 py-2 border rounded-md resize-none h-5/6 focus:outline-none focus:border-blue-500"
-                  placeholder="Let us know here"
-                ></textarea>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-      <!-- ############################################################################################ -->
       <!-- WHY PLACEMENTHUB? -->
-      <section class="py-10 mx-auto mb-4 bg-gray-100">
+      <!-- WHY US LAYOUT 1 -->
+      <!-- <section class="w-screen py-10">
         <div class="max-w-screen-lg mx-auto">
           <h1
             class="w-full mb-6 text-4xl font-semibold text-center plus-jakarta-sans-B"
           >
             Why choose PlacementHub
           </h1>
-          <div class="w-full">
+          <p class="mb-10 font-normal text-center">
+            Choosing the right software for recruitment and placement is
+            pivotal. Let's weigh the options
+          </p>
+          <div class="w-full rounded-md">
             <table class="w-full">
               <thead>
                 <tr>
-                  <th class="text-white dark-bg-color"></th>
-                  <!-- Empty cell -->
+                  <th class="text-white dark-bg-color rounded-tl-md"></th>
                   <th
                     class="p-4 text-2xl text-white border-b border-l border-r dark-bg-color plus-jakarta-sans-B"
                   >
                     PlacementHub
                   </th>
                   <th
-                    class="px-4 py-2 text-2xl text-white dark-bg-color plus-jakarta-sans-B"
+                    class="px-4 py-2 text-2xl text-white dark-bg-color plus-jakarta-sans-B rounded-tr-md"
                   >
                     Build-Your-Own
                   </th>
@@ -781,7 +600,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="rounded-b-md">
                   <td
                     class="px-4 py-2 text-lg font-semibold bg-white border-t border-b border-r plus-jakarta-sans-B"
                   >
@@ -810,16 +629,670 @@
             </table>
           </div>
         </div>
+      </section> -->
+      <!-- WHY US LAYOUT 2 -->
+      <section class="w-screen py-10">
+        <div class="max-w-screen-lg mx-auto">
+          <h1
+            class="w-full mb-6 text-4xl font-semibold text-center plus-jakarta-sans-B"
+          >
+            Why choose PlacementHub
+          </h1>
+          <p class="mb-10 font-normal text-center">
+            Choosing the right software for recruitment and placement is
+            pivotal. Let's weigh the options.
+          </p>
+          <div class="w-full">
+            <table class="w-full">
+              <thead>
+                <tr class="w-full">
+                  <th
+                    class="w-2/5 p-4 text-2xl text-black bg-gray-200 border-b border-black plus-jakarta-sans-B rounded-tl-md"
+                  >
+                    PlacementHub
+                  </th>
+                  <th class="w-1/5 bg-gray-200 border-b border-black"></th>
+                  <th
+                    class="w-2/5 px-4 py-2 text-2xl text-black bg-gray-200 border-b border-black plus-jakarta-sans-B rounded-tr-md"
+                  >
+                    Build-Your-Own
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="w-full">
+                <tr class="w-full border-b border-gray-400">
+                  <td class="w-2/5 p-2 bg-white">
+                    <div class="flex gap-2">
+                      <i class="mt-1.5 fa-regular fa-circle-check"></i>
+                      <p class="font-normal">
+                        Instant access, free 30-day trial, delivered to you by
+                        tomorrow.
+                      </p>
+                    </div>
+                  </td>
+                  <td
+                    class="w-1/5 p-2 text-lg font-semibold text-center bg-gray-200 plus-jakarta-sans-B"
+                  >
+                    Time and Cost Efficiency
+                  </td>
+                  <td class="w-2/5 p-2 bg-white">
+                    <div class="flex gap-2">
+                      <span>📅</span>
+                      <p>
+                        Time-consuming developer search, hefty upfront costs,
+                        minimum 6-month development.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="w-full border-b border-gray-400">
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <i class="mt-1.5 fa-regular fa-circle-check"></i>
+                      <p class="font-normal">
+                        Dedicated support, regular updates, and consistent
+                        reliability.
+                      </p>
+                    </div>
+                  </td>
+                  <td
+                    class="p-2 text-lg font-semibold text-center bg-gray-200 plus-jakarta-sans-B"
+                  >
+                    Reliability and Support
+                  </td>
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <span>🚌</span>
+                      <p>
+                        Risk of project abandonment, potential for unfinished
+                        product.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-400">
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <i class="mt-1.5 fa-regular fa-circle-check"></i>
+                      <p class="font-normal">
+                        Crafted by industry experts, tailored for specific
+                        recruitment needs.
+                      </p>
+                    </div>
+                  </td>
+                  <td
+                    class="p-2 text-lg font-semibold text-center bg-gray-200 plus-jakarta-sans-B"
+                  >
+                    Industry Expertise
+                  </td>
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <span>🆗</span>
+                      <p>
+                        Generalized approach, potential lack of industry
+                        nuances.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-400">
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <i class="mt-1.5 fa-regular fa-circle-check"></i>
+                      <p class="font-normal">
+                        Maintenance-free, updates included in subscription.
+                      </p>
+                    </div>
+                  </td>
+                  <td
+                    class="p-2 text-lg font-semibold text-center bg-gray-200 plus-jakarta-sans-B"
+                  >
+                    Maintenance
+                  </td>
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <span>💸</span>
+                      <p>Ongoing maintenance costs, bug fixes, and upgrades.</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-400">
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <i class="mt-1.5 fa-regular fa-circle-check"></i>
+                      <p class="font-normal">
+                        Robust security measures, regular security audits &
+                        updates.
+                      </p>
+                    </div>
+                  </td>
+                  <td
+                    class="p-2 text-lg font-semibold text-center bg-gray-200 plus-jakarta-sans-B"
+                  >
+                    Security
+                  </td>
+                  <td class="p-2 bg-white">
+                    <div class="flex gap-2">
+                      <span>🤔</span>
+                      <p>
+                        Dependent on developer's knowledge, potential
+                        vulnerabilities.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ############################################################################################ -->
+      <!-- FORMS SECTION -->
+      <!-- FORM STYLE OPTION 1 -->
+      <!-- <section class="w-full h-auto py-10 bg-[#f3f4f6]" id="form-section">
+        <div
+          class="flex flex-col items-center justify-center max-w-screen-lg mx-auto mb-10 h-1/4"
+        >
+          <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
+            Sign-up for the FREE 30-Day Success Trial
+          </h1>
+          <p class="text-lg text-center">
+            Are you considering if PlacementHub is the right solution for your
+            recruitment agency? Experience the revolution in hiring processes
+            firsthand with our 30-day free trial. Explore how PlacementHub can
+            streamline your operations, improve placement efficiency, and
+            provide invaluable insights.
+          </p>
+        </div>
+        <div class="w-full h-auto max-w-screen-lg mx-auto">
+          <form class="flex h-full gap-10 neo-form">
+            <div class="w-1/2 h-[505px]">
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Name*"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="company"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Company</label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  placeholder="Company*"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <select
+                  class="w-full h-full px-3 py-2 text-gray-500 border rounded-l-md focus:outline-none focus:border-blue-500"
+                >
+                  <option disabled selected>How big is your company?*</option>
+                  <option>1-10 Employees</option>
+                  <option>11-25 Employees</option>
+                  <option>26-100 Employees</option>
+                  <option>100+ Employees</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="phone"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Phone</label
+                >
+                <div class="flex items-center gap-4">
+                  <div class="relative flex-shrink-0">
+                    <input
+                      type="text"
+                      id="phone-code"
+                      name="phone-code"
+                      class="w-20 px-3 py-2 text-gray-500 bg-transparent bg-white border pointer-events-none rounded-l-md focus:outline-none focus:border-blue-500"
+                      placeholder="+63"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-3 py-2 border rounded-r-md focus:outline-none focus:border-blue-500"
+                    placeholder="Phone*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="w-full mt-2 text-xl text-blue-500 transition-all duration-300 ease-in-out bg-white hover:bg-blue-500 hover:text-white focus:outline-none focus:ring focus:ring-blue-200 btn-squircle plus-jakarta-sans-B"
+                >
+                  START YOUR TRIAL
+                </button>
+              </div>
+            </div>
+            <div class="w-1/2 h-[505px]">
+              <div class="w-full overflow-y-auto h-3/5 overscroll-contain">
+                <label
+                  class="sticky top-0 block w-full pb-1 font-bold text-gray-700 bg-gray-100"
+                  >What do you want to accomplish?</label
+                >
+                <div>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="recruitment"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Streamline Recruitment Process:</span
+                      >
+                      Automate and streamline your recruitment process, reducing
+                      the time and effort spent on sourcing and selecting
+                      candidates.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="candidate-tracking"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Enhance Candidate Tracking:</span
+                      >
+                      Improve your ability to track candidates throughout the
+                      recruitment process, from initial application to final
+                      placement.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="efficiency"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Improve Placement Efficiency:</span
+                      >
+                      Enhance the speed and accuracy of your candidate
+                      placements, ensuring the right fit for both candidates and
+                      companies.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="data-management"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Better Data Management:</span
+                      >
+                      Improve your recruitment data management, allowing for
+                      efficient storage, access, and utilization of candidate
+                      and company data.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="reporting"
+                    />
+                    <span
+                      ><span class="font-semibold">Automate Reporting:</span>
+                      Automate your recruitment reporting, providing insightful
+                      and actionable analytics for decision-making.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="hiring-error"
+                    />
+                    <span
+                      ><span class="font-semibold">Reduce Hiring Errors:</span>
+                      Minimize errors in the recruitment process, enhancing the
+                      quality of your candidate shortlists and placements.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="scaling"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Scale Recruitment Efforts:</span
+                      >
+                      Improve your ability to scale up recruitment efforts in
+                      line with company growth or seasonal fluctuations.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="compliance"
+                    />
+                    <span
+                      ><span class="font-semibold">Ensure Compliance:</span>
+                      Ensure your recruitment processes are compliant with
+                      industry regulations and standards.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="w-full border-t h-2/5">
+                <label
+                  class="block pt-1 text-base font-bold text-gray-700 h-1/6"
+                  for="otherChallenges"
+                  >Tell us more about your challenges</label
+                >
+                <textarea
+                  id="otherChallenges"
+                  class="w-full px-4 py-2 border rounded-md resize-none h-5/6 focus:outline-none focus:border-blue-500"
+                  placeholder="Let us know here"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section> -->
+      <!-- FORM STYLE OPTION 2 -->
+      <section class="w-full h-auto py-10 bg-gray-100" id="form-section">
+        <div
+          class="flex flex-col items-center justify-center max-w-screen-lg pb-10 mx-auto h-1/4"
+        >
+          <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
+            Sign-up for the
+            <span class="primary-text-color">FREE 30-Day Success Trial</span>
+          </h1>
+          <p class="text-base font-normal text-center">
+            Are you considering if PlacementHub is the right solution for your
+            recruitment agency? Experience the revolution in hiring processes
+            firsthand with our 30-day free trial. Explore how PlacementHub can
+            streamline your operations, improve placement efficiency, and
+            provide invaluable insights.
+          </p>
+        </div>
+        <div class="w-full max-w-screen-lg mx-auto">
+          <form class="flex h-full gap-10 neo-form">
+            <div class="w-1/2 h-auto">
+              <div class="mb-4">
+                <label
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  for="name"
+                  >Name</label
+                >
+                <label class="neo-label">
+                  <input
+                    class="neo-input"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="mb-4">
+                <label
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  for="email"
+                  >Email</label
+                >
+                <label class="neo-label">
+                  <input
+                    class="neo-input"
+                    type="text"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="mb-4">
+                <label
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  for="company"
+                  >Company</label
+                >
+                <label class="neo-label">
+                  <input
+                    class="neo-input"
+                    type="text"
+                    placeholder="Company"
+                    name="company"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="mb-4">
+                <select
+                  class="w-full h-full px-3 py-2 text-gray-500 border neo-input rounded-l-md"
+                  required
+                >
+                  <option disabled selected>How big is your company?*</option>
+                  <option>1-10 Employees</option>
+                  <option>11-25 Employees</option>
+                  <option>26-100 Employees</option>
+                  <option>100+ Employees</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="phone"
+                  class="block mb-2 text-lg font-bold text-gray-700"
+                  >Phone</label
+                >
+                <div class="flex items-center gap-4">
+                  <div class="relative flex-shrink-0">
+                    <input
+                      class="bg-white border pointer-events-none neo-input-area-code rounded-l-md focus:outline-none focus:border-blue-500"
+                      type="text"
+                      placeholder="+63"
+                      name="phone-code"
+                    />
+                  </div>
+                  <label class="neo-label">
+                    <input
+                      class="neo-input"
+                      type="text"
+                      placeholder="Phone"
+                      name="phone"
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="w-full mt-2 text-xl transition-all neo-button"
+                >
+                  START YOUR TRIAL
+                </button>
+              </div>
+            </div>
+            <div class="w-1/2 h-[525px]">
+              <div class="w-full overflow-y-auto h-3/5 overscroll-contain">
+                <label
+                  class="sticky top-0 block w-full pb-1 font-bold text-gray-700 bg-gray-100"
+                  >What do you want to accomplish?</label
+                >
+                <div>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="recruitment"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Streamline Recruitment Process:</span
+                      >
+                      Automate and streamline your recruitment process, reducing
+                      the time and effort spent on sourcing and selecting
+                      candidates.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="candidate-tracking"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Enhance Candidate Tracking:</span
+                      >
+                      Improve your ability to track candidates throughout the
+                      recruitment process, from initial application to final
+                      placement.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="efficiency"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Improve Placement Efficiency:</span
+                      >
+                      Enhance the speed and accuracy of your candidate
+                      placements, ensuring the right fit for both candidates and
+                      companies.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="data-management"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Better Data Management:</span
+                      >
+                      Improve your recruitment data management, allowing for
+                      efficient storage, access, and utilization of candidate
+                      and company data.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="reporting"
+                    />
+                    <span
+                      ><span class="font-semibold">Automate Reporting:</span>
+                      Automate your recruitment reporting, providing insightful
+                      and actionable analytics for decision-making.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="hiring-error"
+                    />
+                    <span
+                      ><span class="font-semibold">Reduce Hiring Errors:</span>
+                      Minimize errors in the recruitment process, enhancing the
+                      quality of your candidate shortlists and placements.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="scaling"
+                    />
+                    <span
+                      ><span class="font-semibold"
+                        >Scale Recruitment Efforts:</span
+                      >
+                      Improve your ability to scale up recruitment efforts in
+                      line with company growth or seasonal fluctuations.
+                    </span>
+                  </label>
+                  <label class="flex items-start px-4 py-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      class="mt-2 mr-2 leading-tight"
+                      name="compliance"
+                    />
+                    <span
+                      ><span class="font-semibold">Ensure Compliance:</span>
+                      Ensure your recruitment processes are compliant with
+                      industry regulations and standards.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="w-full border-t h-2/5">
+                <label
+                  class="block pt-1 text-base font-bold text-gray-700 h-1/6"
+                  for="otherChallenges"
+                  >Tell us more about your challenges</label
+                >
+                <textarea
+                  id="otherChallenges"
+                  class="w-full h-full px-4 py-2 border rounded-md resize-none neo-input"
+                  placeholder="Let us know here"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
       <!-- ############################################################################################ -->
       <!-- KEY FEATURE (IN-DEPTH) -->
-      <section class="w-full h-screen py-10">
+      <section class="w-full h-screen py-10" id="feature-section">
         <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
           <div class="flex flex-col items-center mb-10">
             <h1 class="mb-6 text-4xl plus-jakarta-sans-B">
               Discover the Power of PlacementHub
             </h1>
-            <p class="text-base">
+            <p class="text-base font-normal">
               User-Centric Design. Efficient Processes. Data Driven Insights.
             </p>
           </div>
@@ -858,10 +1331,12 @@
               class="flex justify-between w-full gap-4 content-area active"
               id="content-record-keeping"
             >
-              <div class="w-4/6 h-full bg-gray-200">
+              <div
+                class="flex items-center justify-center w-4/6 h-full bg-gray-200 border-2"
+              >
                 <img
-                  class="object-cover object-center h-full"
-                  src="assets/feature-srk.png"
+                  class="object-cover object-left w-full h-full"
+                  src="assets/2 - Workers.jpg"
                   alt="smart-record-keeping"
                 />
               </div>
@@ -909,16 +1384,18 @@
                     </div>
                   </li>
                 </ul>
-                <button class="btn-squircle">Learn More</button>
+                <button class="btn-squircle">
+                  <a href="#form-section">Learn More</a>
+                </button>
               </div>
             </div>
             <div
               class="flex justify-between w-full gap-4 content-area"
               id="content-job-wizard"
             >
-              <div class="w-4/6 h-full bg-gray-200">
+              <div class="w-4/6 h-full bg-gray-200 border-2">
                 <img
-                  class="object-cover object-center h-full"
+                  class="object-cover object-left w-full h-full"
                   src="assets/feature-jaw.png"
                   alt="job-application-wizard"
                 />
@@ -967,17 +1444,19 @@
                     </div>
                   </li>
                 </ul>
-                <button class="btn-squircle">Learn More</button>
+                <button class="btn-squircle">
+                  <a href="#form-section">Learn More</a>
+                </button>
               </div>
             </div>
             <div
               class="flex justify-between w-full gap-4 content-area"
               id="content-automatch"
             >
-              <div class="w-4/6 h-full bg-gray-200">
+              <div class="w-4/6 h-full bg-gray-200 border-2">
                 <img
-                  class="object-cover object-center h-full"
-                  src="assets/feature-am.png"
+                  class="object-cover object-left w-full h-full"
+                  src="assets/4 - Automatch.jpg"
                   alt="automatch"
                 />
               </div>
@@ -1019,17 +1498,19 @@
                     </div>
                   </li>
                 </ul>
-                <button class="btn-squircle">Learn More</button>
+                <button class="btn-squircle">
+                  <a href="#form-section">Learn More</a>
+                </button>
               </div>
             </div>
             <div
               class="flex justify-between w-full gap-4 content-area"
               id="content-analytics"
             >
-              <div class="w-4/6 h-full bg-gray-200">
+              <div class="w-4/6 h-full bg-gray-200 border-2">
                 <img
-                  class="object-cover object-center h-full"
-                  src="assets/feature-ra.png"
+                  class="object-cover object-left w-full h-full"
+                  src="assets/1 - Dashboard.jpg"
                   alt="report-analytics"
                 />
               </div>
@@ -1075,7 +1556,9 @@
                     </div>
                   </li>
                 </ul>
-                <button class="btn-squircle">Learn More</button>
+                <button class="btn-squircle">
+                  <a href="#form-section">Learn More</a>
+                </button>
               </div>
             </div>
           </div>
@@ -1086,9 +1569,9 @@
       <section class="w-full h-auto py-10 bg-gray-100">
         <div class="max-w-screen-lg mx-auto">
           <h1 class="mb-4 text-4xl plus-jakarta-sans-B">
-            Join the Sageware Revolution
+            Join the <span class="primary-text-color">Sageware Revolution</span>
           </h1>
-          <p class="mb-10">
+          <p class="mb-10 font-normal">
             Don't let outdated processes hold you back. Embrace the future with
             Sageware and watch your business flourish. Our dedicated support
             team is always on hand to assist you, ensuring a smooth transition
@@ -1097,11 +1580,11 @@
           <div class="flex gap-6">
             <div class="w-1/2">
               <div class="mb-4">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
               </div>
               <p class="mb-4">
                 "Switching to Sageware was the best decision we ever made. Our
@@ -1123,11 +1606,11 @@
             </div>
             <div class="w-1/2">
               <div class="mb-4">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
+                <i class="text-yellow-400 fa-solid fa-star"></i>
               </div>
               <p class="mb-4">
                 "The difference is night and day. No more lost files or
@@ -1152,7 +1635,8 @@
       </section>
       <!-- ############################################################################################ -->
       <!-- PRICING SECTION -->
-      <section class="w-full h-auto py-10">
+      <!-- PRICING LAYOUT 1 -->
+      <!-- <section class="w-full h-auto py-10" id="pricing-section">
         <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
           <div class="w-full h-auto mb-12">
             <h1 class="mb-4 text-4xl plus-jakarta-sans-B">
@@ -1199,7 +1683,7 @@
               <div
                 class="flex items-center justify-around w-full gap-4 p-4 mb-4 border border-black"
               >
-                <h1 class="text-3xl plus-jakarta-sans-B">
+                <h1 class="text-4xl plus-jakarta-sans-B">
                   ₱24,000<span class="text-sm font-normal">/setup fee</span>
                 </h1>
                 <h4
@@ -1224,10 +1708,12 @@
                 >
                   <div class="price-plan-type">
                     <h3 class="text-lg font-bold">Monthly Plan</h3>
-                    <h4 class="text-sm font-normal text-center w-fit"></h4>
+                    <h4
+                      class="text-sm font-normal text-center w-fit dark-text-color border-[#1d678a]"
+                    ></h4>
                   </div>
                   <div>
-                    <h1 class="inline-block text-3xl plus-jakarta-sans-B price">
+                    <h1 class="inline-block text-4xl plus-jakarta-sans-B price">
                       ₱15,000
                     </h1>
                     <span class="inline-block text-sm font-normal"
@@ -1300,15 +1786,15 @@
                       </h3>
                       <ul class="text-sm">
                         <li class="flex gap-3 mb-1">
-                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <i class="fa-solid fa-wrench pt-1.5"></i>
                           <h4>Weekly Executive Reports by Jared</h4>
                         </li>
                         <li class="flex gap-3 mb-1">
-                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <i class="fa-solid fa-wrench pt-1.5"></i>
                           <h4>Blacklisted Workers</h4>
                         </li>
                         <li class="flex gap-3 mb-1">
-                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <i class="fa-solid fa-wrench pt-1.5"></i>
                           <h4>Wordpress Integration</h4>
                         </li>
                       </ul>
@@ -1323,513 +1809,242 @@
               </div>
             </div>
           </div>
-          <!-- <div class="w-full px-10">
-            <div class="w-full rounded-lg card-bs">
-              <div class="flex items-center p-6 gap-7 h-2/5">
-                <div class="flex flex-col items-center justify-center w-1/2">
-                  <h1 class="text-5xl">
-                    ₱24,000<span class="text-sm">/setup fee</span>
-                  </h1>
-                  <h3
-                    class="px-2 py-1 mt-3 text-sm text-center text-white bg-blue-500 rounded-sm w-fit"
-                  >
-                    One-time Upfront Payment
-                  </h3>
-                </div>
-                <div
-                  class="flex flex-col items-center justify-center w-1/2 gap-1"
-                >
-                  <div>
-                    <h1 class="text-5xl">
-                      ₱12,000<span class="text-sm">/office/mo</span>
-                    </h1>
-                    <h3
-                      class="px-2 py-1 mt-1 text-sm text-center text-white bg-blue-500 rounded-sm"
-                    >
-                      paid yearly (20% OFF)
-                    </h3>
-                  </div>
-                  <h4 class="w-full text-center">OR</h4>
-                  <div>
-                    <h1 class="text-3xl">
-                      ₱15,000<span class="text-sm">/office/mo</span>
-                    </h1>
-                    <h3
-                      class="px-2 py-1 mt-1 text-sm text-center text-white bg-blue-500 rounded-sm"
-                    >
-                      paid monthly
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex gap-4 px-12 py-6 text-white bg-blue-500 border-t rounded-md h-3/5"
-              >
-                <div class="w-1/2">
-                  <h2
-                    class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                  >
-                    FEATURES
-                  </h2>
-                  <ul class="mb-2 text-base list-none">
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Unlimited
-                      Employers, Jobs, Workers
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Unlimited
-                      Document Uploads
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Social Media
-                      Shareable Job Postings
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Job Application
-                      Wizard
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Batch
-                      Processing
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Worker
-                      Automatch / Follow-ups
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Ops Analytics /
-                      Google Analytics
-                    </li>
-                  </ul>
-                  <h2
-                    class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                  >
-                    COMING SOON
-                  </h2>
-                  <ul class="mb-2 text-base list-none">
-                    <li>
-                      <i class="fa-solid fa-wrench"></i> Weekly Executive
-                      Reports by Jared
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-wrench"></i> Blacklisted Workers
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-wrench"></i> Wordpress Integration
-                    </li>
-                  </ul>
-                </div>
-                <div class="w-1/2">
-                  <h2
-                    class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                  >
-                    ONBOARDING SUPPORT
-                  </h2>
-                  <ul class="mb-2 text-base list-none">
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Database
-                      migration template and ingest
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Data
-                      customization (add/remove)
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Job page
-                      branding
-                    </li>
-                  </ul>
-                  <h2
-                    class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                  >
-                    SUPPORT
-                  </h2>
-                  <ul class="mb-2 text-base list-none">
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> 8x5 Phone
-                      Support
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Feature Updates
-                      / Security Patches
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> User Manual /
-                      Video Tutorials
-                    </li>
-                  </ul>
-                  <h2
-                    class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                  >
-                    STANDARD CLOUD
-                  </h2>
-                  <ul class="mb-2 text-base list-none">
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Standard Cloud
-                      VM: 2vCPU 2GB 3TB Transfer
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Secure Cloud
-                      Object Storage
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i> Weekly Backups
-                      / Let's Encrypt SSL
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
-      </section>
-      <!-- <section
-        class="flex flex-col items-center w-full h-auto gap-10 px-10 pt-2 pb-20 mx-auto font-semibold max-w-7xl"
-      >
-        <h1 class="text-4xl plus-jakarta-sans-B">
-          Transparent Pricing For You
-        </h1>
-        <div class="w-full px-10">
-          <div class="w-full rounded-lg card-bs">
-            <div class="flex items-center p-6 gap-7 h-2/5">
-              <div class="flex flex-col items-center justify-center w-1/2">
-                <h1 class="text-5xl">
-                  ₱24,000<span class="text-sm">/setup fee</span>
+      </section> -->
+      <!-- PRICING LAYOUT 2 -->
+      <section class="w-full h-auto py-10" id="pricing-section">
+        <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
+          <div class="w-full h-auto mb-12">
+            <h1 class="mb-4 text-4xl plus-jakarta-sans-B">
+              <span class="primary-text-color">Transparent Pricing</span> For
+              You
+            </h1>
+            <p class="text-base font-normal">No contracts or surprises.</p>
+          </div>
+          <div class="flex w-full h-full gap-6">
+            <div class="w-1/2 h-full">
+              <div
+                class="flex items-center justify-around w-full gap-4 p-4 mb-4 border border-black"
+              >
+                <h1 class="text-4xl plus-jakarta-sans-B">
+                  ₱24,000<span class="text-sm font-normal">/setup fee</span>
                 </h1>
-                <h3
-                  class="px-2 py-1 mt-3 text-sm text-center text-white bg-blue-500 rounded-sm w-fit"
+                <h4
+                  class="px-4 py-2 text-sm font-bold text-white rounded-sm secondary-bg-color"
                 >
                   One-time Upfront Payment
-                </h3>
-              </div>
-              <div
-                class="flex flex-col items-center justify-center w-1/2 gap-1"
-              >
-                <div>
-                  <h1 class="text-5xl">
-                    ₱12,000<span class="text-sm">/office/mo</span>
-                  </h1>
-                  <h3
-                    class="px-2 py-1 mt-1 text-sm text-center text-white bg-blue-500 rounded-sm"
-                  >
-                    paid yearly (20% OFF)
-                  </h3>
-                </div>
-                <h4 class="w-full text-center">OR</h4>
-                <div>
-                  <h1 class="text-3xl">
-                    ₱15,000<span class="text-sm">/office/mo</span>
-                  </h1>
-                  <h3
-                    class="px-2 py-1 mt-1 text-sm text-center text-white bg-blue-500 rounded-sm"
-                  >
-                    paid monthly
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex gap-4 px-12 py-6 text-white bg-blue-500 border-t rounded-md h-3/5"
-            >
-              <div class="w-1/2">
-                <h2
-                  class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                >
-                  FEATURES
-                </h2>
-                <ul class="mb-2 text-base list-none">
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Unlimited
-                    Employers, Jobs, Workers
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Unlimited
-                    Document Uploads
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Social Media
-                    Shareable Job Postings
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Job Application
-                    Wizard
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Batch Processing
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Worker Automatch
-                    / Follow-ups
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Ops Analytics /
-                    Google Analytics
-                  </li>
-                </ul>
-                <h2
-                  class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                >
-                  COMING SOON
-                </h2>
-                <ul class="mb-2 text-base list-none">
-                  <li>
-                    <i class="fa-solid fa-wrench"></i> Weekly Executive Reports
-                    by Jared
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-wrench"></i> Blacklisted Workers
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-wrench"></i> Wordpress Integration
-                  </li>
-                </ul>
-              </div>
-              <div class="w-1/2">
-                <h2
-                  class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                >
-                  ONBOARDING SUPPORT
-                </h2>
-                <ul class="mb-2 text-base list-none">
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Database
-                    migration template and ingest
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Data
-                    customization (add/remove)
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Job page branding
-                  </li>
-                </ul>
-                <h2
-                  class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                >
-                  SUPPORT
-                </h2>
-                <ul class="mb-2 text-base list-none">
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> 8x5 Phone Support
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Feature Updates /
-                    Security Patches
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> User Manual /
-                    Video Tutorials
-                  </li>
-                </ul>
-                <h2
-                  class="w-full mb-2 text-2xl font-bold border-b plus-jakarta-sans-B"
-                >
-                  STANDARD CLOUD
-                </h2>
-                <ul class="mb-2 text-base list-none">
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Standard Cloud
-                    VM: 2vCPU 2GB 3TB Transfer
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Secure Cloud
-                    Object Storage
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Weekly Backups /
-                    Let's Encrypt SSL
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex w-full h-auto gap-4 px-10">
-          <div class="w-1/3 border">IMAGE HERE</div>
-          <div class="relative flex items-center w-2/3 rounded-lg card-bs">
-            <div
-              class="flex flex-col justify-center w-1/3 h-full gap-2 px-3 py-6"
-            >
-              <div class="flex flex-col items-center pt-4">
-                <h1 class="text-3xl">₱5,000<span class="text-sm">/mo</span></h1>
-                <h3
-                  class="px-2 py-1 mt-2 text-xs text-center text-white bg-blue-500 rounded-sm w-fit"
-                >
-                  paid monthly
-                </h3>
-              </div>
-              <h4
-                class="p-1 mt-2 text-sm italic text-center border-b border-black"
-              >
-                downgrade anytime
-              </h4>
-            </div>
-            <div
-              class="w-4/6 h-full px-4 py-2 text-white bg-blue-500 rounded-md"
-            >
-              <h2 class="w-full text-xl font-bold border-b plus-jakarta-sans-B">
-                PRO CLOUD
-              </h2>
-              <div class="flex flex-col justify-between h-5/6">
-                <ul class="pt-2 text-sm list-none">
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Prod Cloud VM:
-                    4vCPU 4GB 5TB Transfer
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Secure Cloud
-                    Object Storage
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Daily Backups
-                  </li>
-                </ul>
-                <h4 class="text-xs italic">
-                  *resizing happens every monthly cut-off
                 </h4>
               </div>
+              <div class="px-6 py-4 border border-black">
+                <div
+                  class="flex items-center justify-between h-16 gap-4 pb-4 border-b border-black price-plan"
+                >
+                  <div class="price-plan-type">
+                    <h3 class="text-lg font-bold">Monthly Plan</h3>
+                    <h4
+                      class="text-sm font-normal text-center w-fit dark-text-color border-[#1d678a]"
+                    ></h4>
+                  </div>
+                  <div>
+                    <h1 class="inline-block text-4xl plus-jakarta-sans-B price">
+                      ₱15,000
+                    </h1>
+                    <span class="inline-block text-sm font-normal"
+                      >/office/mo</span
+                    >
+                  </div>
+                </div>
+                <div class="w-full pb-4">
+                  <div class="flex w-full gap-8">
+                    <div class="w-1/2 pt-4">
+                      <h3 class="mb-2 text-base font-bold border-b">
+                        Onboarding Support
+                      </h3>
+                      <ul class="text-sm">
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Database migration template and ingest</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Data customization (add/remove)</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Job page branding</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="w-1/2 pt-4">
+                      <h3 class="mb-2 text-base font-bold border-b">Support</h3>
+                      <ul class="text-sm">
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>8x5 Phone Support</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Feature Updates / Security Patches</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>User Manual / Video Tutorials</h4>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="flex w-full gap-8">
+                    <div class="w-1/2 pt-4">
+                      <h3 class="mb-2 text-base font-bold border-b">
+                        Standard Cloud
+                      </h3>
+                      <ul class="text-sm">
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Standard Cloud VM: 2vCPU 2GB 3TB Transfer</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Secure Cloud Object Storage</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-regular fa-circle-check pt-1.5"></i>
+                          <h4>Weekly Backups / Let’s Encrypt SSL</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="w-1/2 pt-4">
+                      <h3 class="mb-2 text-base font-bold border-b">
+                        Coming Soon
+                      </h3>
+                      <ul class="text-sm">
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-solid fa-wrench pt-1.5"></i>
+                          <h4>Weekly Executive Reports by Jared</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-solid fa-wrench pt-1.5"></i>
+                          <h4>Blacklisted Workers</h4>
+                        </li>
+                        <li class="flex gap-3 mb-1">
+                          <i class="fa-solid fa-wrench pt-1.5"></i>
+                          <h4>Wordpress Integration</h4>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-6 border-t border-black">
+                  <div
+                    class="flex w-auto h-auto p-1 bg-gray-200 rounded-md cursor-pointer price-plan-picker"
+                  >
+                    <div
+                      class="w-1/2 px-4 py-2 text-center rounded-md"
+                      data-plan="Monthly"
+                    >
+                      Monthly
+                    </div>
+                    <div
+                      class="w-1/2 px-4 py-2 text-center rounded-md"
+                      data-plan="Yearly"
+                    >
+                      Yearly
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div
-              class="absolute px-4 py-2 text-lg font-semibold text-white bg-green-600 rounded-sm -top-5 left-2 w-max card-bs-green"
-            >
-              CLOUD UPGRADE
+            <div class="w-1/2 pl-8">
+              <h2 class="mb-6 text-2xl font-bold">Features</h2>
+              <ul class="mb-16">
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Unlimited Employers, Jobs, Workers</h4>
+                </li>
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Unlimited Document Uploads</h4>
+                </li>
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Social Media Shareable Job Postings</h4>
+                </li>
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Job Application Wizard</h4>
+                </li>
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Batch Processing</h4>
+                </li>
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Worker Automatch / Follow-ups</h4>
+                </li>
+                <li class="flex items-center gap-3 mb-4">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h4>Ops Analytics / Google Analytics</h4>
+                </li>
+              </ul>
+              <button class="w-full text-base font-bold btn-squircle">
+                <a href="#form-section">Get Started</a>
+              </button>
             </div>
           </div>
         </div>
-        <div class="flex w-full h-auto gap-4 px-10">
-          <div class="w-1/3 border">IMAGE HERE</div>
-          <div class="relative flex items-center w-2/3 rounded-lg card-bs">
-            <div
-              class="flex flex-col justify-center w-1/3 h-full gap-2 px-3 py-6"
-            >
-              <div class="flex flex-col items-center justify-center">
-                <h1 class="text-3xl">₱48,000</h1>
-                <h4 class="text-sm">/8 layouts</h4>
-                <h3
-                  class="px-2 py-1 mt-3 text-xs text-center text-white bg-blue-500 rounded-sm w-fit"
-                >
-                  Upfront Payment
-                </h3>
-              </div>
-              <div class="text-center">OR</div>
-              <div class="flex flex-col items-center justify-center">
-                <h1 class="text-3xl">₱5,000<span class="text-sm">/mo</span></h1>
-                <h3
-                  class="px-2 py-1 mt-3 text-xs text-center text-white bg-blue-500 rounded-sm w-fit"
-                >
-                  over 12 months
-                </h3>
-              </div>
-            </div>
-            <div
-              class="w-4/6 h-full px-6 py-3 text-white bg-blue-500 rounded-md"
-            >
-              <h2 class="w-full text-xl font-bold border-b plus-jakarta-sans-B">
-                PAGES
-              </h2>
-              <ul class="py-2 text-sm list-none">
-                <li><i class="fa-regular fa-circle-check"></i> Blog</li>
-                <li><i class="fa-regular fa-circle-check"></i> Photo Feed</li>
-                <li><i class="fa-regular fa-circle-check"></i> About Us</li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> Mission/Vision
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> Our Team How It
-                  Works: For Employers
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> For Workers Contact
-                  Us (Form)
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> Our Offices (GMaps)
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> Terms of Service &
-                  Privacy Policy
-                </li>
-              </ul>
-              <h2 class="w-full font-bold border-b plus-jakarta-sans-B">
-                CONTENT MANAGEMENT SYSTEM
-              </h2>
-              <h3 class="pt-1 text-sm italic">Powered by PlacementHub</h3>
-            </div>
-            <div
-              class="absolute px-2 py-1 text-lg font-semibold text-white bg-green-600 rounded-sm -top-5 left-2 w-max card-bs-green"
-            >
-              ADD-ON
-            </div>
+      </section>
+      <!-- UPGRADE AND ADD-ONS SECTION -->
+      <!-- <section class="w-full py-10 bg-gray-100">
+        <div class="max-w-screen-lg mx-auto">
+          <div class="flex flex-col items-center w-full mb-10">
+            <h1 class="mb-6 text-4xl font-bold">Upgrade and Add-Ons Pricing</h1>
+            <p class="text-base font-normal">For those who need more power.</p>
           </div>
-        </div>
-        <div class="flex w-full h-auto gap-4 px-10">
-          <div class="w-1/3 border">IMAGE HERE</div>
-          <div class="relative flex w-2/3 h-full rounded-lg card-bs">
+          <div class="flex items-center w-full gap-8">
             <div
-              class="flex flex-col justify-center w-1/3 h-full gap-2 px-3 py-6"
+              class="relative w-1/3 p-4 pt-10 border-2 border-green-600 rounded-md"
             >
-              <div class="flex flex-col items-center justify-center">
-                <h1 class="text-3xl">₱18,000</h1>
-                <h4 class="text-sm">/DocGen format</h4>
-                <h3
-                  class="px-2 py-1 mt-3 text-xs text-center text-white bg-blue-500 rounded-sm w-fit"
-                >
-                  Upfront Payment
-                </h3>
+              <div
+                class="absolute -top-3 px-3 py-1 text-xs font-bold text-white bg-green-600 left-[38%] rounded-md"
+              >
+                UPGRADE
               </div>
-              <div class="text-center">OR</div>
-              <div class="flex flex-col items-center justify-center">
-                <h1 class="text-3xl">₱1,875<span class="text-sm">/mo</span></h1>
-                <h3
-                  class="px-2 py-1 mt-3 text-xs text-center text-white bg-blue-500 rounded-sm w-fit"
-                >
-                  over 12 months
-                </h3>
+              <div
+                class="flex justify-end pt-4 border-t-[3px] rounded-md border-[#1d678a]"
+              >
+                <i class="text-5xl fa-solid fa-cube"></i>
+              </div>
+              <div class="pb-6 border-b border-black">
+                <h4 class="mb-2 text-base font-normal">Pro Cloud</h4>
+                <h1 class="pb-3 text-4xl font-bold">
+                  +₱5,000<span class="text-sm font-normal">/mo</span>
+                </h1>
+                <h4 class="text-base">downgrade anytime</h4>
+              </div>
+              <div class="pt-6">
+                <h3 class="mb-4 text-xl font-bold">Features</h3>
+                <ul>
+                  <li class="flex gap-3 mb-1">
+                    <i class="fa-regular fa-circle-check pt-1.5"></i>
+                    <h4>Prod Cloud VM: 4vCPU 4GB 5TB Transfer</h4>
+                  </li>
+                  <li class="flex gap-3 mb-1">
+                    <i class="fa-regular fa-circle-check pt-1.5"></i>
+                    <h4>Secure Cloud Object Storage</h4>
+                  </li>
+                  <li class="flex gap-3 mb-1">
+                    <i class="fa-regular fa-circle-check pt-1.5"></i>
+                    <h4>Daily Backups</h4>
+                  </li>
+                </ul>
+                <p class="mt-12 text-xs italic">
+                  *resizing happens every monthly cut-off
+                </p>
               </div>
             </div>
-            <div
-              class="w-4/6 h-full px-6 py-3 text-white bg-blue-500 rounded-md"
-            >
-              <h2 class="w-full text-xl font-bold border-b plus-jakarta-sans-B">
-                DOCGEN
-              </h2>
-              <ul class="py-2 text-sm list-none">
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> Contracts Interview
-                  Manifests
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> People Reports
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> Dossier Generator
-                </li>
-              </ul>
-              <h2 class="w-full text-xl font-bold border-b plus-jakarta-sans-B">
-                SUPPORTED FORMATS
-              </h2>
-              <ul class="py-2 text-sm list-none">
-                <li><i class="fa-regular fa-circle-check"></i> XSL</li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> XSLX (Microsoft
-                  Excel)
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> CSV (Standard)
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> DOC/DOCX (Microsoft
-                  Word)
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i> PDF (Standard)
-                </li>
-              </ul>
-            </div>
-            <div
-              class="absolute px-2 py-1 text-lg font-semibold text-white bg-green-600 rounded-sm -top-5 left-2 w-max card-bs-green"
-            >
-              ADD-ON
+            <div class="flex w-2/3 p-4 border-2 border-orange-500">
+              <div class="w-1/2">ADD-ON 1</div>
+              <div class="w-1/2">ADD-ON 2</div>
             </div>
           </div>
         </div>
@@ -1856,7 +2071,7 @@
           <button
             class="text-2xl transition-all duration-300 ease-in-out bg-white primary-text-color w-44 btn-secondary card-bs plus-jakarta-sans-B"
           >
-            Try it Now
+            <a href="#form-section">Try it Now</a>
           </button>
         </div>
       </section>
@@ -1864,112 +2079,226 @@
       <!-- FAQS SECTION -->
       <section class="w-full h-auto py-10">
         <div
-          class="flex flex-col items-center justify-center max-w-screen-lg gap-10 mx-auto"
+          class="flex flex-col items-center justify-center max-w-screen-lg gap-10 mx-auto faq-container"
         >
-          <h1 class="mb-4 text-4xl font-semibold plus-jakarta-sans-B">
-            Frequently Asked Questions
-          </h1>
+          <div class="mb-4 text-center">
+            <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
+              Frequently Asked Questions
+            </h1>
+            <p class="mb-4 font-normal">
+              Find answers to common questions about PlacementHub.
+            </p>
+          </div>
           <div
-            class="flex flex-col justify-center w-full px-6 py-8 text-xl font-medium faq-question rounded-xl card-bs"
+            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            data-rotate="false"
           >
-            How can I get started?
+            <div class="flex justify-between">
+              <h2>Who can use PlacementHub?</h2>
+              <div
+                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+              >
+                <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
+              </div>
+            </div>
             <div
               class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
             >
-              You can get started by following these steps...
+              PlacementHub is versatile, suitable for any organization focused
+              on optimizing recruitment operations. This includes everything
+              from large enterprises to small businesses, as well as specialized
+              recruitment agencies and HR departments.
             </div>
           </div>
           <div
-            class="w-full px-6 py-8 text-xl font-medium faq-question rounded-xl card-bs"
+            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            data-rotate="false"
           >
-            What documents or other requirements I need to prepare?
+            <div class="flex justify-between">
+              <h2>How does it benefit my organization?</h2>
+              <div
+                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+              >
+                <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
+              </div>
+            </div>
             <div
               class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
             >
-              To prepare for the process, you will need...
+              PlacementHub offers multiple benefits like task automation, error
+              minimization, efficient data management, and scalability. It
+              enables you to focus more on strategic tasks while automating
+              routine processes, thereby enhancing overall recruitment
+              performance.
             </div>
+          </div>
+          <div
+            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            data-rotate="false"
+          >
+            <div class="flex justify-between">
+              <h2>Is my data secure?</h2>
+              <div
+                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+              >
+                <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
+              </div>
+            </div>
+            <div
+              class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
+            >
+              Absolutely, your data's security is a priority. We use advanced
+              security protocols and industry-grade software. Additionally, we
+              offer weekly server backups with a 4-week retention period to
+              ensure your data remains secure and accessible.
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            data-rotate="false"
+          >
+            <div class="flex justify-between">
+              <h2>Can I use my own domain name?</h2>
+              <div
+                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+              >
+                <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
+              </div>
+            </div>
+            <div
+              class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
+            >
+              Certainly. We support custom domain names to provide a more
+              personalized experience that aligns with your organization's
+              brand.
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            data-rotate="false"
+          >
+            <div class="flex justify-between">
+              <h2>Can I integrate it with other software?</h2>
+              <div
+                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+              >
+                <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
+              </div>
+            </div>
+            <div
+              class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
+            >
+              Yes, PlacementHub is designed to integrate seamlessly with other
+              software systems. Integration comes at an additional cost.
+            </div>
+          </div>
+          <div class="w-full my-10">
+            <h1 class="mb-6 text-3xl font-bold">Still have questions?</h1>
+            <h4 class="mb-6 font-normal">Contact us for more information.</h4>
+            <button class="btn-squircle-negative">Contact</button>
           </div>
         </div>
       </section>
     </main>
-    <footer
-      class="flex flex-col justify-between w-full text-white dark-bg-color h-72"
-    >
-      <div class="container flex flex-wrap mx-auto">
-        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold plus-jakarta-sans-B">
-            Features
-          </h3>
-          <ul class="flex flex-col gap-2 list-unstyled">
-            <li><a href="#" class="hover:text-gray-300">Link 1</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 2</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 3</a></li>
-          </ul>
+    <footer class="w-full py-10" id="footer-section">
+      <div
+        class="flex h-auto max-w-screen-lg gap-8 p-10 mx-auto mb-10 bg-white border border-black"
+      >
+        <div class="w-1/3">
+          <img
+            class="w-2/3 mb-6"
+            src="./assets/placement-hub-logo.jpg"
+            alt="placement-hub-logo"
+          />
+          <div class="flex gap-2 mb-4">
+            <i class="pt-1 fa-solid fa-map-pin"></i>
+            <h4>
+              Twin Oaks Place, <br />
+              <span class="text-sm">Mandaluyong, Philippines</span>
+            </h4>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-sm font-bold">Phone:</h3>
+            <h4 class="text-sm">+63 0917 718 0420</h4>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-sm font-bold">Email:</h3>
+            <h4 class="text-sm">contact@placementhub.ph</h4>
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="https://facebook.com/placementhubhq"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
         </div>
-        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold plus-jakarta-sans-B">
-            Resources
-          </h3>
-          <ul class="flex flex-col gap-2 list-unstyled">
-            <li><a href="#" class="hover:text-gray-300">Link 4</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 5</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 6</a></li>
+        <div class="flex justify-end w-2/3 gap-12">
+          <ul class="flex flex-col gap-2 text-sm">
+            <h3 class="mb-2 text-base font-bold">Features</h3>
+            <li><a href="#feature-section">Smart Record Keeping</a></li>
+            <li><a href="#feature-section">Job Application Wizard</a></li>
+            <li><a href="#feature-section">Automatch</a></li>
+            <li><a href="#feature-section">Reporting & Analytics</a></li>
           </ul>
-        </div>
-        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold plus-jakarta-sans-B">
-            Pricing
-          </h3>
-          <ul class="flex flex-col gap-2 list-unstyled">
-            <li><a href="#" class="hover:text-gray-300">Link 7</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 8</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 9</a></li>
+          <ul class="flex flex-col gap-2 text-sm">
+            <h3 class="mb-2 text-base font-bold">Pricing</h3>
+            <li><a href="#pricing-section">Setup</a></li>
+            <li>Upgrade</li>
+            <li>Add-ons</li>
           </ul>
-        </div>
-        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold plus-jakarta-sans-B">
-            About us
-          </h3>
-          <ul class="flex flex-col gap-2 list-unstyled">
-            <li><a href="#" class="hover:text-gray-300">Link 10</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 11</a></li>
-            <li><a href="#" class="hover:text-gray-300">Link 12</a></li>
-          </ul>
-        </div>
-        <div class="flex flex-col items-center w-full p-4 md:w-1/5">
-          <h3 class="mb-4 text-xl font-semibold plus-jakarta-sans-B">
-            Social Media
-          </h3>
-          <ul class="flex space-x-4">
-            <li>
-              <a href="#" class="text-xl hover:text-gray-300"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="text-xl hover:text-gray-300"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="text-xl hover:text-gray-300"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
+          <ul class="flex flex-col gap-2 text-sm">
+            <h3 class="mb-2 text-base font-bold">Company</h3>
+            <li>About us</li>
+            <li>Contact us</li>
           </ul>
         </div>
       </div>
-      <div class="flex items-center justify-between gap-10 px-20 py-5 text-sm">
+      <div
+        class="flex justify-between max-w-screen-lg gap-8 mx-auto text-sm font-normal"
+      >
         <h4>
           <i class="fa-regular fa-copyright"></i> 2023 Sageware IT Solutions -
           All Rights Reserved
         </h4>
-        <h4 class="cursor-pointer">Privacy | Terms of Service</h4>
+        <ul class="flex gap-6">
+          <li class="underline cursor-pointer">Privacy Policy</li>
+          <li class="underline cursor-pointer">Terms of Service</li>
+          <li class="underline cursor-pointer">Cookie Settings</li>
+        </ul>
       </div>
     </footer>
   </body>
 
   <script>
+    // SCROLL LINK
+    const offset = 75; //px
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - offset,
+          });
+        }
+      });
+    });
+
     // KEY FEATURES
     const contentItems = document.querySelectorAll(".content-item");
     const contentAreas = document.querySelectorAll(".content-area");
@@ -2035,7 +2364,7 @@
         } else if (selectedPlan === "Yearly") {
           pricePlanType.textContent = "Yearly Plan";
           pricePlanNote.textContent = "save 20%";
-          pricePlanNote.style.border = "1px solid black";
+          pricePlanNote.style.border = "1px solid";
           pricePlanNote.style.padding = "0.1rem 0.5rem";
           price.textContent = "₱12,000";
         }
@@ -2092,6 +2421,25 @@
           dropdownMenu.classList.add("hidden");
         }
       });
+    });
+
+    // FAQ ARROWS
+    const faqContainer = document.querySelector(".faq-container");
+
+    faqContainer.addEventListener("click", function (event) {
+      const faqDiv = event.target.closest(".faq-div");
+      if (!faqDiv) return;
+
+      const arrow = faqDiv.querySelector(".arrow");
+      const shouldRotate = faqDiv.getAttribute("data-rotate") === "false";
+
+      if (shouldRotate) {
+        arrow.classList.add("rotate-180");
+        faqDiv.setAttribute("data-rotate", "true");
+      } else {
+        arrow.classList.remove("rotate-180");
+        faqDiv.setAttribute("data-rotate", "false");
+      }
     });
   </script>
 </html>
