@@ -140,7 +140,6 @@ li:hover .animated-underline::before {
   outline: 0;
   font-size: var(--ruler);
   font-weight: normal;
-  /* border-radius: calc(var(--ruler) * 20); */
   border-radius: 6px;
   padding: var(--ruler);
   background-color: var(--color-bg);
@@ -184,12 +183,50 @@ li:hover .animated-underline::before {
   margin-bottom: calc(var([--ruler]) * 1.5);
   width: 100%;
 }
+
+.neo-tab {
+  border: 0;
+  outline: 0;
+  font-size: var(--ruler);
+  font-weight: normal;
+  border-radius: 6px;
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+
+  margin-right: cacl(var([--ruler]) / 2);
+  box-shadow: inset 2px 2px 5px var(--color-shadow),
+    inset -5px -5px 10px var(--color-white);
+  width: auto;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.neo-tab-price {
+  border: 0;
+  outline: 0;
+  font-size: var(--ruler);
+  font-weight: normal;
+  border-radius: 6px;
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+
+  margin-right: cacl(var([--ruler]) / 2);
+  box-shadow: inset 2px 2px 5px var(--color-shadow),
+    inset -5px -5px 10px var(--color-white);
+  width: 50%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
 .neo-button {
   border: 0;
   outline: 0;
   font-size: var(--ruler);
   font-weight: normal;
-  /* border-radius: calc(var(--ruler) * 20); */
   border-radius: 6px;
   padding: var(--ruler);
   background-color: var(--color-bg);
@@ -197,8 +234,7 @@ li:hover .animated-underline::before {
 
   color: #61677c;
   font-weight: bold;
-  box-shadow: -5px -5px 20px var(--color-white),
-    5px 5px 20px var(--color-shadow);
+  box-shadow: -5px -5px 20px var(--color-bg), 5px 5px 20px var(--color-shadow);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: bold;
