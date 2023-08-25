@@ -210,3 +210,6 @@ li:hover .animated-underline::before {
   box-shadow: inset 1px 1px 2px var(--color-shadow),
     inset -1px -1px 2px var(--color-white);
 }
+.tilt:hover .fa-arrow-right {
+  rotate: 45deg;
+}
