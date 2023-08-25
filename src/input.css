@@ -215,3 +215,10 @@ li:hover .animated-underline::before {
 .tilt:hover .fa-arrow-right {
   rotate: 45deg;
 }
+
+.vector-scale-65 {
+  scale: 0.65;
+}
+.vector-scale-70 {
+  scale: 0.7;
+}
