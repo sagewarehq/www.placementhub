@@ -121,6 +121,7 @@ li:hover .animated-underline::before {
   background-color: white;
   font-weight: 600;
   transition: background-color 300ms ease-out;
+  color: var(--talent-hub-color-primary);
 }
 
 .price-plan-picker {
@@ -129,6 +130,7 @@ li:hover .animated-underline::before {
 .price-plan-picker .selected {
   background-color: white;
   font-weight: 600;
+  color: var(--talent-hub-color-primary);
   transition: background-color 300ms ease-out;
 }
 
