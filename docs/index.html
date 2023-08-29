@@ -18,7 +18,7 @@
     <title>PlacementHub</title>
   </head>
   <body
-    class="box-border flex flex-col items-center justify-center h-auto p-0 m-0 plus-jakarta-sans-L"
+    class="box-border flex flex-col items-center justify-center w-screen h-auto p-0 m-0 plus-jakarta-sans-L"
   >
     <nav
       class="sticky top-0 z-20 flex items-center justify-between w-full h-24 px-20 py-4 bg-white border-b shadow-md"
@@ -82,14 +82,16 @@
       <!-- ############################################################################################ -->
       <!--HERO SECTION -->
       <section
-        class="flex items-center justify-center w-full py-16 h-[60vh] bg-gray-100"
+        class="flex items-center justify-center w-full h-auto py-16 bg-gray-100"
         id="hero-section"
       >
         <div
-          class="flex items-center justify-center h-full max-w-screen-lg gap-16 p-8"
+          class="flex flex-wrap items-center justify-center h-full min-[1100px]:max-w-screen-lg gap-16 p-8 min-[1100px]:flex-nowrap mx-auto"
         >
-          <div class="w-3/5">
-            <h4 class="mb-6 text-5xl leading-[1.25] plus-jakarta-sans-B">
+          <div class="min-[1100px]:w-3/5 max-w-screen-md">
+            <h4
+              class="mb-6 leading-[1.25] plus-jakarta-sans-B sm:text-4xl min-[672px]:text-[2.5rem] min-[740px]:text-[2.75rem] min-[808px]:text-5xl max-[639px]:text-4xl"
+            >
               Improve Your Placement Efficiency with
               <span class="dark-text-color">PlacementHub!</span>
             </h4>
@@ -106,9 +108,11 @@
               </button>
             </div>
           </div>
-          <div class="flex items-center justify-center w-2/5 h-full">
+          <div
+            class="flex items-center justify-center min-[1100px]:w-2/5 max-w-screen-md h-full"
+          >
             <img
-              class="h-auto scale-[1.3]"
+              class="h-auto scale-[1.3] max-[1100px]:scale-100"
               src="assets/ARSK-_notion-developer-daily-product-launch-2-bluegreen.png"
               alt="hero-vector-art"
             />
