@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border p-0 m-0 overflow-x-hidden scroll-smooth">
+<html
+  lang="en"
+  class="box-border w-screen h-auto p-0 m-0 overflow-x-hidden scroll-smooth"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,13 +21,13 @@
     <title>PlacementHub</title>
   </head>
   <body
-    class="box-border flex flex-col items-center justify-center w-screen h-auto p-0 m-0 plus-jakarta-sans-L"
+    class="flex flex-col items-center justify-center w-full h-auto p-0 m-0 plus-jakarta-sans-L"
   >
     <nav
-      class="sticky top-0 z-20 flex items-center justify-between w-full h-24 px-20 py-4 bg-white border-b shadow-md"
+      class="sticky top-0 z-20 flex items-center justify-between w-screen h-24 px-4 py-4 bg-white border-b shadow-md"
     >
       <div
-        class="flex items-center justify-between w-full h-full max-w-screen-lg gap-4 mx-auto"
+        class="flex items-center justify-between w-full h-full min-[1100px]:max-w-screen-lg gap-4 mx-auto"
       >
         <div class="w-40">
           <a href="#hero-section">
@@ -35,9 +38,10 @@
             />
           </a>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center justify-end gap-4 max-[895px]:flex-grow">
           <ul
-            class="flex items-center justify-center gap-4 text-lg font-normal dark-text-color"
+            class="items-center justify-center hidden gap-4 text-lg font-normal min-[895px]:flex dark-text-color"
+            id="nav-list"
           >
             <a href="#feature-section">
               <li
@@ -68,9 +72,36 @@
               </li>
             </a>
           </ul>
+
+          <div
+            class="min-[895px]:hidden max-[895px]:flex-grow max-[895px]:justify-center max-[895px]:flex"
+          >
+            <button
+              id="mobile-menu-button"
+              class="text-gray-800 focus:outline-none focus:text-gray-500"
+              aria-label="Toggle navigation"
+              data-menu-toggle="mobile-menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
           <a href="#form-section">
             <button
-              class="ml-4 text-white transition-all duration-300 ease-in-out btn-squircle hover:bg-white hover:text-[#1d678a] plus-jakarta-sans-B"
+              class="ml-4 text-white transition-all duration-300 ease-in-out btn-squircle hover:bg-white hover:text-[#1d678a] plus-jakarta-sans-B max-[435px]:text-sm max-[340px]:text-xs"
             >
               START FREE TRIAL
             </button>
@@ -78,7 +109,46 @@
         </div>
       </div>
     </nav>
-    <main class="w-full h-auto">
+
+    <div
+      id="mobile-menu"
+      class="fixed z-10 top-24 left-0 w-full h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md"
+    >
+      <div class="absolute inset-0" id="mobile-menu-overlay"></div>
+      <ul
+        class="flex flex-col items-center justify-center gap-4 py-8 text-lg font-normal dark-text-color"
+      >
+        <a href="#feature-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">Features</span>
+          </li>
+        </a>
+        <a href="#pricing-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">Pricing</span>
+          </li>
+        </a>
+        <a href="#benefits-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">About us</span>
+          </li>
+        </a>
+        <a href="#footer-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">Contact us</span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <main class="w-screen h-auto">
       <!-- ############################################################################################ -->
       <!--HERO SECTION -->
       <section
@@ -1790,6 +1860,27 @@
   </body>
 
   <script>
+    // HAMBURGER MENU
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+
+    mobileMenuButton.addEventListener("click", () => {
+      const menuToggle = mobileMenuButton.getAttribute("data-menu-toggle");
+      if (menuToggle === "mobile-menu") {
+        mobileMenu.classList.toggle("-translate-y-full");
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !mobileMenuButton.contains(event.target)
+      ) {
+        mobileMenu.classList.add("-translate-y-full");
+      }
+    });
+
     // SCROLL LINK
     const offset = 55; //px
 
