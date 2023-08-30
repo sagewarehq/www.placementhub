@@ -678,6 +678,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -830,6 +834,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 .max-w-screen-lg {
@@ -2029,6 +2037,10 @@ li:hover .animated-underline::before {
     flex-wrap: wrap;
   }
 
+  .max-\[750px\]\:flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
   .max-\[750px\]\:items-center {
     align-items: center;
   }
@@ -2208,6 +2220,80 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 500px) {
+  .max-\[500px\]\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .max-\[500px\]\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .max-\[500px\]\:w-1\/2 {
+    width: 50%;
+  }
+
+  .max-\[500px\]\:w-full {
+    width: 100%;
+  }
+
+  .max-\[500px\]\:w-2\/5 {
+    width: 40%;
+  }
+
+  .max-\[500px\]\:w-auto {
+    width: auto;
+  }
+
+  .max-\[500px\]\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .max-\[500px\]\:justify-center {
+    justify-content: center;
+  }
+
+  .max-\[500px\]\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .max-\[500px\]\:gap-0 {
+    gap: 0px;
+  }
+
+  .max-\[500px\]\:gap-8 {
+    gap: 2rem;
+  }
+
+  .max-\[500px\]\:gap-4 {
+    gap: 1rem;
+  }
+
+  .max-\[500px\]\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .max-\[500px\]\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .max-\[500px\]\:pl-2 {
+    padding-left: 0.5rem;
+  }
+
+  .max-\[500px\]\:pr-2 {
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .max-\[485px\]\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 @media (max-width: 435px) {
   .max-\[435px\]\:text-sm {
     font-size: 0.875rem;
@@ -2266,6 +2352,16 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 424px) {
+  .max-\[424px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[424px\]\:justify-start {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 400px) {
   .max-\[400px\]\:text-3xl {
     font-size: 1.875rem;
@@ -2309,6 +2405,13 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 374px) {
+  .max-\[374px\]\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 @media (max-width: 340px) {
   .max-\[340px\]\:text-xs {
     font-size: 0.75rem;
@@ -2340,6 +2443,12 @@ li:hover .animated-underline::before {
 
 @media (min-width: 400px) {
   .min-\[400px\]\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 425px) {
+  .min-\[425px\]\:hidden {
     display: none;
   }
 }
