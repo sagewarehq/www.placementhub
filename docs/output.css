@@ -586,6 +586,10 @@ video {
   top: 6rem;
 }
 
+.-bottom-28 {
+  bottom: -7rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -682,6 +686,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -766,6 +774,14 @@ video {
   height: 100vh;
 }
 
+.h-\[560px\] {
+  height: 560px;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -838,6 +854,14 @@ video {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .max-w-screen-lg {
@@ -982,6 +1006,10 @@ video {
   gap: 2rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1058,6 +1086,10 @@ video {
 
 .border-t-\[3px\] {
   border-top-width: 3px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .border-\[\#1d678a\] {
@@ -1208,6 +1240,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1254,6 +1291,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-center {
@@ -2463,6 +2504,13 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 379px) {
+  .max-\[379px\]\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 @media (max-width: 377px) {
   .max-\[377px\]\:text-base {
     font-size: 1rem;
@@ -2500,6 +2548,13 @@ li:hover .animated-underline::before {
   .max-\[361px\]\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .max-\[350px\]\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
