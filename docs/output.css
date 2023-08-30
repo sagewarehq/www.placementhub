@@ -766,6 +766,10 @@ video {
   height: 100vh;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -847,6 +851,10 @@ video {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .flex-shrink-0 {
@@ -1028,6 +1036,11 @@ video {
   border-width: 2px;
 }
 
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1046,6 +1059,10 @@ video {
 
 .border-t-\[3px\] {
   border-top-width: 3px;
+}
+
+.border-r {
+  border-right-width: 1px;
 }
 
 .border-\[\#1d678a\] {
@@ -1320,6 +1337,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .italic {
@@ -1884,6 +1905,10 @@ li:hover .animated-underline::before {
   .max-\[785px\]\:justify-center {
     justify-content: center;
   }
+
+  .max-\[785px\]\:text-center {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2009,8 +2034,41 @@ li:hover .animated-underline::before {
 }
 
 @media (max-width: 600px) {
+  .max-\[600px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[600px\]\:h-screen {
+    height: 100vh;
+  }
+
+  .max-\[600px\]\:h-full {
+    height: 100%;
+  }
+
+  .max-\[600px\]\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .max-\[600px\]\:h-\[80vh\] {
+    height: 80vh;
+  }
+
   .max-\[600px\]\:w-full {
     width: 100%;
+  }
+
+  .max-\[600px\]\:max-w-screen-sm {
+    max-width: 640px;
+  }
+
+  .max-\[600px\]\:border {
+    border-width: 1px;
+  }
+
+  .max-\[600px\]\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -2034,10 +2092,44 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 399px) {
+  .max-\[399px\]\:flex {
+    display: flex;
+  }
+
+  .max-\[399px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[399px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[399px\]\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .max-\[399px\]\:text-center {
+    text-align: center;
+  }
+}
+
 @media (max-width: 340px) {
   .max-\[340px\]\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .min-\[400px\]\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
+    display: none;
   }
 }
 
