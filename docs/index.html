@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border p-0 m-0 overflow-x-hidden scroll-smooth">
+<html
+  lang="en"
+  class="box-border w-screen h-auto p-0 m-0 overflow-x-hidden scroll-smooth"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,13 +21,13 @@
     <title>PlacementHub</title>
   </head>
   <body
-    class="box-border flex flex-col items-center justify-center h-auto p-0 m-0 plus-jakarta-sans-L"
+    class="flex flex-col items-center justify-center w-full h-auto p-0 m-0 plus-jakarta-sans-L"
   >
     <nav
-      class="sticky top-0 z-20 flex items-center justify-between w-full h-24 px-20 py-4 bg-white border-b shadow-md"
+      class="sticky top-0 z-20 flex items-center justify-between w-screen h-24 px-4 py-4 bg-white border-b shadow-md"
     >
       <div
-        class="flex items-center justify-between w-full h-full max-w-screen-lg gap-4 mx-auto"
+        class="flex items-center justify-between w-full h-full min-[1100px]:max-w-screen-lg gap-4 mx-auto"
       >
         <div class="w-40">
           <a href="#hero-section">
@@ -35,9 +38,10 @@
             />
           </a>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center justify-end gap-4 max-[895px]:flex-grow">
           <ul
-            class="flex items-center justify-center gap-4 text-lg font-normal dark-text-color"
+            class="items-center justify-center hidden gap-4 text-lg font-normal min-[895px]:flex dark-text-color"
+            id="nav-list"
           >
             <a href="#feature-section">
               <li
@@ -68,9 +72,36 @@
               </li>
             </a>
           </ul>
+
+          <div
+            class="min-[895px]:hidden max-[895px]:flex-grow max-[895px]:justify-center max-[895px]:flex"
+          >
+            <button
+              id="mobile-menu-button"
+              class="text-gray-800 focus:outline-none focus:text-gray-500"
+              aria-label="Toggle navigation"
+              data-menu-toggle="mobile-menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
           <a href="#form-section">
             <button
-              class="ml-4 text-white transition-all duration-300 ease-in-out btn-squircle hover:bg-white hover:text-[#1d678a] plus-jakarta-sans-B"
+              class="ml-4 text-white transition-all duration-300 ease-in-out btn-squircle hover:bg-white hover:text-[#1d678a] plus-jakarta-sans-B max-[435px]:text-sm max-[340px]:text-xs"
             >
               START FREE TRIAL
             </button>
@@ -78,18 +109,59 @@
         </div>
       </div>
     </nav>
-    <main class="w-full h-auto">
+
+    <div
+      id="mobile-menu"
+      class="fixed z-10 top-24 left-0 w-full h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md"
+    >
+      <div class="absolute inset-0" id="mobile-menu-overlay"></div>
+      <ul
+        class="flex flex-col items-center justify-center gap-4 py-8 text-lg font-normal dark-text-color"
+      >
+        <a href="#feature-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">Features</span>
+          </li>
+        </a>
+        <a href="#pricing-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">Pricing</span>
+          </li>
+        </a>
+        <a href="#benefits-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">About us</span>
+          </li>
+        </a>
+        <a href="#footer-section">
+          <li
+            class="relative transition-all duration-300 ease-out scale-90 cursor-pointer hover:scale-100 hover:font-bold"
+          >
+            <span class="animated-underline">Contact us</span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <main class="w-screen h-auto">
       <!-- ############################################################################################ -->
       <!--HERO SECTION -->
       <section
-        class="flex items-center justify-center w-full py-16 h-[60vh] bg-gray-100"
+        class="flex items-center justify-center w-full h-auto py-16 bg-gray-100"
         id="hero-section"
       >
         <div
-          class="flex items-center justify-center h-full max-w-screen-lg gap-16 p-8"
+          class="flex flex-wrap items-center justify-center h-full min-[1100px]:max-w-screen-lg gap-16 p-8 min-[1100px]:flex-nowrap mx-auto"
         >
-          <div class="w-3/5">
-            <h4 class="mb-6 text-5xl leading-[1.25] plus-jakarta-sans-B">
+          <div class="min-[1100px]:w-3/5 max-w-screen-md">
+            <h4
+              class="mb-6 leading-[1.25] plus-jakarta-sans-B sm:text-4xl min-[672px]:text-[2.5rem] min-[740px]:text-[2.75rem] min-[808px]:text-5xl max-[639px]:text-4xl"
+            >
               Improve Your Placement Efficiency with
               <span class="dark-text-color">PlacementHub!</span>
             </h4>
@@ -106,9 +178,11 @@
               </button>
             </div>
           </div>
-          <div class="flex items-center justify-center w-2/5 h-full">
+          <div
+            class="flex items-center justify-center min-[1100px]:w-2/5 max-w-screen-md h-full"
+          >
             <img
-              class="h-auto scale-[1.3]"
+              class="h-auto scale-[1.3] max-[1099px]:scale-100"
               src="assets/ARSK-_notion-developer-daily-product-launch-2-bluegreen.png"
               alt="hero-vector-art"
             />
@@ -422,11 +496,13 @@
       <!-- ############################################################################################ -->
       <!-- FEATURES SECTION -->
       <section class="w-screen h-auto pb-16">
-        <div class="w-full bg-white h-[560px]">
+        <div class="w-full h-auto bg-white">
           <article
-            class="flex items-center w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex flex-wrap items-center justify-between w-full h-full max-w-screen-lg py-4 mx-auto gap-4 min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
-            <div class="flex flex-col justify-center w-1/2 h-full">
+            <div
+              class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
+            >
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Expand Your Talent Reach
               </h1>
@@ -444,27 +520,33 @@
                 ></i
               ></a>
             </div>
-            <div class="flex items-center justify-center w-1/2">
+            <div
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+            >
               <img
-                class="object-cover h-full vector-scale-65"
+                class="object-cover h-full max-[1099px]:scale-110 vector-scale-65"
                 src="assets/ARSK-_notion-developer-daily-communication-app-2-bluegreen.png"
                 alt="feature-1"
               />
             </div>
           </article>
         </div>
-        <div class="w-full bg-gray-100 h-[560px]">
+        <div class="w-full h-auto bg-gray-100">
           <article
-            class="flex items-center justify-between w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex flex-wrap-reverse items-center justify-between w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
-            <div class="flex items-center justify-center w-1/2">
+            <div
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+            >
               <img
                 class="object-cover h-full scale-75"
                 src="assets/ARSK-_notion-developer-daily-analytic-bluegreen.png"
                 alt="feature-2"
               />
             </div>
-            <div class="flex flex-col justify-center w-1/2 h-full">
+            <div
+              class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
+            >
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Insight at Your Fingertips
               </h1>
@@ -485,11 +567,13 @@
             </div>
           </article>
         </div>
-        <div class="w-full bg-white h-[560px]">
+        <div class="w-full h-auto bg-white">
           <article
-            class="flex items-center w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex flex-wrap items-center w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
-            <div class="flex flex-col justify-center w-1/2 h-full">
+            <div
+              class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
+            >
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Precision in Placement
               </h1>
@@ -508,7 +592,9 @@
                 ></i
               ></a>
             </div>
-            <div class="flex items-center justify-center w-1/2">
+            <div
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+            >
               <img
                 class="object-cover h-full scale-75"
                 src="assets/ARSK-_notion-developer-daily-writing-document-bluegreen.png"
@@ -517,18 +603,22 @@
             </div>
           </article>
         </div>
-        <div class="w-full bg-gray-100 h-[560px]">
+        <div class="w-full h-auto bg-gray-100">
           <article
-            class="flex items-center justify-between w-full h-full max-w-screen-lg gap-20 py-4 mx-auto"
+            class="flex flex-wrap-reverse items-center justify-between w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
-            <div class="flex items-center justify-center w-1/2">
+            <div
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+            >
               <img
-                class="object-cover h-full vector-scale-70"
+                class="object-cover max-[1099px]:scale-110 h-full vector-scale-70"
                 src="assets/ARSK-_notion-developer-daily-work-from-home-2-bluegreen.png"
                 alt="feature-4"
               />
             </div>
-            <div class="flex flex-col justify-center w-1/2 h-full">
+            <div
+              class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
+            >
               <h1 class="mb-4 text-4xl font-bold plus-jakarta-sans-B">
                 Proactivity Made Easy
               </h1>
@@ -552,23 +642,33 @@
       <!-- ############################################################################################ -->
       <!-- BENEFITS SECTION -->
       <section class="w-screen h-auto py-16" id="benefits-section">
-        <div class="max-w-screen-lg mx-auto">
+        <div
+          class="max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
           <div class="mb-12">
             <h4 class="px-2 py-1 text-sm bg-gray-100 border rounded-md w-fit">
               By the numbers
             </h4>
-            <h1 class="w-3/5 my-6 text-4xl plus-jakarta-sans-B">
+            <h1
+              class="min-[1100px]:w-3/5 max-w-screen-md my-6 text-4xl plus-jakarta-sans-B max-[400px]:text-3xl"
+            >
               <span class="primary-text-color">The modern solution</span> for
               fast-growing manpower agencies.
             </h1>
-            <p class="w-1/2 mb-6 text-base font-normal">
+            <p
+              class="min-[1100px]:w-1/2 max-w-screen-md mb-6 text-base font-normal"
+            >
               Transform the way you approach recruitment and placement with
               PlacementHub. Elevate your HR strategy, increase your efficiency,
               and focus on fostering a robust and successful team.
             </p>
           </div>
-          <div class="flex items-center w-full gap-4">
-            <div class="flex flex-col justify-start w-1/4 h-60">
+          <div
+            class="flex flex-wrap justify-between items-center w-full gap-4 min-[1100px]:flex-nowrap"
+          >
+            <div
+              class="flex flex-col justify-start min:[1100px]:w-1/4 w-[45%] max-[535px]:w-full h-60"
+            >
               <h1 class="text-6xl dark-text-color plus-jakarta-sans-B">
                 ₱500k<span class="text-lg font-normal">/year</span>
               </h1>
@@ -584,7 +684,9 @@
                 Philippines.
               </h6>
             </div>
-            <div class="flex flex-col justify-start w-1/4 h-60">
+            <div
+              class="flex flex-col justify-start min:[1100px]:w-1/4 w-[45%] max-[535px]:w-full h-60"
+            >
               <h1 class="text-6xl dark-text-color plus-jakarta-sans-B">
                 5x<span class="text-4xl">more</span>
               </h1>
@@ -599,7 +701,9 @@
                 Based on comparative data from agencies not using Apply Wizard.
               </h6>
             </div>
-            <div class="flex flex-col justify-start w-1/4 h-60">
+            <div
+              class="flex flex-col justify-start min:[1100px]:w-1/4 w-[45%] max-[535px]:w-full h-60"
+            >
               <h1 class="text-6xl dark-text-color plus-jakarta-sans-B">
                 108<span class="text-4xl">hrs</span>
               </h1>
@@ -612,7 +716,9 @@
               </p>
               <h6 class="mt-4 text-[0.6rem] italic"></h6>
             </div>
-            <div class="flex flex-col justify-start w-1/4 h-60">
+            <div
+              class="flex flex-col justify-start min:[1100px]:w-1/4 w-[45%] max-[535px]:w-full h-60"
+            >
               <h1 class="text-6xl dark-text-color plus-jakarta-sans-B">
                 30<span class="text-4xl">secs</span>
               </h1>
@@ -1472,7 +1578,9 @@
       <!-- ############################################################################################ -->
       <!-- TESTIMONIAL SECTION -->
       <section class="w-full h-auto py-16 bg-gray-100">
-        <div class="max-w-screen-lg mx-auto">
+        <div
+          class="max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
           <h1 class="mb-4 text-4xl plus-jakarta-sans-B">
             Join the <span class="primary-text-color">Sageware Revolution</span>
           </h1>
@@ -1482,8 +1590,8 @@
             team is always on hand to assist you, ensuring a smooth transition
             and ongoing success.
           </p>
-          <div class="flex gap-6">
-            <div class="w-1/2">
+          <div class="flex gap-6 max-[676px]:flex-wrap">
+            <div class="w-1/2 max-[676px]:w-full">
               <div class="mb-4">
                 <i class="text-yellow-400 fa-solid fa-star"></i>
                 <i class="text-yellow-400 fa-solid fa-star"></i>
@@ -1509,7 +1617,7 @@
                 <div>TechSolutions LOGO</div>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-1/2 max-[676px]:w-full">
               <div class="mb-4">
                 <i class="text-yellow-400 fa-solid fa-star"></i>
                 <i class="text-yellow-400 fa-solid fa-star"></i>
@@ -1542,7 +1650,7 @@
       <!-- JOIN US SECTION -->
       <section class="py-16 text-white primary-bg-color">
         <div
-          class="flex items-center justify-between max-w-screen-lg gap-10 mx-auto"
+          class="flex items-center justify-between max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-4 mx-auto max-[768px]:flex-wrap"
         >
           <div>
             <h1 class="mb-2 text-5xl font-bold plus-jakarta-sans-B">
@@ -1553,12 +1661,12 @@
               difference.
             </h4>
             <p class="mt-6 text-base">
-              <i class="text-green-600 fa-regular fa-circle-check"></i> Free
-              30-Day Success Trial
+              <i class="fa-regular fa-circle-check"></i> Free 30-Day Success
+              Trial
             </p>
           </div>
           <button
-            class="text-2xl transition-all duration-300 ease-in-out bg-white primary-text-color w-44 btn-secondary card-bs plus-jakarta-sans-B"
+            class="text-2xl transition-all duration-300 ease-in-out bg-white primary-text-color min-[1100px]:w-44 max-[1099px]:w-56 max-[676px]:w-60 btn-secondary card-bs plus-jakarta-sans-B"
           >
             <a href="#form-section">Try it Now</a>
           </button>
@@ -1770,6 +1878,27 @@
   </body>
 
   <script>
+    // HAMBURGER MENU
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+
+    mobileMenuButton.addEventListener("click", () => {
+      const menuToggle = mobileMenuButton.getAttribute("data-menu-toggle");
+      if (menuToggle === "mobile-menu") {
+        mobileMenu.classList.toggle("-translate-y-full");
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !mobileMenuButton.contains(event.target)
+      ) {
+        mobileMenu.classList.add("-translate-y-full");
+      }
+    });
+
     // SCROLL LINK
     const offset = 55; //px
 
