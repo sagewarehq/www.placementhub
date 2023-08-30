@@ -836,6 +836,11 @@ video {
   width: 100vw;
 }
 
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -1867,9 +1872,112 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 785px) {
+  .max-\[785px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[785px\]\:items-center {
+    align-items: center;
+  }
+
+  .max-\[785px\]\:justify-center {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .max-\[768px\]\:flex-wrap {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 750px) {
+  .max-\[750px\]\:flex {
+    display: flex;
+  }
+
+  .max-\[750px\]\:h-auto {
+    height: auto;
+  }
+
+  .max-\[750px\]\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .max-\[750px\]\:w-full {
+    width: 100%;
+  }
+
+  .max-\[750px\]\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .max-\[750px\]\:w-1\/5 {
+    width: 20%;
+  }
+
+  .max-\[750px\]\:w-2\/5 {
+    width: 40%;
+  }
+
+  .max-\[750px\]\:w-auto {
+    width: auto;
+  }
+
+  .max-\[750px\]\:w-1\/2 {
+    width: 50%;
+  }
+
+  .max-\[750px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[750px\]\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .max-\[750px\]\:items-center {
+    align-items: center;
+  }
+
+  .max-\[750px\]\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .max-\[750px\]\:justify-center {
+    justify-content: center;
+  }
+
+  .max-\[750px\]\:justify-between {
+    justify-content: space-between;
+  }
+
+  .max-\[750px\]\:gap-4 {
+    gap: 1rem;
+  }
+
+  .max-\[750px\]\:gap-8 {
+    gap: 2rem;
+  }
+
+  .max-\[750px\]\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .max-\[750px\]\:text-center {
+    text-align: center;
+  }
+
+  .max-\[750px\]\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .max-\[750px\]\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1887,10 +1995,22 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 640px) {
+  .max-\[640px\]\:w-full {
+    width: 100%;
+  }
+}
+
 @media (max-width: 639px) {
   .max-\[639px\]\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .max-\[600px\]\:w-full {
+    width: 100%;
   }
 }
 

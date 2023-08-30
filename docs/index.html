@@ -112,9 +112,9 @@
 
     <div
       id="mobile-menu"
-      class="fixed z-10 top-24 left-0 w-full h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md"
+      class="fixed z-10 top-24 left-0 h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md w-screen"
     >
-      <div class="absolute inset-0" id="mobile-menu-overlay"></div>
+      <div class="absolute inset-0 w-full" id="mobile-menu-overlay"></div>
       <ul
         class="flex flex-col items-center justify-center gap-4 py-8 text-lg font-normal dark-text-color"
       >
@@ -1797,64 +1797,105 @@
         </div>
       </section>
     </main>
-    <footer class="w-full py-16" id="footer-section">
+    <footer class="w-full py-16 max-[1100px]:px-8" id="footer-section">
       <div
-        class="flex h-auto max-w-screen-lg gap-8 p-10 mx-auto mb-10 bg-white border border-black"
+        class="flex h-auto min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-8 p-10 mx-auto mb-10 bg-white border border-black max-[750px]:flex-wrap"
       >
-        <div class="w-1/3">
-          <img
-            class="w-2/3 mb-6"
-            src="./assets/placement-hub-logo.jpg"
-            alt="placement-hub-logo"
-          />
-          <div class="flex gap-2 mb-4">
-            <i class="pt-1 fa-solid fa-map-pin"></i>
-            <h4>
-              Twin Oaks Place, <br />
-              <span class="text-sm">Mandaluyong, Philippines</span>
-            </h4>
+        <div
+          class="w-1/3 max-[750px]:flex max-[750px]:w-full max-[750px]:gap-4 max-[750px]:justify-between"
+        >
+          <div class="max-[750px]:w-2/5">
+            <img
+              class="w-2/3 mb-6 max-[600px]:w-full"
+              src="./assets/placement-hub-logo.jpg"
+              alt="placement-hub-logo"
+            />
+            <div class="flex gap-2 mb-4">
+              <i class="pt-1 fa-solid fa-map-pin"></i>
+              <h4>
+                Twin Oaks Place, <br />
+                <span class="text-sm">Mandaluyong, Philippines</span>
+              </h4>
+            </div>
           </div>
-          <div class="mb-4">
-            <h3 class="text-sm font-bold">Phone:</h3>
-            <h4 class="text-sm">+63 0917 718 0420</h4>
+          <div class="max-[750px]:w-2/5">
+            <div class="mb-4">
+              <h3 class="text-sm font-bold">Phone:</h3>
+              <h4 class="text-sm">+63 0917 718 0420</h4>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-sm font-bold">Email:</h3>
+              <h4 class="text-sm">contact@placementhub.ph</h4>
+            </div>
           </div>
-          <div class="mb-4">
-            <h3 class="text-sm font-bold">Email:</h3>
-            <h4 class="text-sm">contact@placementhub.ph</h4>
-          </div>
-          <div class="flex gap-4">
+          <div
+            class="flex gap-4 max-[750px]:w-1/5 max-[750px]:flex-wrap max-[750px]:h-fit max-[750px]:justify-end"
+          >
             <a
               href="https://facebook.com/placementhubhq"
               target="_blank"
               rel="noopener noreferrer"
-              ><i class="fab fa-facebook"></i
+              class="max-[750px]:w-2/5 max-[750px]:h-fit"
+              ><i class="fab fa-facebook max-[750px]:text-xl"></i
             ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-instagram"></i
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="max-[750px]:w-2/5 max-[750px]:h-fit"
+              ><i class="fab fa-instagram max-[750px]:text-xl"></i
             ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-twitter"></i
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="max-[750px]:w-2/5 max-[750px]:h-fit"
+              ><i class="fab fa-twitter max-[750px]:text-xl"></i
             ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-linkedin"></i
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="max-[750px]:w-2/5 max-[750px]:h-fit"
+              ><i class="fab fa-linkedin max-[750px]:text-xl"></i
             ></a>
           </div>
         </div>
-        <div class="flex justify-end w-2/3 gap-12">
-          <ul class="flex flex-col gap-2 text-sm">
-            <h3 class="mb-2 text-base font-bold">Features</h3>
-            <li><a href="#feature-section">Smart Record Keeping</a></li>
-            <li><a href="#feature-section">Job Application Wizard</a></li>
-            <li><a href="#feature-section">Automatch</a></li>
-            <li><a href="#feature-section">Reporting & Analytics</a></li>
+        <div
+          class="flex justify-end w-2/3 gap-12 max-[750px]:w-full max-[750px]:justify-between max-[750px]:gap-4"
+        >
+          <ul
+            class="flex flex-col gap-2 text-sm max-[750px]:w-1/3 max-[750px]:items-center"
+          >
+            <h3
+              class="mb-2 text-base font-bold max-[750px]:w-full max-[750px]:text-center"
+            >
+              Features
+            </h3>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Smart Record Keeping</a>
+            </li>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Job Application Wizard</a>
+            </li>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Automatch</a>
+            </li>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Reporting & Analytics</a>
+            </li>
           </ul>
-          <ul class="flex flex-col gap-2 text-sm">
+          <ul
+            class="flex flex-col gap-2 text-sm max-[750px]:w-1/3 max-[750px]:items-center"
+          >
             <h3 class="mb-2 text-base font-bold">Pricing</h3>
             <li><a href="#pricing-section">Setup</a></li>
             <li>Upgrade</li>
             <li>Add-ons</li>
           </ul>
-          <ul class="flex flex-col gap-2 text-sm">
+          <ul
+            class="flex flex-col gap-2 text-sm max-[750px]:w-1/3 max-[750px]:items-center"
+          >
             <h3 class="mb-2 text-base font-bold">Company</h3>
             <li>About us</li>
             <li>Contact us</li>
@@ -1862,7 +1903,7 @@
         </div>
       </div>
       <div
-        class="flex justify-between max-w-screen-lg gap-8 mx-auto text-sm font-normal"
+        class="flex justify-between max-w-screen-lg gap-8 mx-auto text-sm font-normal max-[785px]:flex-col max-[785px]:justify-center max-[785px]:items-center"
       >
         <h4>
           <i class="fa-regular fa-copyright"></i> 2023 Sageware IT Solutions -
