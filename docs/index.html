@@ -192,52 +192,80 @@
       <!-- ############################################################################################ -->
       <!-- KEY FEATURE (IN-DEPTH) -->
       <section class="w-full h-auto py-16" id="feature-section">
-        <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
+        <div
+          class="flex flex-col items-center h-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
           <div class="flex flex-col items-center mb-10">
-            <h1 class="mb-6 text-4xl plus-jakarta-sans-B">
+            <h1
+              class="mb-6 text-4xl plus-jakarta-sans-B max-[1099px]:text-center"
+            >
               Discover the Power of PlacementHub
             </h1>
-            <p class="text-base font-normal">
+            <p class="text-base font-normal max-[1099px]:text-center">
               User-Centric Design. Efficient Processes. Data Driven Insights.
             </p>
           </div>
           <div
-            class="flex gap-2 p-1 mb-8 bg-gray-200 rounded-md cursor-pointer content-picker"
+            class="flex gap-2 p-1 mb-8 bg-gray-200 rounded-md cursor-pointer max-[1099px]:h-auto content-picker max-[639px]:w-4/5 max-[425px]:w-full"
           >
             <div
-              class="px-4 py-2 rounded-md content-item active neo-tab"
+              class="px-4 py-2 rounded-md content-item active neo-tab max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="record-keeping"
             >
               Smart Record Keeping
             </div>
             <div
-              class="px-4 py-2 rounded-md content-item neo-tab neo-button"
+              class="px-4 py-2 rounded-md content-item active neo-tab max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4"
+              data-content="record-keeping"
+            >
+              <h1 class="w-full">SRK</h1>
+            </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="job-wizard"
             >
               Job Application Wizard
             </div>
             <div
-              class="px-4 py-2 rounded-md content-item neo-tab neo-button"
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4 max-[639px]:text-center"
+              data-content="job-wizard"
+            >
+              <h1 class="w-full">JAW</h1>
+            </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="automatch"
             >
               Automatch
             </div>
             <div
-              class="px-4 py-2 rounded-md content-item neo-tab neo-button"
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4 max-[639px]:text-center"
+              data-content="automatch"
+            >
+              <h1 class="w-full">AM</h1>
+            </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="analytics"
             >
               Reporting & Analytics
             </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4 max-[639px]:text-center"
+              data-content="analytics"
+            >
+              <h1 class="w-full">R & A</h1>
+            </div>
           </div>
           <div
-            class="flex justify-between w-full h-full gap-4 p-16 content bg-gray-50"
+            class="flex justify-between w-full h-full gap-4 p-16 content bg-gray-50 max-[640px]:p-8"
           >
             <div
-              class="flex justify-between w-full gap-4 content-area active"
+              class="flex justify-between w-full gap-4 content-area active max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-record-keeping"
             >
               <div
-                class="flex items-center justify-center w-4/6 h-full bg-gray-200 border-2"
+                class="flex items-center justify-center w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
               >
                 <img
                   class="object-cover object-left w-full h-full"
@@ -245,11 +273,13 @@
                   alt="smart-record-keeping"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
                   Smart Record Keeping
                 </h2>
-                <p class="mb-6 text-base">
+                <p class="mb-6 text-base font-normal">
                   Harness the power of digital efficiency in managing candidate
                   data.
                 </p>
@@ -301,21 +331,25 @@
               </div>
             </div>
             <div
-              class="flex justify-between w-full gap-4 content-area"
+              class="flex justify-between w-full gap-4 content-area max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-job-wizard"
             >
-              <div class="w-4/6 h-full bg-gray-200 border-2">
+              <div
+                class="w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
+              >
                 <img
                   class="object-cover object-left w-full h-full"
                   src="assets/feature-jaw.png"
                   alt="job-application-wizard"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
                   Job Application Wizard
                 </h2>
-                <p class="mb-6 text-base">
+                <p class="mb-6 text-base font-normal">
                   Optimizing the application process for efficiency and
                   accuracy.
                 </p>
@@ -367,19 +401,25 @@
               </div>
             </div>
             <div
-              class="flex justify-between w-full gap-4 content-area"
+              class="flex justify-between w-full gap-4 content-area max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-automatch"
             >
-              <div class="w-4/6 h-full bg-gray-200 border-2">
+              <div
+                class="w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
+              >
                 <img
                   class="object-cover object-left w-full h-full"
                   src="assets/4 - Automatch.jpg"
                   alt="automatch"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">Automatch</h2>
-                <p class="mb-6 text-base">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
+                  Automatch
+                </h2>
+                <p class="mb-6 text-base font-normal">
                   One click, perfect matches, every time.
                 </p>
                 <ul class="mb-8">
@@ -427,21 +467,25 @@
               </div>
             </div>
             <div
-              class="flex justify-between w-full gap-4 content-area"
+              class="flex justify-between w-full gap-4 content-area max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-analytics"
             >
-              <div class="w-4/6 h-full bg-gray-200 border-2">
+              <div
+                class="w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
+              >
                 <img
                   class="object-cover object-left w-full h-full"
                   src="assets/1 - Dashboard.jpg"
                   alt="report-analytics"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
                   Reporting & Analytics
                 </h2>
-                <p class="mb-6 text-base">
+                <p class="mb-6 text-base font-normal">
                   Data-driven decisions, clearer strategies.
                 </p>
                 <ul class="mb-8">
@@ -498,7 +542,7 @@
       <section class="w-screen h-auto pb-16">
         <div class="w-full h-auto bg-white">
           <article
-            class="flex flex-wrap items-center justify-between w-full h-full max-w-screen-lg py-4 mx-auto gap-4 min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap items-center justify-between w-full h-full py-4 mx-auto gap-4 min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
               class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
@@ -533,7 +577,7 @@
         </div>
         <div class="w-full h-auto bg-gray-100">
           <article
-            class="flex flex-wrap-reverse items-center justify-between w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap-reverse items-center justify-between w-full h-full gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
               class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
@@ -569,7 +613,7 @@
         </div>
         <div class="w-full h-auto bg-white">
           <article
-            class="flex flex-wrap items-center w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap items-center w-full h-full gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
               class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
@@ -605,7 +649,7 @@
         </div>
         <div class="w-full h-auto bg-gray-100">
           <article
-            class="flex flex-wrap-reverse items-center justify-between w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap-reverse items-center justify-between w-full h-full gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
               class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
