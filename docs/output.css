@@ -2294,6 +2294,28 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 475px) {
+  .max-\[475px\]\:h-auto {
+    height: auto;
+  }
+
+  .max-\[475px\]\:w-full {
+    width: 100%;
+  }
+
+  .max-\[475px\]\:scale-95 {
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-\[475px\]\:scale-50 {
+    --tw-scale-x: .5;
+    --tw-scale-y: .5;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
 @media (max-width: 435px) {
   .max-\[435px\]\:text-sm {
     font-size: 0.875rem;
@@ -2399,6 +2421,10 @@ li:hover .animated-underline::before {
 }
 
 @media (max-width: 375px) {
+  .max-\[375px\]\:h-auto {
+    height: auto;
+  }
+
   .max-\[375px\]\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2406,6 +2432,10 @@ li:hover .animated-underline::before {
 }
 
 @media (max-width: 374px) {
+  .max-\[374px\]\:h-auto {
+    height: auto;
+  }
+
   .max-\[374px\]\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
