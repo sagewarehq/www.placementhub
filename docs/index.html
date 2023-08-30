@@ -1476,20 +1476,22 @@
       <!-- ############################################################################################ -->
       <!-- PRICING SECTION -->
       <section class="w-full h-auto py-16" id="pricing-section">
-        <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
+        <div
+          class="flex flex-col items-center h-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
           <div class="w-full h-auto mb-12">
-            <h1 class="mb-4 text-4xl plus-jakarta-sans-B">
+            <h1 class="mb-4 text-4xl plus-jakarta-sans-B max-[320px]:text-3xl">
               <span class="primary-text-color">Transparent Pricing</span> For
               You
             </h1>
             <p class="text-base font-normal">No contracts or surprises.</p>
           </div>
-          <div class="flex w-full h-full gap-5">
-            <div class="w-1/2 h-full">
+          <div class="flex w-full h-full gap-5 max-[1099px]:flex-col">
+            <div class="w-1/2 h-full max-[1099px]:w-auto max-[1099px]:h-auto">
               <div
-                class="flex items-center justify-around w-full gap-4 p-4 mb-4 border border-black"
+                class="flex items-center justify-around w-full gap-4 p-4 mb-4 border border-black max-[425px]:flex-col"
               >
-                <h1 class="text-4xl plus-jakarta-sans-B">
+                <h1 class="text-4xl plus-jakarta-sans-B max-[320px]:text-3xl">
                   ₱48,000<span class="text-sm font-normal">/setup fee</span>
                 </h1>
                 <h4
@@ -1502,15 +1504,23 @@
                 <div
                   class="flex items-center justify-between h-16 gap-4 pb-4 border-b border-black price-plan"
                 >
-                  <div class="price-plan-type">
-                    <h3 class="text-lg font-bold">Monthly Plan</h3>
+                  <div class="price-plan-type max-[425px]:w-1/2">
+                    <h3 class="text-lg font-bold max-[320px]:text-base">
+                      Yearly Plan
+                    </h3>
                     <h4
-                      class="text-sm font-normal text-center w-fit dark-text-color border-[#1d678a]"
-                    ></h4>
+                      class="text-sm font-normal text-center w-fit dark-text-color border-[#1d678a] max-[320px]:text-xs"
+                    >
+                      save 20%
+                    </h4>
                   </div>
-                  <div>
-                    <h1 class="inline-block text-4xl plus-jakarta-sans-B price">
-                      ₱15,000
+                  <div
+                    class="max-[425px]:flex max-[425px]:flex-col max-[425px]:items-end"
+                  >
+                    <h1
+                      class="inline-block text-4xl plus-jakarta-sans-B price max-[375px]:text-3xl max-[320px]:text-2xl"
+                    >
+                      ₱12,000
                     </h1>
                     <span class="inline-block text-sm font-normal"
                       >/office/mo</span
@@ -1518,8 +1528,10 @@
                   </div>
                 </div>
                 <div class="w-full pb-4">
-                  <div class="flex w-full gap-8">
-                    <div class="w-1/2 pt-4">
+                  <div
+                    class="flex w-full gap-8 max-[425px]:flex-col max-[425px]:h-auto max-[425px]:gap-2"
+                  >
+                    <div class="w-1/2 pt-4 max-[425px]:w-full">
                       <h3 class="mb-2 text-base font-bold border-b">
                         Onboarding Support
                       </h3>
@@ -1544,7 +1556,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="w-1/2 pt-4">
+                    <div class="w-1/2 pt-4 max-[425px]:w-full max-[425px]:pt-0">
                       <h3 class="mb-2 text-base font-bold border-b">Support</h3>
                       <ul class="text-sm">
                         <li class="flex gap-3 mb-1">
@@ -1568,8 +1580,10 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="flex w-full gap-8">
-                    <div class="w-1/2 pt-4">
+                  <div
+                    class="flex w-full gap-8 max-[425px]:flex-col max-[425px]:h-auto max-[425px]:gap-2 max-[425px]:mt-2"
+                  >
+                    <div class="w-1/2 pt-4 max-[425px]:w-full max-[425px]:pt-0">
                       <h3 class="mb-2 text-base font-bold border-b">
                         Standard Cloud
                       </h3>
@@ -1594,7 +1608,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="w-1/2 pt-4">
+                    <div class="w-1/2 pt-4 max-[425px]:w-full max-[425px]:pt-0">
                       <h3 class="mb-2 text-base font-bold border-b">
                         Coming Soon
                       </h3>
@@ -1635,34 +1649,50 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2 pl-8">
+            <div class="w-1/2 pl-8 max-[1099px]:w-full max-[1099px]:px-0">
               <h2 class="mb-6 text-2xl font-bold">Features</h2>
-              <ul class="mb-16">
-                <li class="flex items-center gap-3 mb-4">
+              <ul
+                class="mb-10 max-[1099px]:h-1/4 max-[1099px]:flex max-[1099px]:flex-wrap max-[680px]:flex-col font-normal"
+              >
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Unlimited Employers, Jobs, Workers</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Unlimited Document Uploads</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Social Media Shareable Job Postings</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Job Application Wizard</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Batch Processing</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Worker Automatch / Follow-ups</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Ops Analytics / Google Analytics</h4>
                 </li>
