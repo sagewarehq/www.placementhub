@@ -2005,6 +2005,15 @@ li:hover .animated-underline::before {
   .max-\[768px\]\:flex-wrap {
     flex-wrap: wrap;
   }
+
+  .max-\[768px\]\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .max-\[768px\]\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 750px) {
@@ -2214,6 +2223,27 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 531px) {
+  .max-\[531px\]\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .max-\[531px\]\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .max-\[531px\]\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .max-\[531px\]\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (max-width: 529px) {
   .max-\[529px\]\:hidden {
     display: none;
@@ -2320,6 +2350,13 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 440px) {
+  .max-\[440px\]\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (max-width: 435px) {
   .max-\[435px\]\:text-sm {
     font-size: 0.875rem;
@@ -2375,6 +2412,15 @@ li:hover .animated-underline::before {
   .max-\[425px\]\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .max-\[425px\]\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .max-\[425px\]\:text-\[2rem\] {
+    font-size: 2rem;
   }
 }
 
@@ -2447,6 +2493,56 @@ li:hover .animated-underline::before {
   .max-\[374px\]\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 361px) {
+  .max-\[361px\]\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 343px) {
+  .max-\[343px\]\:w-52 {
+    width: 13rem;
+  }
+
+  .max-\[343px\]\:w-48 {
+    width: 12rem;
+  }
+
+  .max-\[343px\]\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .max-\[343px\]\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .max-\[343px\]\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-\[343px\]\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .max-\[343px\]\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .max-\[343px\]\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .max-\[343px\]\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
