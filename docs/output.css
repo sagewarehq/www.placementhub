@@ -2314,6 +2314,10 @@ li:hover .animated-underline::before {
     --tw-scale-y: .5;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
+
+  .max-\[475px\]\:p-4 {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 435px) {
@@ -2434,6 +2438,10 @@ li:hover .animated-underline::before {
 @media (max-width: 374px) {
   .max-\[374px\]\:h-auto {
     height: auto;
+  }
+
+  .max-\[374px\]\:p-2 {
+    padding: 0.5rem;
   }
 
   .max-\[374px\]\:text-3xl {
