@@ -586,6 +586,42 @@ video {
   top: 6rem;
 }
 
+.-bottom-24 {
+  bottom: -6rem;
+}
+
+.-bottom-1\/4 {
+  bottom: -25%;
+}
+
+.-bottom-\[10\%\] {
+  bottom: -10%;
+}
+
+.-bottom-1\/2 {
+  bottom: -50%;
+}
+
+.-bottom-3\/4 {
+  bottom: -75%;
+}
+
+.-bottom-\[100\%\] {
+  bottom: -100%;
+}
+
+.-bottom-\[120\%\] {
+  bottom: -120%;
+}
+
+.-bottom-\[150\%\] {
+  bottom: -150%;
+}
+
+.-bottom-\[104px\] {
+  bottom: -104px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -760,6 +796,19 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-\[200\%\] {
+  height: 200%;
 }
 
 .w-0 {
@@ -1905,6 +1954,10 @@ li:hover .animated-underline::before {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .max-\[1099px\]\:text-\[2rem\] {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 895px) {
@@ -2025,6 +2078,34 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 670px) {
+  .max-\[670px\]\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 669px) {
+  .max-\[669px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[669px\]\:h-auto {
+    height: auto;
+  }
+
+  .max-\[669px\]\:w-full {
+    width: 100%;
+  }
+
+  .max-\[669px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[669px\]\:gap-2 {
+    gap: 0.5rem;
+  }
+}
+
 @media (max-width: 667px) {
   .max-\[667px\]\:hidden {
     display: none;
@@ -2083,6 +2164,12 @@ li:hover .animated-underline::before {
   }
 }
 
+@media (max-width: 529px) {
+  .max-\[529px\]\:hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 435px) {
   .max-\[435px\]\:text-sm {
     font-size: 0.875rem;
@@ -2123,8 +2210,17 @@ li:hover .animated-underline::before {
     gap: 0.5rem;
   }
 
+  .max-\[425px\]\:gap-1 {
+    gap: 0.25rem;
+  }
+
   .max-\[425px\]\:pt-0 {
     padding-top: 0px;
+  }
+
+  .max-\[425px\]\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2221,6 +2317,12 @@ li:hover .animated-underline::before {
 
 @media (min-width: 668px) {
   .min-\[668px\]\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 670px) {
+  .min-\[670px\]\:hidden {
     display: none;
   }
 }
