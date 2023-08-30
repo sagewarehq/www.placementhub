@@ -112,9 +112,9 @@
 
     <div
       id="mobile-menu"
-      class="fixed z-10 top-24 left-0 w-full h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md"
+      class="fixed z-10 top-24 left-0 h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md w-screen"
     >
-      <div class="absolute inset-0" id="mobile-menu-overlay"></div>
+      <div class="absolute inset-0 w-full" id="mobile-menu-overlay"></div>
       <ul
         class="flex flex-col items-center justify-center gap-4 py-8 text-lg font-normal dark-text-color"
       >
@@ -156,7 +156,7 @@
         id="hero-section"
       >
         <div
-          class="flex flex-wrap items-center justify-center h-full min-[1100px]:max-w-screen-lg gap-16 p-8 min-[1100px]:flex-nowrap mx-auto"
+          class="flex flex-wrap items-center justify-center h-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-16 p-8 min-[1100px]:flex-nowrap mx-auto w-full"
         >
           <div class="min-[1100px]:w-3/5 max-w-screen-md">
             <h4
@@ -192,52 +192,80 @@
       <!-- ############################################################################################ -->
       <!-- KEY FEATURE (IN-DEPTH) -->
       <section class="w-full h-auto py-16" id="feature-section">
-        <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
+        <div
+          class="flex flex-col items-center h-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
           <div class="flex flex-col items-center mb-10">
-            <h1 class="mb-6 text-4xl plus-jakarta-sans-B">
+            <h1
+              class="mb-6 text-4xl plus-jakarta-sans-B max-[1099px]:text-center"
+            >
               Discover the Power of PlacementHub
             </h1>
-            <p class="text-base font-normal">
+            <p class="text-base font-normal max-[1099px]:text-center">
               User-Centric Design. Efficient Processes. Data Driven Insights.
             </p>
           </div>
           <div
-            class="flex gap-2 p-1 mb-8 bg-gray-200 rounded-md cursor-pointer content-picker"
+            class="flex gap-2 p-1 mb-8 bg-gray-200 rounded-md cursor-pointer max-[1099px]:h-auto content-picker max-[639px]:w-4/5 max-[425px]:w-full"
           >
             <div
-              class="px-4 py-2 rounded-md content-item active neo-tab"
+              class="px-4 py-2 rounded-md content-item active neo-tab max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="record-keeping"
             >
               Smart Record Keeping
             </div>
             <div
-              class="px-4 py-2 rounded-md content-item neo-tab neo-button"
+              class="px-4 py-2 rounded-md content-item active neo-tab max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4"
+              data-content="record-keeping"
+            >
+              <h1 class="w-full">SRK</h1>
+            </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="job-wizard"
             >
               Job Application Wizard
             </div>
             <div
-              class="px-4 py-2 rounded-md content-item neo-tab neo-button"
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4 max-[639px]:text-center"
+              data-content="job-wizard"
+            >
+              <h1 class="w-full">JAW</h1>
+            </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="automatch"
             >
               Automatch
             </div>
             <div
-              class="px-4 py-2 rounded-md content-item neo-tab neo-button"
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4 max-[639px]:text-center"
+              data-content="automatch"
+            >
+              <h1 class="w-full">AM</h1>
+            </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto max-[639px]:hidden"
               data-content="analytics"
             >
               Reporting & Analytics
             </div>
+            <div
+              class="px-4 py-2 rounded-md content-item neo-tab neo-button max-[1099px]:flex max-[1099px]:text-center max-[1099px]:items-center max-[1099px]:py-2 max-[1099px]:px-3 max-[1099px]:h-auto min-[640px]:hidden max-[639px]:w-1/4 max-[639px]:text-center"
+              data-content="analytics"
+            >
+              <h1 class="w-full">R & A</h1>
+            </div>
           </div>
           <div
-            class="flex justify-between w-full h-full gap-4 p-16 content bg-gray-50"
+            class="flex justify-between w-full h-full gap-4 p-16 content bg-gray-50 max-[640px]:p-8"
           >
             <div
-              class="flex justify-between w-full gap-4 content-area active"
+              class="flex justify-between w-full gap-4 content-area active max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-record-keeping"
             >
               <div
-                class="flex items-center justify-center w-4/6 h-full bg-gray-200 border-2"
+                class="flex items-center justify-center w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
               >
                 <img
                   class="object-cover object-left w-full h-full"
@@ -245,11 +273,13 @@
                   alt="smart-record-keeping"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
                   Smart Record Keeping
                 </h2>
-                <p class="mb-6 text-base">
+                <p class="mb-6 text-base font-normal">
                   Harness the power of digital efficiency in managing candidate
                   data.
                 </p>
@@ -301,21 +331,25 @@
               </div>
             </div>
             <div
-              class="flex justify-between w-full gap-4 content-area"
+              class="flex justify-between w-full gap-4 content-area max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-job-wizard"
             >
-              <div class="w-4/6 h-full bg-gray-200 border-2">
+              <div
+                class="w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
+              >
                 <img
                   class="object-cover object-left w-full h-full"
                   src="assets/feature-jaw.png"
                   alt="job-application-wizard"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
                   Job Application Wizard
                 </h2>
-                <p class="mb-6 text-base">
+                <p class="mb-6 text-base font-normal">
                   Optimizing the application process for efficiency and
                   accuracy.
                 </p>
@@ -367,19 +401,25 @@
               </div>
             </div>
             <div
-              class="flex justify-between w-full gap-4 content-area"
+              class="flex justify-between w-full gap-4 content-area max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-automatch"
             >
-              <div class="w-4/6 h-full bg-gray-200 border-2">
+              <div
+                class="w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
+              >
                 <img
                   class="object-cover object-left w-full h-full"
                   src="assets/4 - Automatch.jpg"
                   alt="automatch"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">Automatch</h2>
-                <p class="mb-6 text-base">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
+                  Automatch
+                </h2>
+                <p class="mb-6 text-base font-normal">
                   One click, perfect matches, every time.
                 </p>
                 <ul class="mb-8">
@@ -427,21 +467,25 @@
               </div>
             </div>
             <div
-              class="flex justify-between w-full gap-4 content-area"
+              class="flex justify-between w-full gap-4 content-area max-[1099px]:flex-col-reverse max-[1099px]:gap-12"
               id="content-analytics"
             >
-              <div class="w-4/6 h-full bg-gray-200 border-2">
+              <div
+                class="w-4/6 h-full bg-gray-200 border-2 max-[1099px]:w-full"
+              >
                 <img
                   class="object-cover object-left w-full h-full"
                   src="assets/1 - Dashboard.jpg"
                   alt="report-analytics"
                 />
               </div>
-              <div class="w-2/6 h-full pl-10">
-                <h2 class="mb-4 text-xl plus-jakarta-sans-B">
+              <div
+                class="w-2/6 h-full pl-8 max-[1099px]:h-auto max-[1099px]:w-full max-[1099px]:pl-0"
+              >
+                <h2 class="mb-4 text-xl uppercase plus-jakarta-sans-B">
                   Reporting & Analytics
                 </h2>
-                <p class="mb-6 text-base">
+                <p class="mb-6 text-base font-normal">
                   Data-driven decisions, clearer strategies.
                 </p>
                 <ul class="mb-8">
@@ -498,7 +542,7 @@
       <section class="w-screen h-auto pb-16">
         <div class="w-full h-auto bg-white">
           <article
-            class="flex flex-wrap items-center justify-between w-full h-full max-w-screen-lg py-4 mx-auto gap-4 min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap items-center justify-between w-full h-full py-4 mx-auto gap-4 min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
               class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
@@ -521,10 +565,10 @@
               ></a>
             </div>
             <div
-              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96 max-[475px]:w-full max-[375px]:h-auto"
             >
               <img
-                class="object-cover h-full max-[1099px]:scale-110 vector-scale-65"
+                class="object-cover h-full max-[1099px]:scale-110 vector-scale-65 max-[475px]:w-full max-[475px]:h-auto"
                 src="assets/ARSK-_notion-developer-daily-communication-app-2-bluegreen.png"
                 alt="feature-1"
               />
@@ -533,13 +577,13 @@
         </div>
         <div class="w-full h-auto bg-gray-100">
           <article
-            class="flex flex-wrap-reverse items-center justify-between w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap-reverse items-center justify-between w-full h-full gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
-              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96 max-[475px]:w-full max-[375px]:h-auto"
             >
               <img
-                class="object-cover h-full scale-75"
+                class="object-cover h-full scale-75 max-[475px]:w-full max-[475px]:h-auto"
                 src="assets/ARSK-_notion-developer-daily-analytic-bluegreen.png"
                 alt="feature-2"
               />
@@ -569,7 +613,7 @@
         </div>
         <div class="w-full h-auto bg-white">
           <article
-            class="flex flex-wrap items-center w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap items-center w-full h-full gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
               class="flex flex-col justify-center min-[1100px]:w-1/2 max-w-screen-md h-full"
@@ -593,10 +637,10 @@
               ></a>
             </div>
             <div
-              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96 max-[475px]:w-full max-[375px]:h-auto"
             >
               <img
-                class="object-cover h-full scale-75"
+                class="object-cover h-full scale-75 max-[475px]:w-full max-[475px]:h-auto"
                 src="assets/ARSK-_notion-developer-daily-writing-document-bluegreen.png"
                 alt="feature-3"
               />
@@ -605,13 +649,13 @@
         </div>
         <div class="w-full h-auto bg-gray-100">
           <article
-            class="flex flex-wrap-reverse items-center justify-between w-full h-full max-w-screen-lg gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
+            class="flex flex-wrap-reverse items-center justify-between w-full h-full gap-4 py-4 mx-auto min-[1100px]:max-w-screen-lg min-[1100px]:flex-nowrap max-[1100px]:justify-center max-[1099px]:p-8"
           >
             <div
-              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96"
+              class="flex items-center justify-center min-[1100px]:w-1/2 max-w-screen-md max-[1099px]:h-96 max-[475px]:w-full max-[375px]:h-auto"
             >
               <img
-                class="object-cover max-[1099px]:scale-110 h-full vector-scale-70"
+                class="object-cover max-[1099px]:scale-110 h-full vector-scale-70 max-[475px]:w-full max-[475px]:h-auto"
                 src="assets/ARSK-_notion-developer-daily-work-from-home-2-bluegreen.png"
                 alt="feature-4"
               />
@@ -739,18 +783,25 @@
       </section>
       <!-- ############################################################################################ -->
       <!-- SUCCESS PROGRAM -->
-      <section class="w-full h-screen py-16 bg-gray-100">
-        <div class="flex items-center h-full max-w-screen-lg mx-auto">
-          <div class="w-1/2 p-4">
-            <h1 class="mb-6 text-4xl plus-jakarta-sans-B">
+      <section class="w-full h-screen py-16 bg-gray-100 max-[669px]:h-auto">
+        <div
+          class="flex items-center h-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto max-[669px]:flex-col"
+        >
+          <div class="w-1/2 p-4 max-[669px]:w-full">
+            <h1 class="mb-6 text-4xl plus-jakarta-sans-B max-[1099px]:hidden">
               Unlock Your Potential <br />
               with PlacementHub's Success Program
+            </h1>
+            <h1
+              class="mb-6 text-4xl plus-jakarta-sans-B min-[1100px]:hidden max-[374px]:text-3xl"
+            >
+              Unlock Your Potential with PlacementHub's Success Program
             </h1>
             <p class="mb-6 font-normal">
               Maximize your PlacementHub experience with this structured
               approach, ensuring a smooth and efficient journey.
             </p>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-4 max-[669px]:hidden">
               <button class="btn-squircle">
                 <a href="#form-section">Learn More</a>
               </button>
@@ -759,12 +810,16 @@
               </button>
             </div>
           </div>
-          <div class="flex flex-col w-1/2 h-full gap-4">
-            <div class="flex items-start gap-8 p-4 h-1/5">
+          <div
+            class="flex flex-col w-1/2 h-full gap-4 max-[669px]:w-full max-[425px]:gap-1"
+          >
+            <div class="flex items-start gap-8 p-4 h-1/5 max-[669px]:gap-2">
               <div class="w-1/5">
-                <i class="relative text-5xl fa-solid fa-cube">
+                <i
+                  class="relative text-5xl fa-solid fa-cube max-[425px]:text-4xl"
+                >
                   <div
-                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-28 left-1/2"
+                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-[104px] left-1/2 max-[529px]:hidden"
                   ></div>
                 </i>
               </div>
@@ -795,15 +850,17 @@
                 </ul>
               </div>
             </div>
-            <div class="flex items-start gap-8 p-4 h-1/5">
+            <div class="flex items-start gap-8 p-4 h-1/5 max-[669px]:gap-2">
               <div class="w-1/5">
-                <i class="relative text-5xl fa-solid fa-cube">
+                <i
+                  class="relative text-5xl fa-solid fa-cube max-[425px]:text-4xl"
+                >
                   <div
-                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-28 left-1/2"
+                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-[104px] left-1/2 max-[529px]:hidden"
                   ></div>
                 </i>
               </div>
-              <div class="4/5">
+              <div class="w-4/5">
                 <h3 class="mb-4 text-lg border-b-2 plus-jakarta-sans-B">
                   Week 1
                 </h3>
@@ -823,15 +880,17 @@
                 </ul>
               </div>
             </div>
-            <div class="flex items-start gap-8 p-4 h-1/5">
+            <div class="flex items-start gap-8 p-4 h-1/5 max-[669px]:gap-2">
               <div class="w-1/5">
-                <i class="relative text-5xl fa-solid fa-cube">
+                <i
+                  class="relative text-5xl fa-solid fa-cube max-[425px]:text-4xl"
+                >
                   <div
-                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-28 left-1/2"
+                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-[104px] left-1/2 max-[529px]:hidden"
                   ></div>
                 </i>
               </div>
-              <div class="4/5">
+              <div class="w-4/5">
                 <h3 class="mb-4 text-lg border-b-2 plus-jakarta-sans-B">
                   Week 2
                 </h3>
@@ -851,15 +910,17 @@
                 </ul>
               </div>
             </div>
-            <div class="flex items-start gap-8 p-4 h-1/5">
+            <div class="flex items-start gap-8 p-4 h-1/5 max-[669px]:gap-2">
               <div class="w-1/5">
-                <i class="relative text-5xl fa-solid fa-cube">
+                <i
+                  class="relative text-5xl fa-solid fa-cube max-[425px]:text-4xl"
+                >
                   <div
-                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-28 left-1/2"
+                    class="absolute w-0.5 h-[180%] transform -translate-x-1/2 bg-black rounded-md -bottom-[104px] left-1/2 max-[529px]:hidden"
                   ></div>
                 </i>
               </div>
-              <div class="4/5">
+              <div class="w-4/5">
                 <h3 class="mb-4 text-lg border-b-2 plus-jakarta-sans-B">
                   Week 3
                 </h3>
@@ -879,9 +940,11 @@
                 </ul>
               </div>
             </div>
-            <div class="flex items-start gap-8 p-4 h-1/5">
-              <div class="w-1/5"><i class="text-5xl fa-solid fa-cube"></i></div>
-              <div class="4/5">
+            <div class="flex items-start gap-8 p-4 h-1/5 max-[669px]:gap-2">
+              <div class="w-1/5">
+                <i class="text-5xl fa-solid fa-cube max-[425px]:text-4xl"></i>
+              </div>
+              <div class="w-4/5">
                 <h3 class="mb-4 text-lg border-b-2 plus-jakarta-sans-B">
                   Week 4
                 </h3>
@@ -898,12 +961,22 @@
               </div>
             </div>
           </div>
+          <div class="min-[670px]:hidden flex items-center gap-4 mt-6">
+            <button class="btn-squircle">
+              <a href="#form-section">Learn More</a>
+            </button>
+            <button class="btn-squircle-negative">
+              <a href="#form-section">Sign Up</a>
+            </button>
+          </div>
         </div>
       </section>
       <!-- ############################################################################################ -->
       <!-- WHY PLACEMENTHUB? -->
       <section class="w-screen py-16">
-        <div class="max-w-screen-lg mx-auto">
+        <div
+          class="max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto max-[600px]:hidden"
+        >
           <h1
             class="w-full mb-6 text-4xl font-semibold text-center plus-jakarta-sans-B"
           >
@@ -1066,17 +1139,178 @@
             </table>
           </div>
         </div>
+        <div class="min-[601px]:hidden px-8 max-w-screen-sm h-auto">
+          <h1
+            class="w-full mb-6 text-4xl font-semibold text-center plus-jakarta-sans-B"
+          >
+            Why choose PlacementHub
+          </h1>
+          <p class="mb-10 font-normal text-center">
+            Choosing the right software for recruitment and placement is
+            pivotal. Let's weigh the options.
+          </p>
+          <div class="w-full h-full border border-black">
+            <header class="sticky flex items-center justify-center bg-gray-200">
+              <h1
+                class="w-1/2 p-1 text-lg font-bold text-center border-r border-black"
+              >
+                PlacementHub
+              </h1>
+              <h1 class="w-1/2 p-1 text-lg font-bold text-center">
+                Build-Your-Own
+              </h1>
+            </header>
+            <div class="w-full h-auto overflow-y-auto">
+              <div class="flex flex-col w-full">
+                <h3
+                  class="w-full px-2 py-1 text-sm font-bold text-center uppercase border-b border-black primary-bg-color border-y"
+                >
+                  Time and Cost Efficiency
+                </h3>
+                <div class="flex text-sm">
+                  <div
+                    class="flex w-1/2 gap-2 p-1 font-normal border-r border-black"
+                  >
+                    <i
+                      class="mt-1.5 fa-regular fa-circle-check text-green-600"
+                    ></i>
+                    <p>
+                      Instant access, free 30-day trial, delivered to you by
+                      tomorrow.
+                    </p>
+                  </div>
+                  <div class="flex w-1/2 gap-2 p-1">
+                    <span>📅</span>
+                    <p>
+                      Time-consuming developer search, hefty upfront costs,
+                      minimum 6-month development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full">
+                <h3
+                  class="w-full px-2 py-1 text-sm font-bold text-center uppercase border-b border-black primary-bg-color border-y"
+                >
+                  Reliability and Support
+                </h3>
+                <div class="flex text-sm">
+                  <div
+                    class="flex w-1/2 gap-2 p-1 font-normal border-r border-black"
+                  >
+                    <i
+                      class="mt-1.5 fa-regular fa-circle-check text-green-600"
+                    ></i>
+                    <p>
+                      Dedicated support, regular updates, and consistent
+                      reliability.
+                    </p>
+                  </div>
+                  <div class="flex w-1/2 gap-2 p-1">
+                    <span>🚌</span>
+                    <p>
+                      Risk of project abandonment, potential for unfinished
+                      product.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full">
+                <h3
+                  class="w-full px-2 py-1 text-sm font-bold text-center uppercase border-b border-black primary-bg-color border-y"
+                >
+                  Industy Expertise
+                </h3>
+                <div class="flex text-sm">
+                  <div
+                    class="flex w-1/2 gap-2 p-1 font-normal border-r border-black"
+                  >
+                    <i
+                      class="mt-1.5 fa-regular fa-circle-check text-green-600"
+                    ></i>
+                    <p>
+                      Crafted by industry experts, tailored for specific
+                      recruitment needs.
+                    </p>
+                  </div>
+                  <div class="flex w-1/2 gap-2 p-1">
+                    <span>🆗</span>
+                    <p>
+                      Generalized approach, potential lack of industry nuances.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full">
+                <h3
+                  class="w-full px-2 py-1 text-sm font-bold text-center uppercase border-b border-black primary-bg-color border-y"
+                >
+                  Maintenance
+                </h3>
+                <div class="flex text-sm">
+                  <div
+                    class="flex w-1/2 gap-2 p-1 font-normal border-r border-black"
+                  >
+                    <i
+                      class="mt-1.5 fa-regular fa-circle-check text-green-600"
+                    ></i>
+                    <p>Maintenance-free, updates included in subscription.</p>
+                  </div>
+                  <div class="flex w-1/2 gap-2 p-1">
+                    <span>💸</span>
+                    <p>Ongoing maintenance costs, bug fixes, and upgrades.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full">
+                <h3
+                  class="w-full px-2 py-1 text-sm font-bold text-center uppercase border-b border-black primary-bg-color border-y"
+                >
+                  Security
+                </h3>
+                <div class="flex text-sm">
+                  <div
+                    class="flex w-1/2 gap-2 p-1 font-normal border-r border-black"
+                  >
+                    <i
+                      class="mt-1.5 fa-regular fa-circle-check text-green-600"
+                    ></i>
+                    <p>
+                      Robust security measures, regular security audits &
+                      updates.
+                    </p>
+                  </div>
+                  <div class="flex w-1/2 gap-2 p-1">
+                    <span>🤔</span>
+                    <p>
+                      Dependent on developer's knowledge, potential
+                      vulnerabilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- ############################################################################################ -->
       <!-- FORMS SECTION -->
       <section class="w-full h-auto py-16 bg-gray-100" id="form-section">
         <div
-          class="flex flex-col items-center justify-center max-w-screen-lg pb-10 mx-auto h-1/4"
+          class="flex flex-col items-center justify-center max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md pb-10 mx-auto h-1/4"
         >
-          <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
+          <h1
+            class="mb-6 text-4xl font-semibold plus-jakarta-sans-B max-[1099px]:hidden"
+          >
             Sign-up for the
             <span class="primary-text-color">FREE 30-Day Success Trial</span>
           </h1>
+          <div
+            class="min-[1100px]:hidden mb-6 text-4xl font-semibold plus-jakarta-sans-B text-center"
+          >
+            <h1>Sign-up for the</h1>
+            <h1 class="primary-text-color">FREE 30-Day Success Trial</h1>
+          </div>
           <p class="text-base font-normal text-center">
             Are you considering if PlacementHub is the right solution for your
             recruitment agency? Experience the revolution in hiring processes
@@ -1085,9 +1319,13 @@
             provide invaluable insights.
           </p>
         </div>
-        <div class="w-full max-w-screen-lg mx-auto">
-          <form class="flex h-full gap-10 neo-form">
-            <div class="w-1/2 h-auto">
+        <div
+          class="w-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
+          <form
+            class="flex h-full gap-10 neo-form max-[667px]:flex-col max-[667px]:gap-2"
+          >
+            <div class="w-1/2 h-auto max-[667px]:w-full">
               <div class="mb-4">
                 <label
                   class="block mb-2 text-lg font-bold text-gray-700"
@@ -1174,7 +1412,7 @@
                   </label>
                 </div>
               </div>
-              <div class="flex justify-end">
+              <div class="flex justify-end max-[667px]:hidden">
                 <button
                   type="submit"
                   class="w-full mt-2 text-xl font-bold transition-all btn-squircle"
@@ -1183,10 +1421,12 @@
                 </button>
               </div>
             </div>
-            <div class="w-1/2 h-[525px]">
-              <div class="w-full overflow-y-auto h-3/5 overscroll-contain">
+            <div class="w-1/2 h-[525px] max-[667px]:h-auto max-[667px]:w-full">
+              <div
+                class="w-full overflow-y-auto h-3/5 overscroll-contain max-[667px]:h-64"
+              >
                 <label
-                  class="sticky top-0 block w-full pb-1 font-bold text-gray-700 bg-gray-100"
+                  class="sticky top-0 block w-full pb-1 text-base font-bold text-gray-700 bg-gray-100 max-[667px]:text-lg max-[377px]:text-base"
                   >What do you want to accomplish?</label
                 >
                 <div>
@@ -1304,15 +1544,23 @@
               </div>
               <div class="w-full border-t h-2/5">
                 <label
-                  class="block pt-1 text-base font-bold text-gray-700 h-1/6"
+                  class="block p-2 pt-1 text-base font-bold text-gray-700 h-1/6 max-[667px]:text-lg max-[377px]:text-base"
                   for="otherChallenges"
                   >Tell us more about your challenges</label
                 >
                 <textarea
                   id="otherChallenges"
-                  class="w-full h-full px-4 py-2 border rounded-md resize-none neo-input"
+                  class="w-full h-full px-4 py-2 border rounded-md resize-none neo-input max-[667px]:h-60"
                   placeholder="Let us know here"
                 ></textarea>
+                <div class="min-[668px]:hidden">
+                  <button
+                    type="submit"
+                    class="w-full mt-6 text-xl font-bold transition-all btn-squircle"
+                  >
+                    START YOUR TRIAL
+                  </button>
+                </div>
               </div>
             </div>
           </form>
@@ -1321,20 +1569,22 @@
       <!-- ############################################################################################ -->
       <!-- PRICING SECTION -->
       <section class="w-full h-auto py-16" id="pricing-section">
-        <div class="flex flex-col items-center h-full max-w-screen-lg mx-auto">
+        <div
+          class="flex flex-col items-center h-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
           <div class="w-full h-auto mb-12">
-            <h1 class="mb-4 text-4xl plus-jakarta-sans-B">
+            <h1 class="mb-4 text-4xl plus-jakarta-sans-B max-[320px]:text-3xl">
               <span class="primary-text-color">Transparent Pricing</span> For
               You
             </h1>
             <p class="text-base font-normal">No contracts or surprises.</p>
           </div>
-          <div class="flex w-full h-full gap-5">
-            <div class="w-1/2 h-full">
+          <div class="flex w-full h-full gap-5 max-[1099px]:flex-col">
+            <div class="w-1/2 h-full max-[1099px]:w-auto max-[1099px]:h-auto">
               <div
-                class="flex items-center justify-around w-full gap-4 p-4 mb-4 border border-black"
+                class="flex items-center justify-around w-full gap-4 p-4 mb-4 border border-black max-[425px]:flex-col"
               >
-                <h1 class="text-4xl plus-jakarta-sans-B">
+                <h1 class="text-4xl plus-jakarta-sans-B max-[320px]:text-3xl">
                   ₱48,000<span class="text-sm font-normal">/setup fee</span>
                 </h1>
                 <h4
@@ -1347,15 +1597,23 @@
                 <div
                   class="flex items-center justify-between h-16 gap-4 pb-4 border-b border-black price-plan"
                 >
-                  <div class="price-plan-type">
-                    <h3 class="text-lg font-bold">Monthly Plan</h3>
+                  <div class="price-plan-type max-[425px]:w-1/2">
+                    <h3 class="text-lg font-bold max-[320px]:text-base">
+                      Yearly Plan
+                    </h3>
                     <h4
-                      class="text-sm font-normal text-center w-fit dark-text-color border-[#1d678a]"
-                    ></h4>
+                      class="text-sm font-normal text-center w-fit dark-text-color border-[#1d678a] max-[320px]:text-xs"
+                    >
+                      save 20%
+                    </h4>
                   </div>
-                  <div>
-                    <h1 class="inline-block text-4xl plus-jakarta-sans-B price">
-                      ₱15,000
+                  <div
+                    class="max-[425px]:flex max-[425px]:flex-col max-[425px]:items-end"
+                  >
+                    <h1
+                      class="inline-block text-4xl plus-jakarta-sans-B price max-[375px]:text-3xl max-[320px]:text-2xl"
+                    >
+                      ₱12,000
                     </h1>
                     <span class="inline-block text-sm font-normal"
                       >/office/mo</span
@@ -1363,8 +1621,10 @@
                   </div>
                 </div>
                 <div class="w-full pb-4">
-                  <div class="flex w-full gap-8">
-                    <div class="w-1/2 pt-4">
+                  <div
+                    class="flex w-full gap-8 max-[425px]:flex-col max-[425px]:h-auto max-[425px]:gap-2"
+                  >
+                    <div class="w-1/2 pt-4 max-[425px]:w-full">
                       <h3 class="mb-2 text-base font-bold border-b">
                         Onboarding Support
                       </h3>
@@ -1389,7 +1649,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="w-1/2 pt-4">
+                    <div class="w-1/2 pt-4 max-[425px]:w-full max-[425px]:pt-0">
                       <h3 class="mb-2 text-base font-bold border-b">Support</h3>
                       <ul class="text-sm">
                         <li class="flex gap-3 mb-1">
@@ -1413,8 +1673,10 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="flex w-full gap-8">
-                    <div class="w-1/2 pt-4">
+                  <div
+                    class="flex w-full gap-8 max-[425px]:flex-col max-[425px]:h-auto max-[425px]:gap-2 max-[425px]:mt-2"
+                  >
+                    <div class="w-1/2 pt-4 max-[425px]:w-full max-[425px]:pt-0">
                       <h3 class="mb-2 text-base font-bold border-b">
                         Standard Cloud
                       </h3>
@@ -1439,7 +1701,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="w-1/2 pt-4">
+                    <div class="w-1/2 pt-4 max-[425px]:w-full max-[425px]:pt-0">
                       <h3 class="mb-2 text-base font-bold border-b">
                         Coming Soon
                       </h3>
@@ -1480,34 +1742,50 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2 pl-8">
+            <div class="w-1/2 pl-8 max-[1099px]:w-full max-[1099px]:px-0">
               <h2 class="mb-6 text-2xl font-bold">Features</h2>
-              <ul class="mb-16">
-                <li class="flex items-center gap-3 mb-4">
+              <ul
+                class="mb-10 max-[1099px]:h-1/4 max-[1099px]:flex max-[1099px]:flex-wrap max-[680px]:flex-col font-normal"
+              >
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Unlimited Employers, Jobs, Workers</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Unlimited Document Uploads</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Social Media Shareable Job Postings</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Job Application Wizard</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Batch Processing</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Worker Automatch / Follow-ups</h4>
                 </li>
-                <li class="flex items-center gap-3 mb-4">
+                <li
+                  class="flex items-center gap-3 mb-4 max-[1099px]:w-1/2 max-[680px]:w-full"
+                >
                   <i class="text-green-600 fa-regular fa-circle-check"></i>
                   <h4>Ops Analytics / Google Analytics</h4>
                 </li>
@@ -1653,20 +1931,22 @@
           class="flex items-center justify-between max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-4 mx-auto max-[768px]:flex-wrap"
         >
           <div>
-            <h1 class="mb-2 text-5xl font-bold plus-jakarta-sans-B">
+            <h1
+              class="mb-2 text-5xl font-bold plus-jakarta-sans-B max-[768px]:text-[2.5rem] max-[440px]:text-4xl max-[425px]:text-[2rem] max-[361px]:text-3xl max-[343px]:text-2xl"
+            >
               Ready to transform your business?
             </h1>
-            <h4 class="text-xl">
+            <h4 class="text-xl max-[531px]:text-base max-[343px]:text-sm">
               Contact us today for a free demo and experience the Sageware
               difference.
             </h4>
-            <p class="mt-6 text-base">
+            <p class="mt-6 text-base max-[531px]:text-sm max-[343px]:text-xs">
               <i class="fa-regular fa-circle-check"></i> Free 30-Day Success
               Trial
             </p>
           </div>
           <button
-            class="text-2xl transition-all duration-300 ease-in-out bg-white primary-text-color min-[1100px]:w-44 max-[1099px]:w-56 max-[676px]:w-60 btn-secondary card-bs plus-jakarta-sans-B"
+            class="text-2xl transition-all duration-300 ease-in-out bg-white primary-text-color min-[1100px]:w-44 max-[1099px]:w-56 max-[676px]:w-60 btn-secondary card-bs plus-jakarta-sans-B max-[531px]:text-xl max-[343px]:text-lg max-[343px]:w-52"
           >
             <a href="#form-section">Try it Now</a>
           </button>
@@ -1676,7 +1956,7 @@
       <!-- FAQS SECTION -->
       <section class="w-full h-auto py-16">
         <div
-          class="flex flex-col items-center justify-center max-w-screen-lg gap-10 mx-auto faq-container"
+          class="flex flex-col items-center justify-center max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-10 mx-auto faq-container"
         >
           <div class="mb-4 text-center">
             <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
@@ -1687,7 +1967,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            class="flex flex-col justify-center w-full px-8 py-8 text-lg font-medium cursor-pointer faq-question rounded-xl card-bs faq-div max-[475px]:p-4"
             data-rotate="false"
           >
             <div class="flex justify-between">
@@ -1708,7 +1988,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            class="flex flex-col justify-center w-full px-8 py-8 text-lg font-medium cursor-pointer faq-question rounded-xl card-bs faq-div max-[475px]:p-4"
             data-rotate="false"
           >
             <div class="flex justify-between">
@@ -1730,7 +2010,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            class="flex flex-col justify-center w-full px-8 py-8 text-lg font-medium cursor-pointer faq-question rounded-xl card-bs faq-div max-[475px]:p-4"
             data-rotate="false"
           >
             <div class="flex justify-between">
@@ -1751,7 +2031,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            class="flex flex-col justify-center w-full px-8 py-8 text-lg font-medium cursor-pointer faq-question rounded-xl card-bs faq-div max-[475px]:p-4"
             data-rotate="false"
           >
             <div class="flex justify-between">
@@ -1771,7 +2051,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-center w-full px-8 py-8 text-xl font-medium cursor-pointer faq-question rounded-xl card-bs faq-div"
+            class="flex flex-col justify-center w-full px-8 py-8 text-lg font-medium cursor-pointer faq-question rounded-xl card-bs faq-div max-[475px]:p-4"
             data-rotate="false"
           >
             <div class="flex justify-between">
@@ -1797,64 +2077,133 @@
         </div>
       </section>
     </main>
-    <footer class="w-full py-16" id="footer-section">
+    <footer class="w-full py-16 max-[1100px]:px-8" id="footer-section">
       <div
-        class="flex h-auto max-w-screen-lg gap-8 p-10 mx-auto mb-10 bg-white border border-black"
+        class="flex h-auto min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-8 p-10 mx-auto mb-10 bg-white border border-black max-[750px]:flex-wrap-reverse max-[500px]:p-5 max-[500px]:gap-4 max-[374px]:p-2"
       >
-        <div class="w-1/3">
-          <img
-            class="w-2/3 mb-6"
-            src="./assets/placement-hub-logo.jpg"
-            alt="placement-hub-logo"
-          />
-          <div class="flex gap-2 mb-4">
-            <i class="pt-1 fa-solid fa-map-pin"></i>
-            <h4>
-              Twin Oaks Place, <br />
-              <span class="text-sm">Mandaluyong, Philippines</span>
-            </h4>
+        <div
+          class="w-1/3 max-[750px]:flex max-[750px]:w-full max-[750px]:gap-4 max-[750px]:justify-between max-[500px]:flex-wrap max-[500px]:gap-0"
+        >
+          <div
+            class="max-[750px]:w-2/5 max-[500px]:w-1/2 max-[500px]:pr-2 max-[424px]:hidden"
+          >
+            <img
+              class="w-2/3 mb-6 max-[600px]:w-full"
+              src="./assets/placement-hub-logo.jpg"
+              alt="placement-hub-logo"
+            />
+            <div class="flex gap-2 mb-4">
+              <i class="pt-1 fa-solid fa-map-pin"></i>
+              <h4>
+                Twin Oaks Place, <br />
+                <span class="text-sm">Mandaluyong, Philippines</span>
+              </h4>
+            </div>
           </div>
-          <div class="mb-4">
-            <h3 class="text-sm font-bold">Phone:</h3>
-            <h4 class="text-sm">+63 0917 718 0420</h4>
+          <div
+            class="max-[750px]:w-2/5 max-[500px]:w-1/2 max-[500px]:pl-2 max-[424px]:hidden"
+          >
+            <div class="mb-4 max-[500px]:mb-7">
+              <h3 class="text-sm font-bold">Phone:</h3>
+              <h4 class="text-sm">+63 0917 718 0420</h4>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-sm font-bold">Email:</h3>
+              <h4 class="text-sm max-[485px]:text-xs">
+                contact@placementhub.ph
+              </h4>
+            </div>
           </div>
-          <div class="mb-4">
-            <h3 class="text-sm font-bold">Email:</h3>
-            <h4 class="text-sm">contact@placementhub.ph</h4>
+          <div class="w-full min-[425px]:hidden">
+            <img
+              class="w-2/3 mb-6"
+              src="./assets/placement-hub-logo.jpg"
+              alt="placement-hub-logo"
+            />
+            <div class="flex gap-2 mb-3">
+              <i class="pt-1 fa-solid fa-map-pin"></i>
+              <h4>
+                Twin Oaks Place, <br />
+                <span class="text-sm">Mandaluyong, Philippines</span>
+              </h4>
+            </div>
+            <div class="mb-2">
+              <h3 class="text-sm font-bold">Phone:</h3>
+              <h4 class="text-sm">+63 0917 718 0420</h4>
+            </div>
+            <div class="mb-3">
+              <h3 class="text-sm font-bold">Email:</h3>
+              <h4 class="text-sm">contact@placementhub.ph</h4>
+            </div>
           </div>
-          <div class="flex gap-4">
+          <div
+            class="flex gap-4 max-[750px]:w-1/5 max-[750px]:flex-wrap max-[750px]:h-fit max-[750px]:justify-end max-[500px]:w-full max-[500px]:justify-center max-[500px]:gap-8 max-[424px]:justify-start"
+          >
             <a
               href="https://facebook.com/placementhubhq"
               target="_blank"
               rel="noopener noreferrer"
-              ><i class="fab fa-facebook"></i
+              class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
+              ><i class="fab fa-facebook max-[750px]:text-xl"></i
             ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-instagram"></i
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
+              ><i class="fab fa-instagram max-[750px]:text-xl"></i
             ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-twitter"></i
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
+              ><i class="fab fa-twitter max-[750px]:text-xl"></i
             ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-linkedin"></i
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
+              ><i class="fab fa-linkedin max-[750px]:text-xl"></i
             ></a>
           </div>
         </div>
-        <div class="flex justify-end w-2/3 gap-12">
-          <ul class="flex flex-col gap-2 text-sm">
-            <h3 class="mb-2 text-base font-bold">Features</h3>
-            <li><a href="#feature-section">Smart Record Keeping</a></li>
-            <li><a href="#feature-section">Job Application Wizard</a></li>
-            <li><a href="#feature-section">Automatch</a></li>
-            <li><a href="#feature-section">Reporting & Analytics</a></li>
+        <div
+          class="flex justify-end w-2/3 gap-12 max-[750px]:w-full max-[750px]:justify-between max-[750px]:gap-4"
+        >
+          <ul
+            class="flex flex-col gap-2 text-sm max-[750px]:w-1/3 max-[750px]:items-center"
+          >
+            <h3
+              class="mb-2 text-base font-bold max-[750px]:w-full max-[750px]:text-center"
+            >
+              Features
+            </h3>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Smart Record Keeping</a>
+            </li>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Job Application Wizard</a>
+            </li>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Automatch</a>
+            </li>
+            <li class="max-[750px]:w-full max-[750px]:text-center">
+              <a href="#feature-section">Reporting & Analytics</a>
+            </li>
           </ul>
-          <ul class="flex flex-col gap-2 text-sm">
+          <ul
+            class="flex flex-col gap-2 text-sm max-[750px]:w-1/3 max-[750px]:items-center"
+          >
             <h3 class="mb-2 text-base font-bold">Pricing</h3>
             <li><a href="#pricing-section">Setup</a></li>
             <li>Upgrade</li>
             <li>Add-ons</li>
           </ul>
-          <ul class="flex flex-col gap-2 text-sm">
+          <ul
+            class="flex flex-col gap-2 text-sm max-[750px]:w-1/3 max-[750px]:items-center"
+          >
             <h3 class="mb-2 text-base font-bold">Company</h3>
             <li>About us</li>
             <li>Contact us</li>
@@ -1862,13 +2211,22 @@
         </div>
       </div>
       <div
-        class="flex justify-between max-w-screen-lg gap-8 mx-auto text-sm font-normal"
+        class="flex justify-between max-w-screen-lg gap-8 mx-auto text-sm font-normal max-[785px]:flex-col max-[785px]:justify-center max-[785px]:items-center"
       >
-        <h4>
+        <h4 class="max-[785px]:text-center max-[399px]:hidden">
           <i class="fa-regular fa-copyright"></i> 2023 Sageware IT Solutions -
           All Rights Reserved
         </h4>
-        <ul class="flex gap-6">
+        <h4
+          class="max-[399px]:text-center max-[399px]:flex-col max-[399px]:flex max-[399px]:gap-2 min-[400px]:hidden"
+        >
+          <span
+            ><i class="fa-regular fa-copyright"></i> 2023 Sageware IT
+            Solutions</span
+          >
+          <span>All Rights Reserved</span>
+        </h4>
+        <ul class="flex gap-6 max-[785px]:text-center">
           <li class="underline cursor-pointer">Privacy Policy</li>
           <li class="underline cursor-pointer">Terms of Service</li>
           <li class="underline cursor-pointer">Cookie Settings</li>
