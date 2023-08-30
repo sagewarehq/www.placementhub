@@ -1226,12 +1226,20 @@
       <!-- FORMS SECTION -->
       <section class="w-full h-auto py-16 bg-gray-100" id="form-section">
         <div
-          class="flex flex-col items-center justify-center max-w-screen-lg pb-10 mx-auto h-1/4"
+          class="flex flex-col items-center justify-center max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md pb-10 mx-auto h-1/4"
         >
-          <h1 class="mb-6 text-4xl font-semibold plus-jakarta-sans-B">
+          <h1
+            class="mb-6 text-4xl font-semibold plus-jakarta-sans-B max-[1099px]:hidden"
+          >
             Sign-up for the
             <span class="primary-text-color">FREE 30-Day Success Trial</span>
           </h1>
+          <div
+            class="min-[1100px]:hidden mb-6 text-4xl font-semibold plus-jakarta-sans-B text-center"
+          >
+            <h1>Sign-up for the</h1>
+            <h1 class="primary-text-color">FREE 30-Day Success Trial</h1>
+          </div>
           <p class="text-base font-normal text-center">
             Are you considering if PlacementHub is the right solution for your
             recruitment agency? Experience the revolution in hiring processes
@@ -1240,9 +1248,13 @@
             provide invaluable insights.
           </p>
         </div>
-        <div class="w-full max-w-screen-lg mx-auto">
-          <form class="flex h-full gap-10 neo-form">
-            <div class="w-1/2 h-auto">
+        <div
+          class="w-full max-[1100px]:px-8 min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md mx-auto"
+        >
+          <form
+            class="flex h-full gap-10 neo-form max-[667px]:flex-col max-[667px]:gap-2"
+          >
+            <div class="w-1/2 h-auto max-[667px]:w-full">
               <div class="mb-4">
                 <label
                   class="block mb-2 text-lg font-bold text-gray-700"
@@ -1329,7 +1341,7 @@
                   </label>
                 </div>
               </div>
-              <div class="flex justify-end">
+              <div class="flex justify-end max-[667px]:hidden">
                 <button
                   type="submit"
                   class="w-full mt-2 text-xl font-bold transition-all btn-squircle"
@@ -1338,10 +1350,12 @@
                 </button>
               </div>
             </div>
-            <div class="w-1/2 h-[525px]">
-              <div class="w-full overflow-y-auto h-3/5 overscroll-contain">
+            <div class="w-1/2 h-[525px] max-[667px]:h-auto max-[667px]:w-full">
+              <div
+                class="w-full overflow-y-auto h-3/5 overscroll-contain max-[667px]:h-64"
+              >
                 <label
-                  class="sticky top-0 block w-full pb-1 font-bold text-gray-700 bg-gray-100"
+                  class="sticky top-0 block w-full pb-1 text-base font-bold text-gray-700 bg-gray-100 max-[667px]:text-lg max-[377px]:text-base"
                   >What do you want to accomplish?</label
                 >
                 <div>
@@ -1459,15 +1473,23 @@
               </div>
               <div class="w-full border-t h-2/5">
                 <label
-                  class="block pt-1 text-base font-bold text-gray-700 h-1/6"
+                  class="block p-2 pt-1 text-base font-bold text-gray-700 h-1/6 max-[667px]:text-lg max-[377px]:text-base"
                   for="otherChallenges"
                   >Tell us more about your challenges</label
                 >
                 <textarea
                   id="otherChallenges"
-                  class="w-full h-full px-4 py-2 border rounded-md resize-none neo-input"
+                  class="w-full h-full px-4 py-2 border rounded-md resize-none neo-input max-[667px]:h-60"
                   placeholder="Let us know here"
                 ></textarea>
+                <div class="min-[668px]:hidden">
+                  <button
+                    type="submit"
+                    class="w-full mt-6 text-xl font-bold transition-all btn-squircle"
+                  >
+                    START YOUR TRIAL
+                  </button>
+                </div>
               </div>
             </div>
           </form>
