@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -24,17 +24,18 @@
     class="flex flex-col items-center justify-center w-full h-auto p-0 m-0 plus-jakarta-sans-L"
   >
     <nav
-      class="sticky top-0 z-20 flex items-center justify-between w-screen h-24 px-4 py-4 bg-white border-b shadow-md"
+      class="sticky top-0 z-[5] flex items-center justify-between w-screen h-24 px-4 py-4 bg-white border-b shadow-md"
+      id="landing-page-nav"
     >
       <div
-        class="flex items-center justify-between w-full h-full min-[1100px]:max-w-screen-lg gap-4 mx-auto"
+        class="flex items-center justify-between w-full h-full min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-4 mx-auto"
       >
         <div class="w-40">
           <a href="#hero-section">
             <img
               class="object-cover"
               src="assets/placement-hub-logo.jpg"
-              alt="placement-hub-logo"
+              alt="placementhub-logo"
             />
           </a>
         </div>
@@ -109,14 +110,21 @@
         </div>
       </div>
     </nav>
-
+    <!-- POP OUT NAV MENU -->
     <div
       id="mobile-menu"
-      class="fixed z-10 top-24 left-0 h-auto overflow-y-auto transition-transform duration-300 ease-in-out transform bg-white min-[895px]:hidden -translate-y-full shadow-md w-screen"
+      class="fixed z-10 top-0 left-0 overflow-y-auto transition-transform duration-300 ease-in-out transform min-[895px]:hidden -translate-x-full shadow-md w-[70vw] h-full dark-bg-color text-white py-8 px-4"
     >
       <div class="absolute inset-0 w-full" id="mobile-menu-overlay"></div>
+      <a href="#hero-section">
+        <img
+          class="object-cover h-20 mb-6"
+          src="assets/icon-logo.png"
+          alt="placementhub-icon-logo"
+        />
+      </a>
       <ul
-        class="flex flex-col items-center justify-center gap-4 py-8 text-lg font-normal dark-text-color"
+        class="flex flex-col justify-center gap-4 text-lg font-normal text-white"
       >
         <a href="#feature-section">
           <li
@@ -147,12 +155,65 @@
           </li>
         </a>
       </ul>
+      <a href="#form-section">
+        <button
+          class="transition-all duration-300 ease-in-out fixed bottom-8 right-0 w-full flex items-start justify-start"
+          id="mobile-trial-button"
+        >
+          <span
+            class="bg-white text-black border-2 border-black py-4 px-8 rounded font-bold ml-4 w-[62vw] hover:text-white hover:bg-black"
+            >START FREE TRIAL</span
+          >
+        </button>
+      </a>
     </div>
-    <main class="w-screen h-auto">
+    <!-- FLOATING SOCIAL MEDIA LINKS -->
+    <ul
+      class="hidden lg:flex fixed left-0 top-1/2 z-10 flex-col gap-4 transition-all duration-300 ease-out"
+      id="floating-socmed-links"
+    >
+      <a
+        href="https://facebook.com/placementhubhq"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border-2 border-[#4267B2] rounded-r-full flex items-center justify-between gap-2 flex-nowrap py-2 pl-2 px-3 text-[#4267B2] hover:text-white hover:bg-[#4267B2] bg-white transition-all duration-300 ease-in-out -translate-x-24 hover:translate-x-0"
+      >
+        <span class="font-medium">Facebook</span>
+        <i class="fab fa-facebook text-2xl ml-2"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/placementhubhq/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border-2 border-[#D1377B] border-l-0 rounded-r-full flex items-center justify-between gap-2 flex-nowrap py-2 pl-2 px-3 text-[#D1377B] hover:text-white hover:bg-[#D1377B] bg-white transition-all duration-300 ease-in-out -translate-x-24 hover:translate-x-0"
+      >
+        <span class="font-medium">Instagram</span>
+        <i class="fab fa-instagram text-2xl ml-2"></i>
+      </a>
+      <a
+        href="https://twitter.com/placementhubhq"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border-2 border-black border-l-0 rounded-r-full flex items-center justify-between gap-2 flex-nowrap py-2 pl-2 px-3 text-black hover:text-[#DAD7D2] hover:bg-black bg-white transition-all duration-300 ease-in-out -translate-x-24 hover:translate-x-0"
+      >
+        <span class="font-medium">Twitter</span>
+        <i class="fa-brands fa-x-twitter text-2xl ml-2"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/placementhubhq"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border-2 border-[#0A66C2] border-l-0 rounded-r-full flex items-center justify-between gap-2 flex-nowrap py-2 pl-2 px-3 text-[#0A66C2] hover:text-white hover:bg-[#0A66C2] bg-white transition-all duration-300 ease-in-out -translate-x-24 hover:translate-x-0"
+      >
+        <span class="font-medium">LinkedIn</span>
+        <i class="fab fa-linkedin text-2xl ml-2"></i>
+      </a>
+    </ul>
+    <main class="w-screen h-auto" id="landing-page-main">
       <!-- ############################################################################################ -->
       <!--HERO SECTION -->
       <section
-        class="flex items-center justify-center w-full h-auto py-16 bg-gray-100"
+        class="flex items-center justify-center w-full h-auto pt-16 pb-16 max-[1099px]:pt-2 bg-gray-100"
         id="hero-section"
       >
         <div
@@ -1298,7 +1359,14 @@
       <!-- ############################################################################################ -->
       <!-- EMBEDDED FORM SECTION -->
       <section class="bg-gray-100 h-auto py-16 w-full" id="form-section">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfy6ubouE0aXc4TmPYoRnsuAx4y0rWPRzaYRgcxTpiGb8Haaw/viewform?embedded=true" height="900px" width="100%" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfy6ubouE0aXc4TmPYoRnsuAx4y0rWPRzaYRgcxTpiGb8Haaw/viewform?embedded=true"
+          height="900px"
+          width="100%"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
       </section>
       <!-- ############################################################################################ -->
       <!-- FORMS SECTION -->
@@ -1974,7 +2042,7 @@
             <div class="flex justify-between">
               <h2>Who can use PlacementHub?</h2>
               <div
-                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+                class="text-[#1d678a] transition-transform duration-300 transform arrow h-fit"
               >
                 <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
               </div>
@@ -1982,7 +2050,10 @@
             <div
               class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
             >
-              PlacementHub is tailored for local and overseas manpower agencies in the Philippines, offering features compliant with key regulatory bodies like the POEA, DMW, and DOLE. Our platform streamlines recruitment processes while ensuring legal compliance
+              PlacementHub is tailored for local and overseas manpower agencies
+              in the Philippines, offering features compliant with key
+              regulatory bodies like the POEA, DMW, and DOLE. Our platform
+              streamlines recruitment processes while ensuring legal compliance
             </div>
           </div>
           <div
@@ -1992,7 +2063,7 @@
             <div class="flex justify-between">
               <h2>How does it benefit my organization?</h2>
               <div
-                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+                class="text-[#1d678a] transition-transform duration-300 transform arrow h-fit"
               >
                 <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
               </div>
@@ -2000,7 +2071,10 @@
             <div
               class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
             >
-              PlacementHub streamlines HR operations with one-click automation and real-time indicators, reducing manual tasks and speeding up decision-making. Our worker-facing interface also eases documentary encoding
+              PlacementHub streamlines HR operations with one-click automation
+              and real-time indicators, reducing manual tasks and speeding up
+              decision-making. Our worker-facing interface also eases
+              documentary encoding
             </div>
           </div>
           <div
@@ -2010,7 +2084,7 @@
             <div class="flex justify-between">
               <h2>Is my data secure?</h2>
               <div
-                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+                class="text-[#1d678a] transition-transform duration-300 transform arrow h-fit"
               >
                 <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
               </div>
@@ -2031,7 +2105,7 @@
             <div class="flex justify-between">
               <h2>Can I use my own domain name?</h2>
               <div
-                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+                class="text-[#1d678a] transition-transform duration-300 transform arrow h-fit"
               >
                 <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
               </div>
@@ -2040,8 +2114,7 @@
               class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
             >
               Certainly. We support custom domain names to provide a more
-              branded experience that aligns with your organization's
-              brand.
+              branded experience that aligns with your organization's brand.
             </div>
           </div>
           <div
@@ -2051,7 +2124,7 @@
             <div class="flex justify-between">
               <h2>Can I integrate it with other software?</h2>
               <div
-                class="text-[#1d678a] transition-transform duration-300 transform arrow"
+                class="text-[#1d678a] transition-transform duration-300 transform arrow h-fit"
               >
                 <i class="text-2xl fa-solid fa-circle-chevron-down"></i>
               </div>
@@ -2059,7 +2132,10 @@
             <div
               class="px-8 pt-4 text-base font-normal text-gray-400 faq-answer hide-answer"
             >
-              PlacementHub offers integration as a premium service, allowing for seamless compatibility with your existing software systems to enhance your operations further. Tell us your requirements, and we'll take care of the rest.
+              PlacementHub offers integration as a premium service, allowing for
+              seamless compatibility with your existing software systems to
+              enhance your operations further. Tell us your requirements, and
+              we'll take care of the rest.
             </div>
           </div>
         </div>
@@ -2128,32 +2204,32 @@
             class="flex gap-4 max-[750px]:w-1/5 max-[750px]:flex-wrap max-[750px]:h-fit max-[750px]:justify-end max-[500px]:w-full max-[500px]:justify-center max-[500px]:gap-8 max-[424px]:justify-start"
           >
             <a
-              href="https://facebook.com/placementhubhq"
+              href="https://www.facebook.com/placementhubhq"
               target="_blank"
               rel="noopener noreferrer"
               class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
-              ><i class="fab fa-facebook max-[750px]:text-xl"></i
+              ><i class="fab fa-facebook text-xl"></i
             ></a>
             <a
-              href=""
+              href="https://www.instagram.com/placementhubhq/"
               target="_blank"
               rel="noopener noreferrer"
               class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
-              ><i class="fab fa-instagram max-[750px]:text-xl"></i
+              ><i class="fab fa-instagram text-xl"></i
             ></a>
             <a
-              href=""
+              href="https://twitter.com/placementhubhq"
               target="_blank"
               rel="noopener noreferrer"
               class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
-              ><i class="fab fa-twitter max-[750px]:text-xl"></i
+              ><i class="fa-brands fa-x-twitter text-xl"></i
             ></a>
             <a
-              href=""
+              href="https://www.linkedin.com/company/placementhubhq"
               target="_blank"
               rel="noopener noreferrer"
               class="max-[750px]:w-2/5 max-[750px]:h-fit max-[500px]:w-auto"
-              ><i class="fab fa-linkedin max-[750px]:text-xl"></i
+              ><i class="fab fa-linkedin text-xl"></i
             ></a>
           </div>
         </div>
@@ -2199,7 +2275,7 @@
         </div>
       </div>
       <div
-        class="flex justify-between max-w-screen-lg gap-8 mx-auto text-sm font-normal max-[785px]:flex-col max-[785px]:justify-center max-[785px]:items-center"
+        class="flex justify-between min-[1100px]:max-w-screen-lg min-[1100px]:mx-auto max-[1100px]:max-w-screen-md gap-8 mx-auto text-sm font-normal max-[785px]:flex-col max-[785px]:justify-center max-[785px]:items-center"
       >
         <h4 class="max-[785px]:text-center max-[399px]:hidden">
           <i class="fa-regular fa-copyright"></i> 2023 Sageware IT Solutions -
@@ -2216,11 +2292,18 @@
         </h4>
         <ul class="flex gap-6 max-[785px]:text-center">
           <li class="underline cursor-pointer">Privacy Policy</li>
-          <li class="underline cursor-pointer">Terms of Service</li>
-          <li class="underline cursor-pointer">Cookie Settings</li>
+          <li class="underline cursor-pointer ponit">Terms of Service</li>
+          <!-- <li class="underline cursor-pointer">Cookie Settings</li> -->
         </ul>
       </div>
     </footer>
+    <a
+      href="#hero-section"
+      class="z-20 text-2xl fixed right-6 bottom-6 w-10 h-10 rounded-full dark-bg-color text-white flex items-center justify-center transition-all duration-300 ease-out"
+      id="go-top-btn"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </body>
 
   <script>
@@ -2228,11 +2311,21 @@
     const mobileMenuButton = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
     const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+    const pageMain = document.getElementById("landing-page-main");
+    const pageNav = document.getElementById("landing-page-nav");
+    const pageFooter = document.getElementById("footer-section");
+    const mobileTrialButton = document.getElementById("mobile-trial-button");
 
     mobileMenuButton.addEventListener("click", () => {
       const menuToggle = mobileMenuButton.getAttribute("data-menu-toggle");
       if (menuToggle === "mobile-menu") {
-        mobileMenu.classList.toggle("-translate-y-full");
+        mobileMenu.classList.toggle("-translate-x-full");
+        pageMain.classList.add("blur-sm");
+        pageNav.classList.add("blur-sm");
+        pageFooter.classList.add("blur-sm");
+        pageMain.classList.add("brightness-[0.7]");
+        pageNav.classList.add("brightness-[0.7]");
+        pageFooter.classList.add("brightness-[0.7]");
       }
     });
 
@@ -2241,8 +2334,23 @@
         !mobileMenu.contains(event.target) &&
         !mobileMenuButton.contains(event.target)
       ) {
-        mobileMenu.classList.add("-translate-y-full");
+        mobileMenu.classList.add("-translate-x-full");
+        pageMain.classList.remove("blur-sm");
+        pageNav.classList.remove("blur-sm");
+        pageFooter.classList.remove("blur-sm");
+        pageMain.classList.remove("brightness-[0.7]");
+        pageNav.classList.remove("brightness-[0.7]");
+        pageFooter.classList.remove("brightness-[0.7]");
       }
+    });
+    mobileTrialButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("-translate-x-full");
+      pageMain.classList.remove("blur-sm");
+      pageNav.classList.remove("blur-sm");
+      pageFooter.classList.remove("blur-sm");
+      pageMain.classList.remove("brightness-[0.7]");
+      pageNav.classList.remove("brightness-[0.7]");
+      pageFooter.classList.remove("brightness-[0.7]");
     });
 
     // SCROLL LINK
@@ -2414,5 +2522,42 @@
         faqDiv.setAttribute("data-rotate", "false");
       }
     });
+
+    // INTERSECTION OBSERVER
+    const goTopLink = document.getElementById("go-top-btn");
+    const socmedLink = document.getElementById("floating-socmed-links");
+
+    const heroSection = document.getElementById("hero-section");
+    const footerSection = document.getElementById("footer-section");
+
+    const observerHero = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          goTopLink.classList.add("opacity-0");
+          goTopLink.classList.remove("opacity-100");
+          goTopLink.classList.add("pointer-events-none");
+        } else {
+          goTopLink.classList.remove("opacity-0");
+          goTopLink.classList.add("opacity-100");
+          goTopLink.classList.remove("pointer-events-none");
+        }
+      });
+    });
+    const observerFooter = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          socmedLink.classList.add("opacity-0");
+          socmedLink.classList.remove("opacity-100");
+          socmedLink.classList.add("pointer-events-none");
+        } else {
+          socmedLink.classList.remove("opacity-0");
+          socmedLink.classList.add("opacity-100");
+          socmedLink.classList.remove("pointer-events-none");
+        }
+      });
+    });
+
+    observerHero.observe(heroSection);
+    observerFooter.observe(footerSection);
   </script>
 </html>
